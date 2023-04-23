@@ -1,0 +1,92 @@
+<div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
+        
+        <b>{{categoria.idioma | uppercase}}</b> 
+			{{espacio}}
+        <b>{{categoria.modo | titlecase}}</b>
+			{{espacio}}
+		<kbd>{{categoria.nivel | titlecase}}</kbd>
+</div>
+
+<div style="display:grid" class="grid2">
+
+<ng-container *ngIf="iniciar">
+<button type="button" class="button grid2 sizebtn ubicar"
+	(click)="funcion(); borrar.emit(); oculta()"> INICIAR/START </button> 
+</ng-container>	
+
+<div class="mensajeinicial" >
+<p >{{mensajeinicial1}}</p>
+<p class="mensajeEN"><b>{{mensajeinicial2}}</b></p>
+</div>
+
+
+<p class="ocultar"> {{final}} </p>	   <!-- variables solo para probar  -->
+<p class="ocultar"> {{inicial}} </p>      <!-- variables solo para probar  -->
+<p class="ocultar"> {{resalta}} </p>
+
+
+<ul class="grid2 lista1">
+<li  [@growUp] *ngFor="let espalabra of espalabras" >
+			{{espalabra | titlecase}}
+</li>
+<li class="palabraEN" *ngFor="let enpalabra of enpalabras" >
+			{{enpalabra | titlecase}}
+</li>
+</ul>
+</div>
+
+
+<app-escribe (guardartexto)="onGuardartexto(); comparar.emit()" (lista)="onLista()" (secuencia)="onSecuencia()" (resalta)="onResalta()" ></app-escribe> 
+
+
+
+<div style="display:grid" class="grid3"> 
+	<button type="button" class="button grid3" (click)="show = !show">{{show ? 'Ocultar respuesta' : 'Mostrar respuesta'}}</button>
+    <!-- show = {{show}} permite ver el cambio de true o false -->
+    <br>
+<ul class="grid3" *ngIf="show">
+<li *ngFor="let ptpalabra of ptpalabras" >
+			{{ptpalabra}}
+</li>
+</ul>
+</div>
+
+<app-lista-secuencial [lista]="lista" [secuenciaArray]="secuenciaArray" 
+							[contar]="contar" [acertadas]="acertadas" 	
+										[porcentaje]="porcentaje" [grado]="grado"></app-lista-secuencial>
+
+ <!-- se muestra un solo boton por cada click     -->
+<div>
+<ng-container *ngIf="uno && resalta">
+<button [@glow]="resalta ? 'open' : 'closed'"  type="button" class="botoncontinuar" (click)="opcional(); siguienteFn(1); onContinuar(); omitirResalta()"> SIGUIENTE/NEXT </button>
+</ng-container>
+<ng-container *ngIf="dos && resalta">
+<button [@glow]="resalta ? 'open' : 'closed'" type="button" class="botoncontinuar" (click)="opcional(); siguienteFn(2); onContinuar(); omitirResalta()"> SIGUIENTE/NEXT </button>
+</ng-container>
+<ng-container *ngIf="tres && resalta">
+<button [@glow]="resalta ? 'open' : 'closed'" type="button" class="botoncontinuar" (click)="opcional(); siguienteFn(3); onContinuar(); omitirResalta()"> SIGUIENTE/NEXT </button>
+</ng-container>
+<ng-container *ngIf="cuatro && resalta">
+<button [@glow]="resalta ? 'open' : 'closed'" type="button" class="botoncontinuar" (click)="opcional(); siguienteFn(4); onContinuar(); omitirResalta()"> SIGUIENTE/NEXT </button>
+</ng-container>
+<ng-container *ngIf="cinco && resalta">
+<button [@glow]="resalta ? 'open' : 'closed'" type="button" class="botoncontinuar" (click)="opcional(); siguienteFn(5); onContinuar(); omitirResalta()"> SIGUIENTE/NEXT </button>
+</ng-container>
+<ng-container *ngIf="seis && resalta">
+<button [@glow]="resalta ? 'open' : 'closed'" type="button" class="botoncontinuar" (click)="opcional(); siguienteFn(6); onContinuar(); omitirResalta()"> SIGUIENTE/NEXT </button>
+</ng-container>
+<ng-container *ngIf="siete && resalta">
+<button [@glow]="resalta ? 'open' : 'closed'" type="button" class="botoncontinuar" (click)="opcional(); siguienteFn(7); onContinuar(); omitirResalta()"> SIGUIENTE/NEXT </button>
+</ng-container>
+<ng-container *ngIf="ocho && resalta">
+<button [@glow]="resalta ? 'open' : 'closed'" type="button" class="botoncontinuar" (click)="opcional(); siguienteFn(8); onContinuar(); omitirResalta()"> SIGUIENTE/NEXT </button>
+</ng-container>
+<ng-container *ngIf="nueve && resalta">
+<button [@glow]="resalta ? 'open' : 'closed'" type="button" class="botoncontinuar" (click)="opcional(); siguienteFn(9); onContinuar(); omitirResalta()"> SIGUIENTE/NEXT </button>
+</ng-container>
+<ng-container *ngIf="diez && resalta">
+<button [@glow]="resalta ? 'open' : 'closed'" type="button" class="botoncontinuar" (click)="opcional(); siguienteFn(10); onContinuar(); determinarPorcentaje(); cierrefinal.emit(); borraSecuencia(); omitirResalta(); muestra()"> SIGUIENTE/NEXT </button>
+</ng-container>
+</div>
+
+

@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+  background-color: #F2E3A9;
+}
+body, input[type="text"], button {
+  color: #333;
+  font-family: Cambria, Georgia, serif;
+}
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+.ocultar{
+	display: none;
+}
+
+.categoria{
+	position: absolute;
+	left: 215px;
+	top: 40px;
+	color: #3f525c;
+}
+.botonretroceso{
+	position: absolute;
+	right: 45px;
+	top: 40px;
+}
+.botonHome{
+	position: absolute;
+	right: 45px;
+	top: 85px;
+}
+.enlace1{
+	position: absolute;
+	right: 45px;
+	top: 130px;
+	font-size: 9px;
+	width: 125px;
+}
+.enlace2{
+	position: absolute;
+	right: 45px;
+	top: 190px;
+	font-size: 9px;
+	width: 125px;
+}
+
+/* everywhere else */
+* {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font: 20px "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}

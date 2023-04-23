@@ -1,0 +1,34 @@
+
+
+<div class="tecladoPT btn-group btn-xs" *ngIf="showPT">	
+<button type="button" class="btn btn-danger disabled" ><kbd>PT</kbd></button>
+<button type="button" class="btn btn-danger" (click)="notifyA1.emit()">à</button>
+<button type="button" class="btn btn-danger" (click)="notifyA2.emit()">á</button>
+<button type="button" class="btn btn-danger" (click)="notifyA3.emit()">â</button>
+<button type="button" class="btn btn-danger" (click)="notifyA4.emit()">ã</button>
+<button type="button" class="btn btn-danger" (click)="notifyC.emit()">ç</button>
+<button type="button" class="btn btn-danger" (click)="notifyE1.emit()">é</button>
+<button type="button" class="btn btn-danger" (click)="notifyE2.emit()">ê</button>
+<button type="button" class="btn btn-danger" (click)="notifyI.emit()">í</button>
+<button type="button" class="btn btn-danger" (click)="notifyO1.emit()">ó</button>
+<button type="button" class="btn btn-danger" (click)="notifyO2.emit()">ô</button>
+<button type="button" class="btn btn-danger" (click)="notifyO3.emit()">õ</button>
+<button type="button" class="btn btn-danger" (click)="notifyU1.emit()">ú</button>
+<button type="button" class="btn btn-danger" (click)="notifyU2.emit()">ü</button>
+<button type="button" class="btn btn-info" (click)="cambiarTecladodePTaSP()">(cambiar a/switch to)Spanish</button>
+</div>
+
+<div class="tecladoSP btn-group btn-xs" *ngIf="showSP">	
+<button type="button" class="btn btn-info disabled" ><kbd>ES</kbd></button>
+<button type="button" class="btn btn-info" (click)="notifyA2.emit()">á</button>
+<button type="button" class="btn btn-info" (click)="notifyE1.emit()">é</button>
+<button type="button" class="btn btn-info" (click)="notifyI.emit()">í</button>
+<button type="button" class="btn btn-info" (click)="notifyO1.emit()">ó</button>
+<button type="button" class="btn btn-info" (click)="notifyU1.emit()">ú</button>
+<button type="button" class="btn btn-info" (click)="notifyU2.emit()">ü</button>
+<button type="button" class="btn btn-info" (click)="notifyN.emit()">ñ</button>
+<button type="button" class="btn btn-info" (click)="notifyInterr.emit()">¿</button>
+<button type="button" class="btn btn-info" (click)="notifyExclam.emit()">¡</button>
+<button type="button" class="btn btn-danger" (click)="cambiarTecladodeSPaPT()">(cambiar a/switch to)Portuguese</button>
+</div>
+

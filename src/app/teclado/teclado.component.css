@@ -1,0 +1,22 @@
+ .tecladoPT {
+   width: 440px;
+   background-color: #eee;
+   border-radius: 2px;
+   display: inline-block;
+   align-items: center;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .tecladoSP {
+   width: 370px;
+   background-color: #eee;
+   border-radius: 2px;
+   display: inline-block;
+   align-items: center;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .ocultar{
+	display: none;
+}
+

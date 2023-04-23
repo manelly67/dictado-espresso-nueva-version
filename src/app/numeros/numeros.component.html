@@ -1,0 +1,42 @@
+<div style="display:grid" class="grid2">
+
+<button type="button" class="button grid2 sizebtn"
+	(click)="generarNumero(); asignarEscritura(); formatearNumero(); guardarSeleccion(); clear()"> Generar número / Generate number </button> 
+<br>
+<p class="ocultar"> {{minimo}} {{maximo}}</p>	 	<!-- variable para probar -->
+
+
+<div [@randomNumber]="isNumber ? true : false" [ngClass]="numeroFormateado.length > 6 ? 'container2': 'container1'">
+<p [@randomNumber1]="isNumber ? true : false">{{numeroFormateado}}</p>
+</div>
+
+</div>
+
+<app-escribe (guardartexto)="onGuardartexto(); comparar()" ></app-escribe> 
+
+<app-comparar [palabraseleccionada]="palabraseleccionada" [respuestacomparar]="respuestacomparar" 
+							[arrayPalabra]="arrayPalabra" [arrayRespuesta]="arrayRespuesta" 	
+									[nuevoArray]="nuevoArray" [aciertos]="aciertos" [percentAciertos]="percentAciertos"
+											     [mostrarIndicador]="mostrarIndicador"		>	 </app-comparar>
+
+<div style="display:grid" class="grid"> 
+	<button type="button" class="button grid" (click)="show = !show">{{show ? 'Ocultar respuesta' : 'Mostrar respuesta'}}</button>
+    <!-- show = {{show}} permite ver el cambio de true o false -->
+    <br>
+<div class="grid" *ngIf="show">
+<div class="grid formato" >
+	
+	{{palabraseleccionada}}
+	
+</div>
+</div>
+</div>
+
+
+<div id="texto" [ngClass]="mensajedealerta != '' ? 'alert alert-warning': 'ocultar'"> 
+{{mensajedealerta | uppercase }}
+ </div>
+ 
+ <ng-container *ngIf="porcentaje"> 
+<p [@slideStatus] class="ubicarPercent" [ngClass]=" grado == 'A' ? 'gradoA':'gradoByC' ">{{ porcentajeMostrar | percent }}</p>
+ </ng-container> 

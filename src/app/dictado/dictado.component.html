@@ -1,0 +1,50 @@
+<div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
+        
+        <b>{{categoria.idioma|uppercase}}</b> 
+			{{espacio}}
+        <b>{{categoria.modo|titlecase}}</b>
+			{{espacio}}
+		<kbd>{{categoria.nivel|titlecase}}</kbd>
+</div>
+
+<button type="button" class="botonretroceso" (click)="goBack()">go back</button>
+<br><br>
+
+
+<app-audio></app-audio>
+<br><br>
+<app-escribe (guardartexto)="onGuardartexto(); comparar()" ></app-escribe> 
+
+<app-comparar [palabraseleccionada]="palabraseleccionada" [respuestacomparar]="respuestacomparar" 
+							[arrayPalabra]="arrayPalabra" [arrayRespuesta]="arrayRespuesta" 	
+									[nuevoArray]="nuevoArray" [aciertos]="aciertos" [percentAciertos]="percentAciertos"
+											     [mostrarIndicador]="mostrarIndicador"		>	 </app-comparar>
+
+<div style="display:grid" class="grid"> 
+	<button type="button" class="button grid" (click)="show = !show">{{show ? 'Ocultar respuesta' : 'Mostrar respuesta'}}</button>
+    <!-- show = {{show}} permite ver el cambio de true o false -->
+    <br>
+<div class="grid" *ngIf="show">
+<div class="grid formato" *ngFor='let letra of letraSeleccionada'>
+	<!-- {{letra.nivel}}
+	{{letra.nro}} -->
+	{{letra.fraseES}}
+	<!-- {{letra.fraseEN}} -->
+</div>
+<div class="grid formatoEN" *ngFor='let letra of letraSeleccionada'>
+	<!-- {{letra.nivel}}
+	{{letra.nro}}
+	{{letra.fraseES}} -->
+	{{letra.fraseEN}}
+</div>
+</div>
+</div>
+
+
+<div id="texto" [ngClass]="mensajedealerta != '' ? 'alert alert-warning': 'ocultar'"> 
+{{mensajedealerta | uppercase }}
+ </div>
+ 
+ <ng-container *ngIf="porcentaje"> 
+<p [@slideStatus] class="ubicarPercent" [ngClass]=" grado == 'A' ? 'gradoA':'gradoByC' ">{{ porcentajeMostrar | percent }}</p>
+ </ng-container> 

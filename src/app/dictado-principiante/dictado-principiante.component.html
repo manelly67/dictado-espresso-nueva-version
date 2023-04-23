@@ -1,0 +1,78 @@
+
+<div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
+        
+        <b>{{categoria.idioma|uppercase}}</b> 
+			{{espacio}}
+        <b>{{categoria.modo|titlecase}}</b>
+			{{espacio}}
+		<kbd>{{categoria.nivel|titlecase}}</kbd>
+</div>
+
+<button type="button" class="botonretroceso" (click)="goBack()">go back</button>
+<button type="button" class="botonHome"><a routerLink="/barra">Home</a></button>
+<button type="button" class="enlace1" *ngFor='let categoria of categorias | slice:1:2'><a routerLink="/dictadoIntermedio">{{categoria.nivel | titlecase}}</a></button>
+<button type="button" class="enlace2" *ngFor='let categoria of categorias | slice:2:3'><a routerLink="/dictadoAvanzado">{{categoria.nivel | titlecase}}</a></button>
+
+<br><br>
+
+<div style="display:grid" id="grid1" class="grid1">
+<div id="nro1" class="subtitulo"><p id="texto1"> Do the exercises, listen to the audios, write and practice the Spanish language </p></div>
+<div id="nro2" class="subtitulo"><p id="texto2"> Haz los ejercicios , escucha los audios, escribe y practica el idioma español </p></div>
+<div class="contenidoA" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>
+<b><p id="vertical">{{categoria.nivel|uppercase}}</p></b>
+</div>
+<div class="contenidoB">
+<ul id="lista">
+<li> <a routerLink="/dictado" (click)="definirArchivo(1)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 1</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(2)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 2</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(3)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 3</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(4)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 4</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(5)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 5</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(6)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 6</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(7)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 7</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(8)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 8</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(9)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 9</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(10)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 10</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(11)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 11</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(12)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 12</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(13)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 13</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(14)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 14</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(15)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 15</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(16)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 16</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(17)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 17</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(18)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 18</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(19)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 19</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(20)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 20</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(21)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 21</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(22)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 22</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(23)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 23</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(24)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 24</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(25)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 25</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(26)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 26</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(27)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 27</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(28)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 28</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(29)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 29</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(30)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 30</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(31)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 31</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(32)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 32</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(33)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 33</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(34)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 34</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(35)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 35</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(36)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 36</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(37)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 37</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(38)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 38</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(39)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 39</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(40)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 40</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(41)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 41</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(42)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 42</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(43)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 43</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(44)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 44</button></a></li>
+
+<!-- <li> <a routerLink="/dictado" (click)="definirArchivo(45)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 45</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(46)" rel="noopener noreferrer" > <button type="button" class="btn btn-primary btn-circle btn-l">Nro 46</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(47)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-m">Nro 47</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(48)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 48</button></a></li>
+<li> <a routerLink="/dictado" (click)="definirArchivo(49)" rel="noopener noreferrer" > <button type="button" class="btn btn-success btn-circle btn-xl">Nro 49</button></a></li> -->
+</ul>
+</div>
+</div>

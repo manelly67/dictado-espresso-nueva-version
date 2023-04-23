@@ -1,0 +1,16 @@
+.ingresarNro{
+	position: absolute;
+	right: 130px;
+	top: 64px;
+	font-size: 25px;
+}
+
+input{
+	width: 100px;
+}
+
+.mensajeEN{
+	color: #4040a1;
+	font-size: 12px;
+	font-weight: 600;
+}

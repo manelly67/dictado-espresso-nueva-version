@@ -1,0 +1,20 @@
+
+<div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
+        
+        <b>{{categoria.idioma|uppercase}}</b> 
+			{{espacio}}
+        <b>{{categoria.modo|titlecase}}</b>
+			{{espacio}}
+		<kbd>{{categoria.nivel|titlecase}}</kbd>
+</div>
+
+<button type="button" class="botonretroceso" (click)="goBack()">go back</button>
+<button type="button" class="botonHome"><a routerLink="/barra">Home</a></button>
+<button type="button" class="enlace1" *ngFor='let categoria of categorias | slice:19:20'><a routerLink="/numerosPrincipiantePT">Numeros / Principiante</a></button>
+<button type="button" class="enlace2" *ngFor='let categoria of categorias | slice:16:17'><a routerLink="/ptsecuencias">Palabras / Secuencias</a></button>
+
+
+<br><br>
+<app-numeros [minimo]="minimo" [maximo]="maximo" [nivel]="nivel" [inicialnivel]="inicialnivel"></app-numeros>
+
+

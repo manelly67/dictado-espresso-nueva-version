@@ -1,0 +1,56 @@
+<br>
+<div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
+        
+        <b>{{categoria.idioma|uppercase}}</b> 
+			{{espacio}}
+        <b>{{categoria.modo|titlecase}}</b>
+			{{espacio}}
+		<kbd>{{categoria.nivel|titlecase}}</kbd>
+</div>
+
+<button type="button" class="botonHome"><a routerLink="/barra">Home</a></button>
+<button type="button" class="enlace1" *ngFor='let categoria of categorias | slice:9:10'><a routerLink="/numerosPrincipiante">Numeros / Principiante</a></button>
+<button type="button" class="enlace2" *ngFor='let categoria of categorias | slice:6:7'><a routerLink="/essecuencias">Palabras / Secuencias</a></button>
+
+
+<!-- evaluando agregar o no
+<button type="button" class="button sourcebtn" (click)="en = !en">{{en? 'EN/PT' : 'EN/PT'}}</button>
+-->
+
+<div style="display:grid" class="grid2">
+<button type="button" class="button grid2 sizebtn"
+	(click)="funcion(); borrar.emit()"> Genera palabra/frase </button> 
+<br>
+<p class="ocultar"> {{final}} </p>	
+<p class="ocultar"> {{inicial}} </p>
+
+<ul class="grid2">
+<!-- evaluando agregar o no
+ <div *ngIf="en">  -->
+<li *ngFor="let enpalabra of enpalabras" >
+			{{enpalabra}}
+</li>
+<!-- evaluando agregar o no
+ <div *ngIf="!en">  -->
+<li class="ocultar" *ngFor="let ptpalabra of ptpalabras">
+			{{ptpalabra}}
+</li>
+</ul>
+</div>
+
+
+<app-escribe (guardartexto)="onGuardartexto(); comparar.emit()" ></app-escribe> 
+
+
+
+<div style="display:grid" class="grid3"> 
+	<button type="button" class="button grid3" (click)="show = !show">{{show ? 'Ocultar respuesta' : 'Mostrar respuesta'}}</button>
+    <!-- show = {{show}} permite ver el cambio de true o false -->
+    <br>
+<ul class="grid3" *ngIf="show">
+<li *ngFor="let espalabra of espalabras" >
+			{{espalabra}}
+</li>
+</ul>
+</div>
+

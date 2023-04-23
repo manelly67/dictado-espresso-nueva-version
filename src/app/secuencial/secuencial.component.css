@@ -1,0 +1,80 @@
+
+/* .categoria{
+	position: absolute;
+	left: 215px;
+	top: 40px;
+} en STYLE*/
+.grid2 {
+	grid-auto-flow:row;
+	grid-template-rows: 55px 30px 20px;
+	grid-template-columns:265px 5px 465px;
+	grid-row-gap:15px;
+	grid-column-gap:15px;
+}
+.grid3 {
+	grid-auto-flow:row;
+	grid-template-rows: 60px;
+	grid-template-columns:265px 5px 465px;
+	grid-row-gap:15px;
+	grid-column-gap:15px;
+}
+.sizebtn {
+	width: 150px;
+	height: 45px;
+	background-color: #04B404;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	color: white;
+}
+
+.ubicar {
+	position: absolute;
+	right: 45px;
+	top: 124px;
+}
+
+.lista1 {
+	grid-column-start: 3;
+	grid-row:1;
+}
+.mensajeinicial {
+	padding-top: 12px;
+	grid-column-start: 1;
+	grid-row:1;
+}
+.mensajeEN{
+	color: #4040a1;
+	font-size: 12px;
+}
+
+
+li {
+  margin-top: 2rem;
+  font-size:  2rem;
+  color: white;
+  text-align: center;
+  background-color: #1abc9c;
+  border-radius: 32px;
+}
+
+
+
+.ubicarlista{
+	position: absolute;
+	left: 900px;
+	top: 200px;
+}
+
+
+
+.botoncontinuar{
+	position: absolute;
+	right: 40px;
+	bottom: 75px;
+}
+
+.palabraEN{
+	color: #f2e394;
+	font-size: 1.7rem;
+	font-weight: 600;
+	
+}

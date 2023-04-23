@@ -1,0 +1,12 @@
+/* slide */
+
+.ubicacion {
+	position: absolute;
+	bottom: 250px;
+	left: 60px;
+}
+
+#myCarousel {
+	padding-left: 200px;
+	
+}

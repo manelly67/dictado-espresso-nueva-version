@@ -1,0 +1,23 @@
+.texto1 {
+	color: green;
+	font-size: 2rem;
+	background-color: white;
+	padding-left: 15px;
+}
+
+.texto2 {
+	padding-left: 160px;
+}
+
+.correcto{color: green;
+		position: absolute;
+		right: 180px;
+		bottom: 30px;
+		font-size: 180px;
+}
+.incorrecto{color:red;
+			position: absolute;
+			right: 180px;
+			bottom: 30px;
+			font-size: 150px;
+}

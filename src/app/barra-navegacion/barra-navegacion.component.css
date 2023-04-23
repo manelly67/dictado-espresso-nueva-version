@@ -1,0 +1,49 @@
+h2 {
+  text-align: center;
+}
+
+.barra-uno{
+	padding-left: 75rem;
+	width: 150rem;
+}
+
+.barra-dos {
+	width: 600px;
+	padding-left: 0;
+}
+
+.barra-tres{
+	width: 600px;
+	padding-left: 0;
+}
+
+.texto{
+  background-color: #3f525c;
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  min-width: 70px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+	}
+
+a:hover {
+  background-color: #1abc9c;
+}
+
+/* everywhere else */
+* {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font: 20px "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}

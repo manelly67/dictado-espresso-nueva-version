@@ -1,0 +1,10 @@
+/* .categoria{
+	position: absolute;
+	left: 215px;
+	top: 40px;
+} en STYLE*/
+.botonretroceso{
+	position: absolute;
+	right: 45px;
+	top: 40px;
+}

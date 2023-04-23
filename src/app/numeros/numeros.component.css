@@ -1,0 +1,85 @@
+.grid2 {
+	grid-auto-flow:row;
+	grid-template-rows: 80px 30px;
+	grid-template-columns:285px 5px 100px;
+	grid-row-gap:15px;
+	grid-column-gap:25px;
+}
+.sizebtn {
+	width: 75%;
+	height: 70%;
+	background-color: #04B404;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	color: white;
+}
+p {
+  font: 34px "Montserrat", sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+.container1{
+	background-color: #1abc9c;
+	padding: 13px 18px;
+	width: 150px;
+	height: 90px;
+	border-radius: 60px;
+	text-align: center;
+}
+.container2{
+	background-color: #1abc9c;
+	padding: 13px 18px;
+	width: 250px;
+	height: 90px;
+	border-radius: 60px;
+	text-align: center;
+}
+
+.grid {
+	grid-auto-flow:row;
+	grid-template-rows: 60px 60px;
+	grid-template-columns:250px 5px 500px;
+	grid-row-gap:5px;
+	grid-column-gap:5px;
+}
+
+.formato {
+  margin-top: 2.2rem;
+  font-size:  2.2rem;
+  color: white;
+  text-align: center;
+  background-color: #1abc9c;
+}
+
+.formatoEN{
+	color: #f2e394;
+	font-size: 1.7rem;
+	font-weight: 600;
+	text-align: center;
+	background-color: #1abc9c;
+}
+
+#texto {
+	color: black;
+	font-size: 1.5rem;
+}
+
+
+.ubicarPercent{
+	position: absolute;
+	left: 805px;
+	bottom: 70px;
+}
+
+.gradoA{
+	color: blue;
+	font-size: 92px;
+}
+
+.gradoByC{
+	color: brown;
+	font-size: 80px;
+}

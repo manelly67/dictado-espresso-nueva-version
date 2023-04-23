@@ -1,0 +1,49 @@
+
+<button type="button" class="botonretroceso" (click)="goBack()">go back</button>
+<br>
+
+<!-- cuando la opcion es numeros random utiliza este componente, en caso contrario está oculto -->
+<ng-container *ngIf="random">
+<app-random (comparar)="onComparar()" (borrar)="onClear()" > </app-random>
+</ng-container>
+<!-- cuando la opcion es ingresar numero utiliza este componente, en caso contrario está oculto -->
+<ng-container *ngIf="secuencial">
+<app-secuencial [numeroingresado]="numeroingresado" [inicialingresado]="inicialingresado" 
+					[secuenciaI]="secuenciaI" [secuenciaF]="secuenciaF" 
+						(comparar)="onComparar()"  (cierrefinal)="cierrefinal()" (borrar)="onClear()"        
+																> </app-secuencial>  <!-- comparte el valor desde palabras hacia secuencial  -->
+</ng-container>
+<br>
+
+<app-comparar [palabraseleccionada]="palabraseleccionada" [respuestacomparar]="respuestacomparar" 
+							[arrayPalabra]="arrayPalabra" [arrayRespuesta]="arrayRespuesta" 	
+									[nuevoArray]="nuevoArray" [aciertos]="aciertos" [percentAciertos]="percentAciertos"
+											     [mostrarIndicador]="mostrarIndicador"		>	 </app-comparar>
+<p class="ocultar">{{numeroingresado}}</p>
+<p class="ocultar">{{inicialingresado}}</p>
+<p class="ocultar">{{respuestacomparar}} </p>
+<p class="ocultar">{{palabraseleccionada}} </p>
+
+<div id="texto" [ngClass]="mensajedealerta != '' ? 'alert alert-warning': 'ocultar'"> 
+{{mensajedealerta | uppercase }}
+ </div>
+
+
+
+
+<!-- EJERCICIO UTILIZANDO UN LISTADO DE PALABRAS CON VARIOS CAMPOS
+	ejercicio como generar una lista de palabras 
+	
+<p>{{palabra.esFrase}}</p>
+<p>{{palabra.ptFrase}}</p>
+	
+<h2> Listado de prueba </h2>
+<ul class="palabras">
+  <li *ngFor="let palabra of palabras">
+    <button type="button">
+      <span class="badge">{{palabra.id}}</span>
+      <span class="name">{{palabra.esFrase}}</span>
+	  <span class="name">{{palabra.ptFrase}}</span>
+    </button>
+  </li>
+</ul> -->

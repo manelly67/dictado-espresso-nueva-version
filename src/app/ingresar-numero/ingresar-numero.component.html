@@ -1,0 +1,46 @@
+
+<ng-container *ngIf="compararService.iniciar">
+<div class="ingresarNro">
+  <p class="mensajeEN">{{mensajeEN|uppercase}}</p>
+  <p>{{mensajeES|uppercase}}</p><p>escribe un número y click INICIAR (<kbd>WRITE A NUMBER</kbd>/ click START)</p>
+
+<input class="ingresanumero" [value]="numeroingresado1" 
+        
+		 (keyup)="onKey2($event)"
+			(blur)="validacion()" 
+			 (keyup.enter)="validacion()"	/>
+
+
+											
+<div id="texto" [ngClass]="mensajedevalidacion != '' ? 'alert alert-warning': 'ocultar'"> 
+{{mensajedevalidacion | uppercase }}
+ </div>
+	  
+	  <ul class="list-inline ocultar" >
+	  <li *ngFor="let numero of secuenciaF">
+	  <p > {{numero}}</p>     <!--variable solo para probar funcionamiento -->
+	  </li>
+	  </ul>
+	  <ul class="list-inline ocultar">
+	  <li *ngFor="let numero of secuenciaI">
+	  <p > {{numero}}</p>     <!--variable solo para probar funcionamiento -->
+	  </li>
+	  </ul>
+	  <p class="ocultar">Result: {{numeroingresado}}</p>
+		<p class="ocultar">Result: {{inicialingresado}}</p>	  <!--variable solo para probar funcionamiento -->
+
+</div>
+</ng-container>
+
+
+<ng-container *ngIf="pt">
+<app-palabras [numeroingresado]="numeroingresado" [inicialingresado]="inicialingresado"
+					[secuenciaI]="secuenciaI" [secuenciaF]="secuenciaF"			   
+													></app-palabras>    <!-- comparte el valor desde ingresar-numero hacia palabras  -->
+</ng-container>
+
+<ng-container *ngIf="es">
+<app-es-palabras [numeroingresado]="numeroingresado" [inicialingresado]="inicialingresado"
+					[secuenciaI]="secuenciaI" [secuenciaF]="secuenciaF"			   
+													></app-es-palabras>    <!-- comparte el valor desde ingresar-numero hacia palabras  -->
+</ng-container>

@@ -1,0 +1,16 @@
+#texto {
+	color: black;
+	font-size: 1.5rem;
+}
+
+.botonretroceso{
+	position: absolute;
+	right: 45px;
+	top: 40px;
+}
+
+.ubicarlista{
+	position: absolute;
+	left: 900px;
+	top: 200px;
+}

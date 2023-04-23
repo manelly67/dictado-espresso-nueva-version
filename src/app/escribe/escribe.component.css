@@ -1,0 +1,45 @@
+.grid1 {
+	grid-auto-flow:row;
+	grid-template-rows: 60px 10px 50px;
+	grid-template-columns:550px 100px 200px;
+	grid-row-gap:30px;
+	grid-column-gap:100px;
+}
+
+.ingresatexto {
+	width: 540px;
+	height: 55px;
+	position: absolute;
+	border-radius: 32px;
+	font-size: 2rem;
+	padding-left: 10px;
+}
+.teclado{
+	width: 300px;
+	height: 90px;
+	position: relative;
+		left: 265px;
+		top: 10px;
+}
+
+#escribe{
+	position: relative;
+	left: 1px;
+	top: 45px;
+}
+
+#escribeingles{
+	position: relative;
+	left: 1px;
+	top: 50px;
+	color: #4040a1;
+}
+
+.button {
+	top: 10px;
+}
+
+
+input { 
+	height: 90px; 
+}

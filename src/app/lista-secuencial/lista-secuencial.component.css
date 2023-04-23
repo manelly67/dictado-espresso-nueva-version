@@ -1,0 +1,32 @@
+
+li {
+  margin-top: 2rem;
+  font-size:  2rem;
+  padding-top: 1px;
+  text-align: center;
+  background-color: white;
+  border-radius: 32px;
+}
+
+
+.ubicarlista{
+	position: absolute;
+	left: 900px;
+	top: 200px;
+}
+
+.ubicarPercent{
+	position: absolute;
+	left: 500px;
+	bottom: 100px;
+}
+
+.gradoA{
+	color: blue;
+	font-size: 100px;
+}
+
+.gradoByC{
+	color: brown;
+	font-size: 80px;
+}
