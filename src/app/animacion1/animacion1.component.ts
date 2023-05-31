@@ -808,7 +808,7 @@ export class Animacion1Component implements OnInit {
 	this.reproducir();
 	}
 
-archivoAudio:string='assets/sounds/efectos/aplausos.3gpp';
+archivoAudio:string='assets/sounds/efectos/aplausos.mp3';
 
 		reproducir() {
         const audio = new Audio(this.archivoAudio);

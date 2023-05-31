@@ -1,113 +1,94 @@
 .Aimg1{ position: fixed; top: -20px; left: 10px; color: blue; font-size: 15px; font-weight: 900; }
-.Aimg2{ position: fixed; top: -20px; left: 30px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Aimg3{ position: fixed; top: -20px; left: 50px; color: green; font-size: 15px; font-weight: 900; }
 
 .Aimg4{ position: fixed; top: -20px; left: 70px; color: blue; font-size: 15px; font-weight: 900; }
-.Aimg5{ position: fixed; top: -20px; left: 90px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Aimg6{ position: fixed; top: -20px; left: 110px; color: green; font-size: 15px; font-weight: 900; }
 
 .Aimg7{ position: fixed; top: -20px; left: 130px; color: blue; font-size: 15px; font-weight: 900; }
-.Aimg8{ position: fixed; top: -20px; left: 150px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Aimg9{ position: fixed; top: -20px; left: 180px; color: green; font-size: 15px; font-weight: 900; }
 
 .Aimg10{ position: fixed; top: -20px; left: 210px; color: blue; font-size: 15px; font-weight: 900; }
-.Aimg11{ position: fixed; top: -20px; left: 230px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Aimg12{ position: fixed; top: -20px; left: 260px; color: green; font-size: 15px; font-weight: 900; }
 
-.Aimg13{ position: fixed; top: -20px; left: 280px; color: blue; font-size: 15px; font-weight: 900; }
+
 .Aimg14{ position: fixed; top: -20px; left: 300px; color: yellow; font-size: 15px; font-weight: 900; }
 .Aimg15{ position: fixed; top: -20px; left: 320px; color: green; font-size: 15px; font-weight: 900; }
 
-.Aimg16{ position: fixed; top: -20px; left: 340px; color: blue; font-size: 15px; font-weight: 900; }
-.Aimg17{ position: fixed; top: -20px; left: 360px; color: yellow; font-size: 15px; font-weight: 900; }
-.Aimg18{ position: fixed; top: -20px; left: 400px; color: green; font-size: 15px; font-weight: 900; }
 
-.Bimg1{ position: fixed; top: -20px; left: 410px; color: blue; font-size: 15px; font-weight: 900; }
+.Aimg17{ position: fixed; top: -20px; left: 360px; color: yellow; font-size: 15px; font-weight: 900; }
+
+
 .Bimg2{ position: fixed; top: -20px; left: 430px; color: yellow; font-size: 15px; font-weight: 900; }
 .Bimg3{ position: fixed; top: -20px; left: 450px; color: green; font-size: 15px; font-weight: 900; }
 
-.Bimg4{ position: fixed; top: -20px; left: 470px; color: blue; font-size: 15px; font-weight: 900; }
+
 .Bimg5{ position: fixed; top: -20px; left: 490px; color: yellow; font-size: 15px; font-weight: 900; }
 .Bimg6{ position: fixed; top: -20px; left: 510px; color: green; font-size: 15px; font-weight: 900; }
 
 .Bimg7{ position: fixed; top: -20px; left: 530px; color: blue; font-size: 15px; font-weight: 900; }
-.Bimg8{ position: fixed; top: -20px; left: 550px; color: yellow; font-size: 15px; font-weight: 900; }
-.Bimg9{ position: fixed; top: -20px; left: 580px; color: green; font-size: 15px; font-weight: 900; }
+
 
 .Bimg10{ position: fixed; top: -20px; left: 610px; color: blue; font-size: 15px; font-weight: 900; }
-.Bimg11{ position: fixed; top: -20px; left: 630px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Bimg12{ position: fixed; top: -20px; left: 660px; color: green; font-size: 15px; font-weight: 900; }
 
-.Bimg13{ position: fixed; top: -20px; left: 680px; color: blue; font-size: 15px; font-weight: 900; }
-.Bimg14{ position: fixed; top: -20px; left: 700px; color: yellow; font-size: 15px; font-weight: 900; }
+
+
 .Bimg15{ position: fixed; top: -20px; left: 720px; color: green; font-size: 15px; font-weight: 900; }
 
 .Bimg16{ position: fixed; top: -20px; left: 740px; color: blue; font-size: 15px; font-weight: 900; }
-.Bimg17{ position: fixed; top: -20px; left: 760px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Bimg18{ position: fixed; top: -20px; left: 800px; color: green; font-size: 15px; font-weight: 900; }
 
 .Cimg1{ position: fixed; top: -20px; left: 810px; color: blue; font-size: 15px; font-weight: 900; }
-.Cimg2{ position: fixed; top: -20px; left: 830px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Cimg3{ position: fixed; top: -20px; left: 850px; color: green; font-size: 15px; font-weight: 900; }
 
 .Cimg4{ position: fixed; top: -20px; left: 870px; color: blue; font-size: 15px; font-weight: 900; }
-.Cimg5{ position: fixed; top: -20px; left: 890px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Cimg6{ position: fixed; top: -20px; left: 910px; color: green; font-size: 15px; font-weight: 900; }
 
 .Cimg7{ position: fixed; top: -20px; left: 930px; color: blue; font-size: 15px; font-weight: 900; }
-.Cimg8{ position: fixed; top: -20px; left: 950px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Cimg9{ position: fixed; top: -20px; left: 980px; color: green; font-size: 15px; font-weight: 900; }
 
 .Cimg10{ position: fixed; top: -20px; left: 1010px; color: blue; font-size: 15px; font-weight: 900; }
-.Cimg11{ position: fixed; top: -20px; left: 1030px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Cimg12{ position: fixed; top: -20px; left: 1060px; color: green; font-size: 15px; font-weight: 900; }
 
 .Cimg13{ position: fixed; top: -20px; left: 1080px; color: blue; font-size: 15px; font-weight: 900; }
-.Cimg14{ position: fixed; top: -20px; left: 1100px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Cimg15{ position: fixed; top: -20px; left: 1120px; color: green; font-size: 15px; font-weight: 900; }
 
 .Cimg16{ position: fixed; top: -20px; left: 1140px; color: blue; font-size: 15px; font-weight: 900; }
-.Cimg17{ position: fixed; top: -20px; left: 1160px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Cimg18{ position: fixed; top: -20px; left: 1200px; color: green; font-size: 15px; font-weight: 900; }
 
 .Dimg1{ position: fixed; top: -20px; right: 5px; color: blue; font-size: 15px; font-weight: 900; }
-.Dimg2{ position: fixed; top: -20px; right: 15px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Dimg3{ position: fixed; top: -20px; right: 30px; color: green; font-size: 15px; font-weight: 900; }
 
 .Dimg4{ position: fixed; top: -20px; right: 70px; color: blue; font-size: 15px; font-weight: 900; }
-.Dimg5{ position: fixed; top: -20px; right: 90px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Dimg6{ position: fixed; top: -20px; right: 110px; color: green; font-size: 15px; font-weight: 900; }
 
 .Dimg7{ position: fixed; top: -20px; right: 130px; color: blue; font-size: 15px; font-weight: 900; }
-.Dimg8{ position: fixed; top: -20px; right: 150px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Dimg9{ position: fixed; top: -20px; right: 180px; color: green; font-size: 15px; font-weight: 900; }
 
 .Dimg10{ position: fixed; top: -20px; right: 210px; color: blue; font-size: 15px; font-weight: 900; }
-.Dimg11{ position: fixed; top: -20px; right: 230px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Dimg12{ position: fixed; top: -20px; right: 260px; color: green; font-size: 15px; font-weight: 900; }
 
 .Dimg13{ position: fixed; top: -20px; right: 280px; color: blue; font-size: 15px; font-weight: 900; }
-.Dimg14{ position: fixed; top: -20px; right: 300px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Dimg15{ position: fixed; top: -20px; right: 320px; color: green; font-size: 15px; font-weight: 900; }
 
 .Dimg16{ position: fixed; top: -20px; right: 340px; color: blue; font-size: 15px; font-weight: 900; }
-.Dimg17{ position: fixed; top: -20px; right: 360px; color: yellow; font-size: 15px; font-weight: 900; }
+
 .Dimg18{ position: fixed; top: -20px; right: 400px; color: green; font-size: 15px; font-weight: 900; }
-
-
-.Aimg19{ position: fixed; top: -20px; left: 45px; color: blue; font-size: 15px; font-weight: 900; }
-.Aimg20{ position: fixed; top: -20px; left: 145px; color: yellow; font-size: 15px; font-weight: 900; }
-.Aimg21{ position: fixed; top: -20px; left: 275px; color: green; font-size: 15px; font-weight: 900; }
-
-.Aimg22{ position: fixed; top: -20px; left: 405px; color: blue; font-size: 15px; font-weight: 900; }
-.Aimg23{ position: fixed; top: -20px; left: 535px; color: yellow; font-size: 15px; font-weight: 900; }
-.Aimg24{ position: fixed; top: -20px; left: 685px; color: green; font-size: 15px; font-weight: 900; }
-
-.Bimg19{ position: fixed; top: -20px; right: 685px; color: blue; font-size: 15px; font-weight: 900; }
-.Bimg20{ position: fixed; top: -20px; right: 535px; color: yellow; font-size: 15px; font-weight: 900; }
-.Bimg21{ position: fixed; top: -20px; right: 405px; color: green; font-size: 15px; font-weight: 900; }
-
-.Bimg22{ position: fixed; top: -20px; right: 275px; color: blue; font-size: 15px; font-weight: 900; }
-.Bimg23{ position: fixed; top: -20px; right: 145px; color: yellow; font-size: 15px; font-weight: 900; }
-.Bimg24{ position: fixed; top: -20px; right: 45px; color: green; font-size: 15px; font-weight: 900; }
 
