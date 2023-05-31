@@ -1,0 +1,22 @@
+
+<button type="button" class="botonretroceso" (click)="goBack()">go back</button>
+
+<div class="container ubicacion1" >
+
+<h1> {{textoEN | uppercase}}</h1>
+<h3> {{textoES |uppercase}}{{separador}}{{textoPT |uppercase}}</h3>
+<br><br>
+<p><b> We invite you to try </b></p>
+</div>
+
+
+
+<div class="container ubicacion2" >
+
+<ul >
+<li	*ngFor='let categoria of categorias | slice:30:31'>{{categoria.idioma | uppercase}}<a class="texto" routerLink="/portugueseTest1">{{categoria.modo | uppercase}}{{separador}}{{categoria.nivel | titlecase}}</a></li>
+<li *ngFor='let categoria of categorias | slice:27:28'>{{categoria.idioma | uppercase}}<a class="texto" routerLink="/dictadoptPrincipiante">{{categoria.modo | uppercase}}{{separador}}{{categoria.nivel | titlecase}}</a></li>
+<li *ngFor='let categoria of categorias | slice:13:14'>{{categoria.idioma | uppercase}}<a class="texto" routerLink="/ptpalabras">{{categoria.modo | uppercase}}{{separador}}{{categoria.nivel | titlecase}}</a></li>
+</ul>
+
+</div>

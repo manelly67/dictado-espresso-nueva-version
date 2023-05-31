@@ -55,6 +55,7 @@ import { Publicidad1Component } from './publicidad1/publicidad1.component';
 import { PortugueseTestComponent } from './portuguese-test/portuguese-test.component';
 import { Publicidad2Component } from './publicidad2/publicidad2.component';
 import { Animacion3Component } from './animacion3/animacion3.component';
+import { InProgressPtComponent } from './in-progress-pt/in-progress-pt.component';
 
 @NgModule({
   declarations: [
@@ -104,7 +105,8 @@ import { Animacion3Component } from './animacion3/animacion3.component';
     Publicidad1Component,
     PortugueseTestComponent,
     Publicidad2Component,
-    Animacion3Component
+    Animacion3Component,
+    InProgressPtComponent
   ],
   imports: [
     BrowserModule,

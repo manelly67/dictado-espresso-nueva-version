@@ -29,6 +29,7 @@ import { PortugueseTestComponent } from './portuguese-test/portuguese-test.compo
 
 
 import { InProgressComponent } from './in-progress/in-progress.component';
+import { InProgressPtComponent } from './in-progress-pt/in-progress-pt.component';
 import { PoliticadeprivacidadComponent } from './politicadeprivacidad/politicadeprivacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
@@ -60,6 +61,7 @@ const routes: Routes = [
   
   
   { path: 'inProgress', component: InProgressComponent },
+  { path: 'inProgressPT', component: InProgressPtComponent },
   { path: 'privacidad', component: PoliticadeprivacidadComponent },
   { path: 'contacto', component: ContactoComponent }
 ];

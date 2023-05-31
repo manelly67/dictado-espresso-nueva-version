@@ -1,0 +1,43 @@
+.ubicacion1 {
+	position: absolute;
+	top: 150px;
+	left: 60px;
+	text-align:center;
+}
+
+
+.ubicacion2 {
+	position: absolute;
+	top: 350px;
+	left: 60px;
+	text-align:center;
+}
+
+ul{
+	display: inline-block;
+	margin: 15px;
+}
+
+.texto{
+  background-color: #3f525c;
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  min-width: 70px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+	}
+
+a:hover {
+  background-color: #1abc9c;
+}

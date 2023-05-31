@@ -57,7 +57,7 @@ preguntaG:'', opcionG1:'', opcionG2:'', opcionG3:'', respuestaG:'',
 preguntaH:'', opcionH1:'', opcionH2:'', opcionH3:'', respuestaH:'', 
 preguntaI:'', opcionI1:'', opcionI2:'', opcionI3:'', respuestaI:'',
 final:'extracto artículo de ABC.ES (28 de junio de 2018). El letal cuaderno de Marie Curie que puede matarte con el mero contacto incluso 100 años después. ABC Historia. https://www.abc.es/historia/abci-letal-cuaderno-marie-curie-puede-matarte-mero-contacto-incluso-100-anos-despues-201704091801-noticia.html',
-pubTest:''
+pubTest:'Test patrocinado por Prof. Javier Díaz - Tutor de Español en Preply.com - contactar en https://preply.com/en/tutor/232026'
 },
 
 {nivel:'avanzado', testID:4, testname:'El oporto - nuevos paladares', instruccion:'',
