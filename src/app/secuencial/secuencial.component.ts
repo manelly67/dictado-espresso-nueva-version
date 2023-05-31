@@ -75,6 +75,7 @@ export class SecuencialComponent implements OnInit{
 	// final definir título superior de la categoría de la página de ejercicios
 			  
 	ngOnInit() {
+	
 	this.onGuardartexto();
 	this.uno = false;  this.dos = false; this.tres = false; this.cuatro =false; this.cinco = false;
 	this.seis = false;  this.siete = false; this.ocho = false; this.nueve =false; this.diez = false;
@@ -143,7 +144,7 @@ export class SecuencialComponent implements OnInit{
 	 if(this.longitud < 2){
 	 this.mensajeinicial1 ='';
 	 }else{
-	 this.mensajeinicial1 = ' '+ this.longitud +' palabras para tí';
+	 this.mensajeinicial1 = ' '+ this.longitud +' palavras para ti';
 	 }
 	return this.mensajeinicial1;
 	}
@@ -338,19 +339,22 @@ export class SecuencialComponent implements OnInit{
 
   // finaliza secuencia de siguientes palabras
 
-	
+gradoA:boolean=false;		
 	//al final cuenta aciertos y determina porcentaje
 	determinarPorcentaje(){
 	this.contar = this.compararService.aciertos(this.secuenciaArray);
 	this.acertadas = this.compararService.porcentaje(this.secuenciaArray,this.contar);
 			if( this.acertadas == 100){
 			this.grado = 'A';
+			this.gradoA = true;
 			}else{
 			if (this.acertadas < 100 && this.acertadas > 40){
 			this.grado = 'B';
+			this.gradoA = false;
 			}else{
 			if (this.acertadas < 40 || this.acertadas == 40){
 			this.grado = 'C';
+			this.gradoA = false;
 			}}}
 	this.acertadas = this.acertadas/100;
 	this.porcentaje = true;

@@ -6,7 +6,7 @@ body {
 	 }
 	 
  #div1 { width: 600px;
-         height: 400px;
+         height: 550px;
          padding: 4px;
          border: 2px solid black;
          background-color: white;
@@ -16,8 +16,14 @@ body {
 		 text-justify: inter-word;
          font-size: 24px;
       }
-#div2 { width: 150px;
-         height: 80px;
+
+.ubicar2{
+		display: flex;
+		justify-content: center;
+	
+}
+#div2 {  width: 150px;
+         height: 75px;
          padding: 4px;
          border: 2px solid black;
          background-color: #DE003A;
@@ -26,6 +32,7 @@ body {
          text-align: justify;
 		 text-justify: inter-word;
          font-size: 16px;
+		 
       }
 
 #div3{
@@ -35,9 +42,18 @@ body {
   
 
 
-#texto1 {font-size: 16px;
-			padding-left: 40px;
+#texto1 {font-size: 14px;
+			padding-left: 70px;
 }
+
+#texto2 {padding-left: 40px;
+}
+
+#texto3 {font-size: 10px;
+		text-align:center;
+}
+
+
  .blue{ color: blue;
 		text-align: center;
 		font-size: 18px;

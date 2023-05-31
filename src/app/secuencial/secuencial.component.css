@@ -28,8 +28,8 @@
 
 .ubicar {
 	position: absolute;
-	right: 45px;
-	top: 124px;
+	right: 185px;
+	top: 130px;
 }
 
 .lista1 {
@@ -68,8 +68,8 @@ li {
 
 .botoncontinuar{
 	position: absolute;
-	right: 40px;
-	bottom: 75px;
+	right: 150px;
+	bottom: 1px;
 }
 
 .palabraEN{

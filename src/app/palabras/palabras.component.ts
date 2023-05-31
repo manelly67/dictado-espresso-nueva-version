@@ -77,11 +77,11 @@ secuencial?:boolean;
 	this.mensajedealerta = this.clearService.clear(this.mensajedealerta);    	
 		
 		if ( this.guardartextoService.palabraseleccionada == ''){
-		this.mensajedealerta = 'No has generado una palabra para comparar';
+		this.mensajedealerta = 'Não gerou uma palavra para comparar';
 		return this.mensajedealerta;
 		}else{	
 			if ( this.guardartextoService.textodefinitivo == ''){
-			this.mensajedealerta = 'No has escrito datos para comparar';
+			this.mensajedealerta = 'Não escreveu dados para comparação';
 			return this.mensajedealerta;
 				}else{
 				this.mensajedealerta = '';

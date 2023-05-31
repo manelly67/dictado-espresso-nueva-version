@@ -3,8 +3,8 @@ h2 {
 }
 
 .barra-uno{
-	padding-left: 75rem;
-	width: 150rem;
+	padding-left: 20rem;
+	width: 85rem;
 }
 
 .barra-dos {
@@ -36,6 +36,7 @@ h2 {
   flex: 0 1 auto;
   align-self: auto;
 	}
+
 
 a:hover {
   background-color: #1abc9c;

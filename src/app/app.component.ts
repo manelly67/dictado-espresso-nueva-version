@@ -1,6 +1,11 @@
 import { Component, OnInit} from '@angular/core';
 import { MostrarService } from './mostrar.service';
 
+// inicio necesarias para publicidad
+import { AdService } from './ad.service';
+import { AdItem } from './ad-item';
+// fin necesarias para publicidad
+
 // inicio instalacion google analytics
 import {NavigationEnd, Router} from '@angular/router';
 import {environment} from '../environment/environment';
@@ -17,6 +22,7 @@ export class AppComponent implements OnInit {
 
 
 constructor(public mostrarService: MostrarService,
+				private adService: AdService,
 				public router: Router) {
 				this.router.events.subscribe(event => {
 				if (event instanceof NavigationEnd) {
@@ -29,10 +35,13 @@ constructor(public mostrarService: MostrarService,
 
 // hasta aqui la instalacion de google analytics para las paginas verificar luego
 
-  title = 'Ejercicios para practicar los idiomas Español y Portugués';
+ 
+  ads: AdItem[]=[];
+  title = 'Practical Exercises - Idioma Español - Língua Portuguesa';
 
   ngOnInit(){
-	this.mostrarService.show = true;         
+	this.mostrarService.show = true;  
+	this.ads = this.adService.getAds();
 	}
 	
 	showbarra:boolean=false;     // se establece en false para evitar duplicidad, las barras las muestra directamente el app-routing module

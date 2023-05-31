@@ -27,25 +27,28 @@ showSP?:boolean;
 	this.nivelcategoria;               // para que el componente Teclado defina el teclado a utilizar
 	this.definirTecladoSP(this.nivelcategoria);
 	this.definirTecladoPT(this.nivelcategoria);
+										
 	}
 
-definirTecladoSP<type>(arg:number):boolean{
+	definirTecladoSP<type>(arg:number):boolean{
 	if (arg < 13){
 	this.showSP = true;
 	}else{
 	this.showSP = false;
 	}
-return this.showSP;
-}
+	return this.showSP;
+	}
 
-definirTecladoPT<type>(arg:number):boolean{
+
+	definirTecladoPT<type>(arg:number):boolean{
 	if (arg < 12){
 	this.showPT = false;
 	}else{
 	this.showPT = true;
 	}
-return this.showPT;
-}
+	return this.showPT;
+	}
 // fin definir teclado
+
 	
 }

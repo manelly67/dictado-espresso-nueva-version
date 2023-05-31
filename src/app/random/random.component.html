@@ -9,14 +9,14 @@
 </div>
 
 <button type="button" class="botonHome"><a routerLink="/barra">Home</a></button>
-<button type="button" class="enlace1" *ngFor='let categoria of categorias | slice:19:20'><a routerLink="/numerosPrincipiantePT">Numeros / Principiante</a></button>
-<button type="button" class="enlace2" *ngFor='let categoria of categorias | slice:16:17'><a routerLink="/ptsecuencias">Palabras / Secuencias</a></button>
+<button type="button" class="enlace1" *ngFor='let categoria of categorias | slice:19:20'><a routerLink="/numerosPrincipiantePT">Números / Principiante</a></button>
+<button type="button" class="enlace2" *ngFor='let categoria of categorias | slice:16:17'><a routerLink="/ptsecuencias">Palavras / Sequência</a></button>
 
 
 <div style="display:grid" class="grid2">
 
 <button type="button" class="button grid2 sizebtn"
-	(click)="funcion(); borrar.emit()"> Genera palabra/frase </button> 
+	(click)="funcion(); borrar.emit()"> Gerar palavra/frase </button> 
 <br>
 <p class="ocultar"> {{final}} </p>	
 <p class="ocultar"> {{inicial}} </p>
@@ -39,7 +39,7 @@
 
 
 <div style="display:grid" class="grid3"> 
-	<button type="button" class="button grid3" (click)="show = !show">{{show ? 'Ocultar respuesta' : 'Mostrar respuesta'}}</button>
+	<button type="button" class="button grid3" (click)="show = !show">{{show ? 'Ocultar resposta' : 'Mostrar resposta'}}</button>
     <!-- show = {{show}} permite ver el cambio de true o false -->
     <br>
 <ul class="grid3" *ngIf="show">

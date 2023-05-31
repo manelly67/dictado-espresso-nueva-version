@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { trigger, transition, state, animate, style, keyframes } from '@angular/animations';
 
-/* import { CompararService } from '../comparar.service'; */
 
 @Component({
   selector: 'app-lista-secuencial',
@@ -36,10 +35,10 @@ import { trigger, transition, state, animate, style, keyframes } from '@angular/
 })
 export class ListaSecuencialComponent implements OnInit{
 
-/* constructor( public compararService: CompararService) { } */
 
 @Input() lista?:boolean;
 @Input() porcentaje?:boolean;
+@Input() gradoA?:boolean;      
 @Input() secuenciaArray:string[]=[];
 @Input() contar:number = 0;
 @Input() acertadas: number = 0;
@@ -47,10 +46,11 @@ export class ListaSecuencialComponent implements OnInit{
 
 nsecuencia:string = '';
 
+
 ngOnInit(){
 this.porcentaje=false;
+this.gradoA=false;          
 }
 
-    
 
 }

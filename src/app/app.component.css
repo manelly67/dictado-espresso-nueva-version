@@ -5,7 +5,8 @@
 }
 	
 .toolbar {
-    position: absolute;
+    position: fixed;
+	/* position: absolute; */
     top: 0;
     left: 0;
     right: 0;
@@ -84,10 +85,22 @@ a:hover {
   background-color: #2f2f2f;
   color: #ffffff;
   }
+  
   .container-fluid {
-	width: 100%;
-	position: absolute;
-	bottom: 1px;
+  width: 50%;
+  position: absolute;
+  bottom: 1px;
   padding-top: 2px;
   padding-bottom: 3px;
   }
+  
+/* publicidad  */ 
+ 
+ .ubicar-ad {
+    position: fixed;
+  /* position: absolute; */
+	right: 5px;
+	top: 145px;
+	z-index:2;
+
+}

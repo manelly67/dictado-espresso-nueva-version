@@ -1,15 +1,21 @@
 
-<ng-container *ngIf="lista">
-<ul class="list-inline ubicarlista">
-<li *ngFor="let nsecuencia of secuenciaArray">
+<ng-container *ngIf="lista" >
+
+<ul class="ubicarlista">
+<li id="listade10" *ngFor="let nsecuencia of secuenciaArray">
    <p [@flyIn] [ngStyle]="{'color':nsecuencia.includes('(')? 'red':'green',
 						   'font-size':nsecuencia.includes('(')? '12px':'14px',
 						   'font-weight':nsecuencia.includes('(')? '500':'900'} "> {{nsecuencia}} </p>
 </li>
 </ul> 
+
 </ng-container>
 
  
 <ng-container *ngIf="porcentaje"> 
 <p [@slideStatus] class="ubicarPercent" [ngClass]=" grado == 'A' ? 'gradoA':'gradoByC' ">{{ acertadas | percent }}</p>
  </ng-container> 
+
+<ng-container *ngIf="gradoA"> 
+<app-animacion1></app-animacion1>
+</ng-container> 

@@ -37,6 +37,7 @@ export class GuardartextoService {
 	
 	guardarSeleccion <Type>(arg:string):string {              // guarda el texto recibido convertido en mayusculas
 		arg = arg.toUpperCase( );
+		arg = arg.trimEnd();
 		this.palabraseleccionada = arg;
 		return this.palabraseleccionada;			/* almacena la palabra seleccionada */
 	}
@@ -44,6 +45,7 @@ export class GuardartextoService {
 	
 	guardarDefinitivo <Type>(arg:string):string {              // guarda el texto recibido convertido en mayusculas
 		arg = arg.toUpperCase( );
+		arg = arg.trimEnd();
 		this.textodefinitivo = arg;
 		return this.textodefinitivo;					/* almacena el texto definitivo para una posterior comparacion*/ 
 	}

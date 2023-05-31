@@ -1,7 +1,7 @@
 <div style="display:grid" class="grid2">
 
 <button type="button" class="button grid2 sizebtn"
-	(click)="generarNumero(); asignarEscritura(); formatearNumero(); guardarSeleccion(); clear()"> Generar número / Generate number </button> 
+	(click)="generarNumero(); asignarEscritura(); formatearNumero(); guardarSeleccion(); clear()"> {{texto1}} / Generate number </button> 
 <br>
 <p class="ocultar"> {{minimo}} {{maximo}}</p>	 	<!-- variable para probar -->
 
@@ -20,7 +20,7 @@
 											     [mostrarIndicador]="mostrarIndicador"		>	 </app-comparar>
 
 <div style="display:grid" class="grid"> 
-	<button type="button" class="button grid" (click)="show = !show">{{show ? 'Ocultar respuesta' : 'Mostrar respuesta'}}</button>
+	<button type="button" class="button grid" (click)="show = !show">{{show ? texto2 : texto3 }}</button>
     <!-- show = {{show}} permite ver el cambio de true o false -->
     <br>
 <div class="grid" *ngIf="show">
@@ -40,3 +40,16 @@
  <ng-container *ngIf="porcentaje"> 
 <p [@slideStatus] class="ubicarPercent" [ngClass]=" grado == 'A' ? 'gradoA':'gradoByC' ">{{ porcentajeMostrar | percent }}</p>
  </ng-container> 
+ 
+<ng-container *ngIf="numerosService.gradoA && numerosService.principiante"> 
+<app-animacion1></app-animacion1>
+<app-animacion2></app-animacion2>
+</ng-container> 
+
+<ng-container *ngIf="numerosService.gradoA && numerosService.avanzado"> 
+<app-animacion1></app-animacion1>
+</ng-container> 
+
+<ng-container *ngIf="numerosService.gradoA && numerosService.intermedio"> 
+<app-animacion3></app-animacion3>
+</ng-container> 

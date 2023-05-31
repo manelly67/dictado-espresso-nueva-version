@@ -72,6 +72,7 @@ export class RandomComponent implements OnInit {
 	ngOnInit() {
 	this.onGuardartexto();
 	this.ptpalabraseleccionada ='';
+	this.guardartextoService.palabraseleccionada == '';
 	this.tecladoService.nivelcategoria = this.inicialnivel;    //para definir el teclado a utilizar
 	}
 	

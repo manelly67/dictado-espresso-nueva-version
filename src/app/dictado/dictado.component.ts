@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { trigger, transition, state, animate, style, keyframes } from '@angular/animations';
 
 import { Letrasdeaudio} from '../letrasdeaudio';
+import { Letrasdeaudiopt} from '../letrasdeaudiopt';
 
 import { MostrarService } from '../mostrar.service';
 import { MensajeService } from '../mensaje.service';
@@ -57,23 +58,58 @@ goBack(): void {
 	categoria = this.mensajeService.categoria;
 	categorias = this.mensajeService.captarCategorias();
 	inicialnivel:number = 0;
-	finalnivel:number = 0;;
+	finalnivel:number = 0;
 	espacio:string=' - ';
 	// final definir título superior de la categoría de la página de ejercicios
 	
 
 show = false;    /* se inicializa en false para que la respuesta este oculta   */
 letraSeleccionada: Letrasdeaudio[]= [];
+letraSeleccionadapt: Letrasdeaudiopt[]= [];
 letra:string = '';
 palabraseleccionada:string = '';
 respuesta = '';
 grado:string = '';
+spanish:boolean=false;
+portuguese:boolean=false;
+
+texto1:string='';
+texto2:string='';
+texto3:string='';
+texto4:string='';
+texto5:string='';
+
+// para definir el idioma de las instrucciones 
+	ptFn(){
+	if (this.inicialnivel > 12){
+	this.texto1='Gerar';
+	this.texto2='Ocultar resposta';
+	this.texto3='Mostrar resposta';
+	this.texto4='Não foi gerado áudio';
+	this.texto5='Não escreveu dados para comparação';
+	}
+	}
+	
+	esFn(){
+	if (this.inicialnivel < 13){
+	this.texto1='Generar';
+	this.texto2='Ocultar respuesta';
+	this.texto3='Mostrar respuesta';
+	this.texto4='No has generado un audio';
+	this.texto5='No has escrito datos para comparar';
+	}
+	}
 
 ngOnInit(){                        // al iniciar el componente toma del service definirAudio las letras del audio y aparta el texto a comparar
  this.porcentaje=false;
  this.mostrarService.show = false;
+		// para mostrar respuesta español o portugués
+ this.spanish = this.definirAudioService.activarSpanish();
+ this.portuguese = this.definirAudioService.activarPortuguese();
+		// capta las letras de los audios y selecciona la de español o portugués de acuerdo a la categoría
  this.letraSeleccionada = this.definirAudioService.captarLetradelaudio();
- this.palabraseleccionada = this.definirAudioService.extraerTextoES(this.letraSeleccionada);
+ this.letraSeleccionadapt = this.definirAudioService.captarLetradelaudiopt();
+ this.palabraseleccionada = this.definirAudioService.extraerTexto(this.spanish,this.portuguese,this.letraSeleccionada,this.letraSeleccionadapt);
  this.palabraseleccionada = this.guardarSeleccion();
        //borra los textos anteriores - ingresados por el usuario- para comenzar un nuevo ingreso de texto
  this.respuesta = this.clearService.clear(this.respuesta);                                                           
@@ -83,6 +119,9 @@ ngOnInit(){                        // al iniciar el componente toma del service 
 		// capta del service los niveles para definir la categoria
  this.inicialnivel = this.definirAudioService.inicialnivel;
  this.finalnivel = this.definirAudioService.finalnivel;
+ this.tecladoService.nivelcategoria = this.inicialnivel;     //para definir el teclado a utilizar
+ this.ptFn();
+ this.esFn();
 }
 
 	guardarSeleccion():string{
@@ -116,11 +155,11 @@ mensajedealerta: string = '';
 	this.mensajedealerta = this.clearService.clear(this.mensajedealerta);    	
 		
 		if ( this.guardartextoService.palabraseleccionada == ''){
-		this.mensajedealerta = 'No has generado una palabra para comparar';
+		this.mensajedealerta = this.texto4;
 		return this.mensajedealerta;
 		}else{	
 			if ( this.guardartextoService.textodefinitivo == ''){
-			this.mensajedealerta = 'No has escrito datos para comparar';
+			this.mensajedealerta = this.texto5;
 			return this.mensajedealerta;
 				}else{
 				this.mensajedealerta = '';
@@ -144,6 +183,10 @@ mensajedealerta: string = '';
 		this.porcentajeMostrar = this.compararService.porcentajeMostrar(this.percentAciertos);
 		this.mostrarIndicador = this.compararService.indicador(this.nuevoArray,this.percentAciertos);
 		this.compararService.siguiente = this.nuevoArray;
+		this.definirAudioService.gradoA = this.definirAudioService.activarGrado(this.grado);
+		this.definirAudioService.avanzado = this.definirAudioService.activarAvanzado(this.definirAudioService.nivel);
+		this.definirAudioService.principiante = this.definirAudioService.activarPrincipiante(this.definirAudioService.nivel);
+		this.definirAudioService.intermedio = this.definirAudioService.activarIntermedio(this.definirAudioService.nivel);
 		
 		return this.arrayPalabra;
 		return this.arrayRespuesta;
@@ -155,6 +198,11 @@ mensajedealerta: string = '';
 		return this.mostrarIndicador;
 		return this.compararService.siguiente;
 		return this.grado;
+		return this.definirAudioService.gradoA;
+		return this.definirAudioService.avanzado;
+		return this.definirAudioService.principiante;
+		return this.definirAudioService.intermedio;
+		
 		
 			} while(this.mensajedealerta == '')
 		}
@@ -179,7 +227,15 @@ this.compararService.siguiente = this.clearService.clearArray(this.compararServi
 this.compararService.contar = this.clearService.clearNro(this.compararService.contar);
 this.compararService.percentAciertos = this.clearService.clearNro(this.compararService.percentAciertos);
 this.compararService.mostrarIndicador = this.clearService.clear(this.compararService.mostrarIndicador);
+this.clearAnimacion();
 }
 
+clearAnimacion(){
+this.definirAudioService.gradoA=false;
+this.definirAudioService.avanzado=false;
+this.definirAudioService.principiante=false;
+this.definirAudioService.intermedio=false;
+
+}
 
 }

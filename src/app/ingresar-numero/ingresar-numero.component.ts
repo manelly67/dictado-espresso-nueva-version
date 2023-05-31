@@ -27,6 +27,13 @@ mensajeES?:string='';
 mensajeEN?:string='';
 mensajedevalidacion:string='';
 numeroingresado1:string='';
+texto1:string='';
+texto2:string='';
+texto3:string='';
+texto4:string='';
+texto5:string='';
+texto6:string='';
+
 
 // INICIO para definir el componente secuencial a utilizar portugues o español
 
@@ -37,12 +44,24 @@ es?:boolean;
 	ptFn(){
 	if (this.idioma == 'portuguese'){
 	this.pt = true;
+	this.texto1='Há ';
+	this.texto2=' palavras e frases para praticar';
+	this.texto3=' Deve introduzir um número';
+	this.texto4=' O número deve ser inferior a ';
+	this.texto5=' O número deve ser maior que 0';
+	this.texto6='digite um número e clique em INICIAR';
 	}
 	}
 	
 	esFn(){
 	if (this.idioma == 'spanish'){
 	this.es = true;
+	this.texto1='Hay ';
+	this.texto2=' palabras y frases para practicar';
+	this.texto3='Debe ingresar un número';
+	this.texto4='Número debe ser menor que ';
+	this.texto5='Número debe ser mayor que 0';
+	this.texto6='escribe un número y click INICIAR';
 	}
 	}
 
@@ -53,7 +72,7 @@ es?:boolean;
 	this.ptFn();
 	this.esFn();
 	this.max=this.randomService.numeroMax();
-	this.mensajeES='Hay '+this.max+' palabras y frases para practicar';
+	this.mensajeES= this.texto1 + this.max + this.texto2;
 	this.mensajeEN='There are '+this.max+' words and phrases to practice';
 	}
 
@@ -79,7 +98,7 @@ es?:boolean;
 	validarIngresoMensaje<type>(arg1:number|undefined,arg2:number|undefined):string{
 	this.mensajedevalidacion = this.clearService.clear(this.mensajedevalidacion);    	
 	if (arg1==undefined || arg1==0){
-		this.mensajedevalidacion = 'Debe ingresar un número';
+		this.mensajedevalidacion = this.texto3;
 		return this.mensajedevalidacion;
 		}else{
 				if(arg2==undefined){
@@ -87,11 +106,11 @@ es?:boolean;
 				return this.mensajedevalidacion;
 				}else{		
 		if ( arg1 > arg2){
-		this.mensajedevalidacion = 'Número debe ser menor que '+arg2;
+		this.mensajedevalidacion = this.texto4 +arg2;
 		return this.mensajedevalidacion;
 		}else{
 				if ( arg1 < 0){
-				this.mensajedevalidacion = 'Número debe ser mayor que 0';
+				this.mensajedevalidacion = this.texto5;
 				return this.mensajedevalidacion;
 				}else{
 			this.mensajedevalidacion = '';	

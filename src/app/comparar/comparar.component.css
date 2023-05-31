@@ -1,3 +1,7 @@
+.ancho {
+	width: 1000px;
+}
+
 .texto1 {
 	color: green;
 	font-size: 2rem;
@@ -7,6 +11,7 @@
 
 .texto2 {
 	padding-left: 160px;
+	width: 1100px;
 }
 
 .correcto{color: green;

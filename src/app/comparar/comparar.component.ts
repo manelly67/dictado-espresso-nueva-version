@@ -1,6 +1,7 @@
 import { Component, Input} from '@angular/core';
 import { trigger, transition, state, animate, style, keyframes } from '@angular/animations';
 
+import { CompararService } from '../comparar.service';
 
 @Component({
   selector: 'app-comparar',
@@ -20,8 +21,10 @@ import { trigger, transition, state, animate, style, keyframes } from '@angular/
   ]
 })
 
-export class CompararComponent  {
+export class CompararComponent {
 
+constructor( public compararService: CompararService ) { }	
+														
 
 @Input() palabraseleccionada: string = '?';
 @Input() respuestacomparar: string = '?';
@@ -37,7 +40,6 @@ palabra: string = '';
 npalabra: string = '';
 respuesta: string = '';
 indicador: string = '';
-
 
 
 

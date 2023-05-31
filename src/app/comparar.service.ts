@@ -13,6 +13,7 @@ array:string[] = [];
 nuevoArray:string[] = [];
 secuenciaArray:string[] = [];
 siguiente:string[] = [];         // se utiliza solo para archivar variable que será utilizada por otro componente
+label2:string='';				 // se utiliza solo para archivar variable que será utilizada por otro componente
 
 contar:number = 0;
 percentAciertos: number = 0;
@@ -27,9 +28,9 @@ iniciar:boolean=true;           // archivar esta condicion para enviar al compon
 		this.array = this.array.filter( word => word.length > 0); 
 		return this.array;
 	}
-
-
 	
+
+	/*  ESTA FUNCION SIRVE CUANDO EL TEXTO INGRESA CON INPUT EN LUGAR DE TEXTAREA
 	comparandoArrays<Type>(arg1:string[],arg2:string[]):string[]{
 	if (arg2[0]==undefined){                                      //si no se ha escrito texto no guarda nada en el nuevoArray (mensaje emitido)
 	this.nuevoArray[0]='';
@@ -45,13 +46,36 @@ iniciar:boolean=true;           // archivar esta condicion para enviar al compon
 			}else{
 		this.nuevoArray[i]=arg1[i]+' ('+arg2[i]+')';
 																// crea un nuevo array comparando cada item segun parametros
-		}
-		}
-		}
+		}}}
+	}
+	return this.nuevoArray;	
+	}  */
+
+ // ESTA FUNCION SE CREO PARA ELIMINAR ESPACIOS ADICIONALES QUE APARECEN CUANDO EL TEXTO INGRESA POR TEXTAREA
+comparando:string='';
+
+	comparandoArrays<Type>(arg1:string[],arg2:string[]):string[]{
+	if (arg2[0]==undefined){                                      //si no se ha escrito texto no guarda nada en el nuevoArray (mensaje emitido)
+	this.nuevoArray[0]='';
+	}else{
+		for (let i = 0; i < arg1.length; i++) {
+		if (arg2[i]==undefined){
+		this.nuevoArray[i]=arg1[i]+' (?)';
+		
+		}else{
+			this.comparando = arg2[i];
+			this.comparando = this.comparando.trimStart();
+			this.comparando = this.comparando.trimEnd();
+			if(arg1[i]==this.comparando){
+			this.nuevoArray[i]=arg1[i]+'';
+			this.comparando = '';
+			}else{
+		this.nuevoArray[i]=arg1[i]+' ('+arg2[i]+')';
+																// crea un nuevo array comparando cada item segun parametros
+		}}}
 	}
 	return this.nuevoArray;	
 	} 
-
 
 
 	aciertos<Type>(arg1:string[]):number{

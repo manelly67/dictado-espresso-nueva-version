@@ -18,6 +18,15 @@ import { NumerosIntermedioComponent } from './numeros-intermedio/numeros-interme
 import { NumerosIntermedio2Component } from './numeros-intermedio2/numeros-intermedio2.component';
 import { NumerosPTPrincipianteComponent } from './numeros-pt-principiante/numeros-pt-principiante.component';
 import { NumerosPTIntermedioComponent } from './numeros-pt-intermedio/numeros-pt-intermedio.component';
+import { SpanishTestComponent } from './spanish-test/spanish-test.component';
+import { SpanishTestIntComponent } from './spanish-test-int/spanish-test-int.component';
+import { SpanishTestAvanzComponent } from './spanish-test-avanz/spanish-test-avanz.component';
+import { DictadoptAvanzadoComponent } from './dictadopt-avanzado/dictadopt-avanzado.component';
+import { DictadoptPrincipianteComponent } from './dictadopt-principiante/dictadopt-principiante.component';
+import { DictadoptIntermedioComponent } from './dictadopt-intermedio/dictadopt-intermedio.component';
+import { PortugueseTestComponent } from './portuguese-test/portuguese-test.component';
+
+
 
 import { InProgressComponent } from './in-progress/in-progress.component';
 import { PoliticadeprivacidadComponent } from './politicadeprivacidad/politicadeprivacidad.component';
@@ -41,6 +50,14 @@ const routes: Routes = [
   { path: 'numerosIntermedio2', component: NumerosIntermedio2Component },
   { path: 'numerosPrincipiantePT', component: NumerosPTPrincipianteComponent },
   { path: 'numerosintermedioPT', component: NumerosPTIntermedioComponent },
+  { path: 'spanishTest1', component: SpanishTestComponent },
+  { path: 'spanishTest2', component: SpanishTestIntComponent },
+  { path: 'spanishTest3', component: SpanishTestAvanzComponent },
+  { path: 'dictadoptAvanzado', component: DictadoptAvanzadoComponent },
+  { path: 'dictadoptPrincipiante', component: DictadoptPrincipianteComponent },
+  { path: 'dictadoptIntermedio', component: DictadoptIntermedioComponent },
+  { path: 'portugueseTest1', component: PortugueseTestComponent },
+  
   
   { path: 'inProgress', component: InProgressComponent },
   { path: 'privacidad', component: PoliticadeprivacidadComponent },

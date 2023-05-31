@@ -11,6 +11,7 @@ import { MensajeService } from '../mensaje.service';
   templateUrl: './dictado-avanzado.component.html',
   styleUrls: ['./dictado-avanzado.component.css']
 })
+
 export class DictadoAvanzadoComponent implements OnInit{
 
 constructor(private route: ActivatedRoute,

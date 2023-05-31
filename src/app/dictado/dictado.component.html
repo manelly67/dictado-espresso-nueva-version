@@ -20,8 +20,8 @@
 									[nuevoArray]="nuevoArray" [aciertos]="aciertos" [percentAciertos]="percentAciertos"
 											     [mostrarIndicador]="mostrarIndicador"		>	 </app-comparar>
 
-<div style="display:grid" class="grid"> 
-	<button type="button" class="button grid" (click)="show = !show">{{show ? 'Ocultar respuesta' : 'Mostrar respuesta'}}</button>
+<div style="display:grid" class="grid" *ngIf="spanish"> 
+	<button type="button" class="button grid" (click)="show = !show">{{show ? texto2 : texto3 }}</button>
     <!-- show = {{show}} permite ver el cambio de true o false -->
     <br>
 <div class="grid" *ngIf="show">
@@ -40,6 +40,26 @@
 </div>
 </div>
 
+<div style="display:grid" class="grid" *ngIf="portuguese"> 
+	<button type="button" class="button grid" (click)="show = !show">{{show ? texto2 : texto3 }}</button>
+    <!-- show = {{show}} permite ver el cambio de true o false -->
+    <br>
+<div class="grid" *ngIf="show">
+<div class="grid formato" *ngFor='let letra of letraSeleccionadapt'>
+	<!-- {{letra.nivel}}
+	{{letra.nro}} -->
+	{{letra.frasePT}}
+	<!-- {{letra.fraseEN}} -->
+</div>
+<div class="grid formatoEN" *ngFor='let letra of letraSeleccionadapt'>
+	<!-- {{letra.nivel}}
+	{{letra.nro}}
+	{{letra.fraseES}} -->
+	{{letra.fraseEN}}
+</div>
+</div>
+</div>
+
 
 <div id="texto" [ngClass]="mensajedealerta != '' ? 'alert alert-warning': 'ocultar'"> 
 {{mensajedealerta | uppercase }}
@@ -48,3 +68,16 @@
  <ng-container *ngIf="porcentaje"> 
 <p [@slideStatus] class="ubicarPercent" [ngClass]=" grado == 'A' ? 'gradoA':'gradoByC' ">{{ porcentajeMostrar | percent }}</p>
  </ng-container> 
+ 
+<ng-container *ngIf="definirAudioService.gradoA && definirAudioService.avanzado"> 
+<app-animacion1></app-animacion1>
+</ng-container> 
+
+<ng-container *ngIf="definirAudioService.gradoA && definirAudioService.principiante"> 
+<app-animacion1></app-animacion1>
+<app-animacion2></app-animacion2>
+</ng-container> 
+
+<ng-container *ngIf="definirAudioService.gradoA && definirAudioService.intermedio"> 
+<app-animacion3></app-animacion3>
+</ng-container> 

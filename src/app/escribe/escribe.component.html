@@ -2,12 +2,17 @@
 <div style="display:grid" class="grid1">
 
 <div class="grid1">
-<label id="escribe">Escribe tu respuesta y [ENTER] </label>
+<label id="escribe">{{label1}}</label>
 
-<input  class="ingresatexto" [value]="arraytexto"
+<!-- <input  class="ingresatexto" [value]="arraytexto" 
          (keyup)="onKey2($event)"
 			(blur)="actualizar()" 
-			 (keyup.enter)="actualizar2();guardartexto.emit(); borrar(); lista.emit(); secuencia.emit(); resalta.emit()" />
+			 (keyup.enter)="actualizar2();guardartexto.emit(); borrar(); lista.emit(); secuencia.emit(); resalta.emit()" /> -->
+
+<textarea  class="ingresatexto" [value]="arraytexto" 
+				(keyup)="onKey2($event)" 
+						(blur)="actualizar()" 
+						(keyup.enter)="actualizar2();guardartexto.emit(); borrar();lista.emit();secuencia.emit();resalta.emit()"></textarea>
 
 <p id="escribeingles"> <b>Write your answer [ENTER]</b> </p>
 

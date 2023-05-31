@@ -51,7 +51,7 @@ import { CompararService } from '../comparar.service';
 })
 export class NumerosComponent implements OnInit {
 
-constructor( private numerosService: NumerosService,
+constructor( public numerosService: NumerosService,
 				public clearService: ClearService,
 					public guardartextoService: GuardartextoService,
 						public tecladoService: TecladoService,
@@ -72,6 +72,33 @@ grado:string = '';
 numeroFormateado:string='?';
 separadorMilesPunto:string='.';
 
+texto1:string='';
+texto2:string='';
+texto3:string='';
+texto4:string='';
+texto5:string='';
+
+// para definir el idioma de las instrucciones 
+	ptFn(){
+	if (this.inicialnivel > 12){
+	this.texto1='Gerar um número';
+	this.texto2='Ocultar resposta';
+	this.texto3='Mostrar resposta';
+	this.texto4='Não foi gerado um número';
+	this.texto5='Não escreveu dados para comparação';
+	}
+	}
+	
+	esFn(){
+	if (this.inicialnivel < 13){
+	this.texto1='Generar número';
+	this.texto2='Ocultar respuesta';
+	this.texto3='Mostrar respuesta';
+	this.texto4='No has generado un número';
+	this.texto5='No has escrito datos para comparar';
+	}
+	}
+
 	ngOnInit(){
 	this.porcentaje=false;
 	this.isNumber=false;    
@@ -82,10 +109,12 @@ separadorMilesPunto:string='.';
 	this.onClearPercent(); 
 	this.clear();
 	this.tecladoService.nivelcategoria = this.inicialnivel;     //para definir el teclado a utilizar
+	this.ptFn();
+	this.esFn();
 	}
 
 	generarNumero(){		// genera un numero cuando el usuario hace click 
-	this.numeroGenerado = this.numerosService.generarNumero();
+	this.numeroGenerado = this.numerosService.generarNumero(); 
 	this.show = false;
 	this.isNumber=true;		
 	}
@@ -113,7 +142,7 @@ separadorMilesPunto:string='.';
 	return this.respuesta;
 	}
 
-   // verificar
+   
    
 arrayPalabra: string[] = [];
 arrayRespuesta: string[] = [];
@@ -129,12 +158,12 @@ mensajedealerta: string = '';
 	mensaje():string{
 	this.mensajedealerta = this.clearService.clear(this.mensajedealerta);    	
 		
-		if ( this.guardartextoService.palabraseleccionada == ''){
-		this.mensajedealerta = 'No has generado una palabra para comparar';
+		if ( this.numeroFormateado == '?'){
+		this.mensajedealerta = this.texto4;
 		return this.mensajedealerta;
 		}else{	
 			if ( this.guardartextoService.textodefinitivo == ''){
-			this.mensajedealerta = 'No has escrito datos para comparar';
+			this.mensajedealerta = this.texto5;
 			return this.mensajedealerta;
 				}else{
 				this.mensajedealerta = '';
@@ -159,6 +188,11 @@ mensajedealerta: string = '';
 		this.mostrarIndicador = this.compararService.indicador(this.nuevoArray,this.percentAciertos);
 		this.compararService.siguiente = this.nuevoArray;
 		this.isNumber = false;
+		this.numerosService.gradoA = this.numerosService.activarGrado(this.grado);
+		this.numerosService.principiante = this.numerosService.activarPrincipiante(this.nivel);
+		this.numerosService.avanzado = this.numerosService.activarAvanzado(this.nivel);
+		this.numerosService.intermedio = this.numerosService.activarIntermedio(this.nivel);
+		
 		
 		return this.arrayPalabra;
 		return this.arrayRespuesta;
@@ -171,6 +205,11 @@ mensajedealerta: string = '';
 		return this.compararService.siguiente;
 		return this.grado;
 		return this.isNumber;
+		return this.numerosService.gradoA;
+		return this.numerosService.principiante;
+		return this.numerosService.avanzado;
+		return this.numerosService.intermedio;
+		
 		
 			} while(this.mensajedealerta == '')
 		}
@@ -188,6 +227,7 @@ this.mostrarIndicador = this.clearService.clear(this.mostrarIndicador);
 this.porcentaje=false;
 this.grado = this.clearService.clear(this.grado);
 this.onClearPercent();
+this.clearAnimacion();
 }
 
 onClearPercent(){
@@ -198,6 +238,13 @@ this.compararService.siguiente = this.clearService.clearArray(this.compararServi
 this.compararService.contar = this.clearService.clearNro(this.compararService.contar);
 this.compararService.percentAciertos = this.clearService.clearNro(this.compararService.percentAciertos);
 this.compararService.mostrarIndicador = this.clearService.clear(this.compararService.mostrarIndicador);
+}
+
+clearAnimacion(){
+this.numerosService.gradoA=false;
+this.numerosService.principiante=false;
+this.numerosService.avanzado=false;
+this.numerosService.intermedio=false;
 }
 
 

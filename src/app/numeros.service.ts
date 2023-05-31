@@ -285,7 +285,7 @@ escribirFraccion3:string='';
 							}} 
 				}
 				
-				if(this.numero2=='100'){
+				/* if(this.numero2=='100'){
 				this.escribirFraccion2 = 'CIEN';
 				}else{
 						if (this.cFraccion2 == '0'){
@@ -310,8 +310,39 @@ escribirFraccion3:string='';
 							this.textobFraccion2 = this.escrituraCien1[this.indice2b];
 							this.escribirFraccion2 =this.textoaFraccion2 +' '+this.textobFraccion2;
 							}}
-				}
-					
+				} */
+		
+				if(this.numero2=='100'){
+				this.escribirFraccion2 = 'CIEN';
+				}else{
+				if(this.numero2=='1' ){
+				this.escribirFraccion2 = '';
+				}else{
+						if (this.cFraccion2 == '0'){
+							this.bFraccion2 = this.b2Fraccion2;
+							}else{
+							this.bFraccion2 = this.b1Fraccion2;
+							}	
+							this.indice1b = Number(this.aFraccion2);
+							this.indice1b = this.indice1b-1;
+							this.indice2b = Number(this.bFraccion2);
+							this.indice2b = this.indice2b-1;
+							this.aFraccion2Nro = Number(this.aFraccion2);
+							if (this.aFraccion2Nro==0){
+							this.textobFraccion2 = this.escrituraCien1[this.indice2b];
+							this.escribirFraccion2 = this.textobFraccion2;
+							}else{
+							if (this.indice2b==-1){
+							this.textoaFraccion2 = this.escrituraCentenas[this.indice1b];
+							this.escribirFraccion2 = this.textoaFraccion2;
+							}else{
+							this.textoaFraccion2 = this.escrituraCentenas[this.indice1b];
+							this.textobFraccion2 = this.escrituraCien1[this.indice2b];
+							this.escribirFraccion2 =this.textoaFraccion2 +' '+this.textobFraccion2;
+							}}
+				}}
+
+		
 		if (this.nro2==0 && this.nro1!=0){
 		this.escribirNumero=this.escribirFraccion1;	
 		}else{
@@ -495,6 +526,54 @@ numeroFormateado:string='';
 	return this.numeroFormateado;
 	}
 
+// asigna las variables necesarias para iniciar las animaciones
+gradoA:boolean=false;
+principiante:boolean=false;
+avanzado:boolean=false;
+intermedio:boolean=false;
 
+ // activar grado
+   
+  activarGrado<Type>(arg:string):boolean{
+     if (arg == 'A'){
+	 this.gradoA=true;
+	 }else{
+	 this.gradoA=false;
+	 }
+  return this.gradoA;
+  }
+  
+     // activar principiante
+  
+  activarPrincipiante<Type>(arg:string):boolean{
+     if (arg == 'principiante' || arg == 'principiantePT'){
+	 this.principiante=true;
+	 }else{
+	 this.principiante=false;
+	 }
+  return this.principiante;
+  }
+  
+       // activar avanzado
+  
+  activarAvanzado<Type>(arg:string|undefined):boolean{
+     if (arg == 'avanzado' || arg == 'intermedio-dos' || arg == 'avanzadoPT' ){
+	 this.avanzado=true;
+	 }else{
+	 this.avanzado=false;
+	 }
+  return this.avanzado;
+  }
+  
+     // activar intermedio
+	 
+	activarIntermedio<Type>(arg:string|undefined):boolean{
+	if (arg == 'intermedio' || arg == 'intermedioPT' ){
+	 this.intermedio=true;
+	 }else{
+	 this.intermedio=false;
+	 }
+	return this.intermedio;
+	}
 	
 }

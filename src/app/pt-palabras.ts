@@ -131,7 +131,7 @@ export const PTPALABRAS: string[] = [
 'Segunda-feira',
 'Tio',
 'O pequeno pónei',
-'As raparigas tocam piano',
+'As raparigas tocam o piano',
 'Quero ir ao centro, por favor',
 'O caminho para a cidade',
 'Casa de banho',

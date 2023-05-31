@@ -1,0 +1,18 @@
+.grid1{
+	grid-auto-flow: rows;
+	grid-template-columns: 200px 800px;
+	grid-column-gap: 10px;
+}
+
+.opciones{
+	background-color: #fefbd8;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	padding-left: 0;
+}
+
+.test {
+	grid-column-start: 2;
+	padding-top: 0;
+	padding-left: 15px;
+}

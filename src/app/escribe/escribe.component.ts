@@ -1,9 +1,8 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 
 import { ClearService } from '../clear.service';
 import { CompararService } from '../comparar.service';
 import { TecladoService } from '../teclado.service';
-
 
 
 
@@ -13,7 +12,7 @@ import { TecladoService } from '../teclado.service';
   styleUrls: ['./escribe.component.css'],
 })
 
-export class EscribeComponent {
+export class EscribeComponent implements OnInit{
 
 constructor(public clearService: ClearService,
 				public compararService: CompararService,		
@@ -30,7 +29,31 @@ letra = '?';
 arraytexto = '';
 array:string[] = [];
 arrayprov:string = '';
+// agregado
+label1:string = '';
 
+showSP?:boolean;
+showPT?:boolean;
+
+ngOnInit(){
+	this.showPT = this.tecladoService.definirTecladoPT(this.tecladoService.nivelcategoria);
+	this.showSP = this.tecladoService.definirTecladoSP(this.tecladoService.nivelcategoria);
+	this.definirEtiqueta1();
+}
+	// inicio definir etiquetas 
+	definirEtiqueta1():string{
+	if (this.showSP == true){
+	this.label1 = 'Escribe tu respuesta y [ENTER] ';
+	this.compararService.label2 = 'Esta es tu respuesta:';
+	}else{
+	if (this.showPT == true){
+	this.label1 = 'Escreva a sua resposta e [ENTER] ';
+	this.compararService.label2 = 'Esta é a tua resposta:';
+	}}
+	return this.label1;
+	return this.compararService.label2;
+	}
+// fin agregado
 
 	onKey2(event:any) { // without type info
     this.arraytexto  = event.target.value;	

@@ -1,0 +1,40 @@
+<div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
+        
+        <b>{{categoria.idioma|uppercase}}</b> 
+			{{espacio}}
+        <b>{{categoria.modo|titlecase}}</b>
+			{{espacio}}
+		<kbd>{{categoria.nivel|titlecase}}</kbd>
+</div>
+
+<button type="button" class="botonretroceso" (click)="goBack()">go back</button>
+<button type="button" class="botonHome"><a routerLink="/barra">Home</a></button>
+<button type="button" class="enlace1" *ngFor='let categoria of categorias | slice:25:26'><a routerLink="/spanishTest2">{{categoria.nivel | titlecase}}</a></button>
+<button type="button" class="enlace2" *ngFor='let categoria of categorias | slice:26:27'><a routerLink="/spanishTest3">{{categoria.nivel | titlecase}}</a></button>
+
+
+
+<br><br>
+
+<div style="display:grid" class="grid1">
+<div  *ngIf="servitestService.isChecked" >
+<ul class="opciones" *ngFor='let testbase of testbases'>
+<button type="button" class="btn btn-success" (click)="onClear(); borrarPrevios(); definirTest(testbase.testID)">{{testbase.testID}}{{espacio}}{{testbase.testname}}</button>
+</ul>
+</div>
+
+<div class="test">
+<app-base-de-test 	(resetear)="borrarPrevios(); onClear(); mostrar()" 
+					[nivel]="nivel" [inicialnivel]="nivelAjustado" [testbase]="testbase" [testbases]="testbases"
+						[definirfinal]="definirtestfinal" [definirinicial]="definirtestinicial" 
+									[testseleccionado]="testseleccionado" [Aoptions]="arrayA" [respuestaA]="respuestaA"
+																		  [Boptions]="arrayB" [respuestaB]="respuestaB"
+																		  [Coptions]="arrayC" [respuestaC]="respuestaC"  
+																		  [Doptions]="arrayD" [respuestaD]="respuestaD"
+																		  [Eoptions]="arrayE" [respuestaE]="respuestaE"
+																		  [Foptions]="arrayF" [respuestaF]="respuestaF"  
+																		  [Goptions]="arrayG" [respuestaG]="respuestaG"
+																		  [Hoptions]="arrayH" [respuestaH]="respuestaH"
+																		  [Ioptions]="arrayI" [respuestaI]="respuestaI"  	></app-base-de-test>
+</div>
+</div>

@@ -128,7 +128,7 @@ export const ESPALABRAS: string[] = [
 'Prohibido girar a la derecha',
 'Yo hablo con ella todas las mañanas',
 'El viento sopla fuerte',
-'El lunes',
+'Lunes',
 'Tío',
 'El pequeño pony',
 'Las niñas tocan el piano',

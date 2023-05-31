@@ -4,6 +4,7 @@
 	left: 215px;
 	top: 40px;
 } en STYLE */
+
 .grid2 {
 	grid-auto-flow:row;
 	grid-template-rows: 55px 30px 20px;
@@ -18,6 +19,8 @@
 	grid-row-gap:15px;
 	grid-column-gap:15px;
 }
+
+
 .sizebtn {
 	width: 150px;
 	height: 45px;
@@ -28,8 +31,8 @@
 
 .ubicar {
 	position: absolute;
-	right: 45px;
-	top: 124px;
+	right: 185px;
+	top: 130px;
 }
 
 .lista1 {
@@ -61,15 +64,15 @@ li {
 .ubicarlista{
 	position: absolute;
 	left: 900px;
-	top: 200px;
+	top: 150px;
 }
 
 
 
 .botoncontinuar{
 	position: absolute;
-	right: 40px;
-	bottom: 75px;
+	right: 150px;
+	bottom: 1px;
 }
 
 .palabraEN{

@@ -28,7 +28,7 @@
           <ul class="dropdown-menu formato">
             <li *ngFor='let categoria of categorias | slice:3:4'><a routerLink="/espalabras" >{{categoria.nivel | titlecase}}</a></li>
             <li *ngFor='let categoria of categorias | slice:4:5'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li>
-            <li *ngFor='let categoria of categorias | slice:5:6'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li>
+          <!--   <li *ngFor='let categoria of categorias | slice:5:6'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li> -->
           </ul>
         </li>
 		<li class="dropdown" *ngFor='let categoria of categorias | slice:6:7'>
@@ -36,7 +36,7 @@
           <ul class="dropdown-menu formato">
             <li *ngFor='let categoria of categorias | slice:6:7'><a routerLink="/essecuencias">{{categoria.nivel | titlecase}}</a></li>
             <li *ngFor='let categoria of categorias | slice:7:8'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li>
-            <li *ngFor='let categoria of categorias | slice:8:9'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li>
+            <!-- <li *ngFor='let categoria of categorias | slice:8:9'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li> -->
           </ul>
         </li>
 		<li class="dropdown" *ngFor='let categoria of categorias | slice:9:10'>
@@ -48,8 +48,16 @@
             <li *ngFor='let categoria of categorias | slice:11:12'><a routerLink="/numerosAvanzado">{{categoria.nivel | titlecase}}</a></li>
           </ul>
         </li>
-        <li *ngFor='let categoria of categorias | slice:12:13'><a routerLink="/inProgress">{{categoria.modo | titlecase}}</a></li>
-       <!--  <li><a href="#">Opción</a></li> -->
+        <li  *ngFor='let categoria of categorias | slice:12:13'><a routerLink="/inProgress">{{categoria.modo | titlecase}}</a></li>
+       
+	   <li class="dropdown" *ngFor='let categoria of categorias | slice:24:25'>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{categoria.modo | titlecase}}<span class="caret"></span></a>
+          <ul class="dropdown-menu formato">
+            <li *ngFor='let categoria of categorias | slice:24:25'><a routerLink="/spanishTest1">{{categoria.nivel | titlecase}}</a></li>
+            <li *ngFor='let categoria of categorias | slice:25:26'><a routerLink="/spanishTest2">{{categoria.nivel | titlecase}}</a></li>
+            <li *ngFor='let categoria of categorias | slice:26:27'><a routerLink="/spanishTest3">{{categoria.nivel | titlecase}}</a></li>
+          </ul>
+        </li>
 		</ul>    
 		</div>
 		</nav>
@@ -73,12 +81,21 @@
 		<div class="container-fluid">      
 		<ul class="nav navbar-nav">
        <!--  <li class="active"><a href="#">Home</a></li> -->
-        <li class="dropdown" *ngFor='let categoria of categorias | slice:13:14'>
+        
+		<li class="dropdown" *ngFor='let categoria of categorias | slice:27:28'>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{categoria.modo | titlecase}}<span class="caret"></span></a>
+          <ul class="dropdown-menu formato">
+            <li *ngFor='let categoria of categorias | slice:27:28'><a routerLink="/dictadoptPrincipiante">{{categoria.nivel | titlecase}}</a></li>
+            <li *ngFor='let categoria of categorias | slice:28:29'><a routerLink="/dictadoptIntermedio">{{categoria.nivel | titlecase}}</a></li>
+            <li *ngFor='let categoria of categorias | slice:29:30'><a routerLink="/dictadoptAvanzado">{{categoria.nivel | titlecase}}</a></li>
+          </ul>
+        </li>
+		<li class="dropdown" *ngFor='let categoria of categorias | slice:13:14'>
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{categoria.modo | titlecase}}<span class="caret"></span></a>
           <ul class="dropdown-menu formato">
             <li *ngFor='let categoria of categorias | slice:13:14'><a routerLink="/ptpalabras">{{categoria.nivel | titlecase}}</a></li>
             <li *ngFor='let categoria of categorias | slice:14:15'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li>
-            <li *ngFor='let categoria of categorias | slice:15:16'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li>
+            <!-- <li *ngFor='let categoria of categorias | slice:15:16'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li> -->
           </ul>
         </li>
 		<li class="dropdown" *ngFor='let categoria of categorias | slice:16:17'>
@@ -86,7 +103,7 @@
           <ul class="dropdown-menu formato">
             <li *ngFor='let categoria of categorias | slice:16:17'><a routerLink="/ptsecuencias">{{categoria.nivel | titlecase}}</a></li>
             <li *ngFor='let categoria of categorias | slice:17:18'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li>
-            <li *ngFor='let categoria of categorias | slice:18:19'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li>
+           <!--  <li *ngFor='let categoria of categorias | slice:18:19'><a routerLink="/inProgress">{{categoria.nivel | titlecase}}</a></li> -->
           </ul>
         </li>
 		<li class="dropdown" *ngFor='let categoria of categorias | slice:19:20'>
@@ -99,6 +116,16 @@
         </li>
         <li *ngFor='let categoria of categorias | slice:22:23'><a routerLink="/inProgress">{{categoria.modo | titlecase}}</a></li>
        <!--  <li><a href="#">Opción</a></li> -->
+	   
+	   <li class="dropdown" *ngFor='let categoria of categorias | slice:30:31'>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{categoria.modo | titlecase}}<span class="caret"></span></a>
+          <ul class="dropdown-menu formato">
+            <li *ngFor='let categoria of categorias | slice:30:31'><a routerLink="/portugueseTest1">{{categoria.nivel | titlecase}}</a></li>
+            <!-- <li *ngFor='let categoria of categorias | slice:28:29'><a routerLink="/dictadoptIntermedio">{{categoria.nivel | titlecase}}</a></li>
+            <li *ngFor='let categoria of categorias | slice:29:30'><a routerLink="/dictadoptAvanzado">{{categoria.nivel | titlecase}}</a></li> -->
+          </ul>
+        </li>
+	   
 		</ul>    
 		</div>
 		</nav>

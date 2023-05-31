@@ -1,0 +1,22 @@
+.job-ad {
+  border: 1px solid gray;
+  padding: 5px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: lightblue;
+  color: black;
+  width: 150px;
+  height: 500px;
+}
+
+#vertical{
+	font-weight:900;
+	word-break: break-word;
+	text-shadow: 1px 1px #feb236;
+	width: 0;
+	justify-content: left;
+	padding-top: 10px;
+	padding-left: 35px;	
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,155 @@
+<div class="tituloTest" *ngIf='servitestService.isChecked!=true' >
+<h3 class="texto" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>{{testbase.testname}}</h3>
+</div>
+
+<form class="formato" [formGroup]="checkoutForm">
+	
+	<div  *ngIf='servitestService.isChecked!=true' >
+	<p  *ngFor='let testbase of testbases | slice:definirinicial:definirfinal' > {{testbase.instruccion}} </p>  
+	</div>
+  
+  <div *ngIf='respuestaA!=""'>
+		<label for="escribe" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>
+		{{testbase.preguntaA}} </label>
+		<mat-radio-group   class="example-radio-group" >
+		<mat-radio-button  class="example-radio-button" *ngFor="let Aop of Aoptions" [value]="Aop" (click)="onKeyA($event)" >
+		{{Aop}}
+		</mat-radio-button>
+		<div *ngIf='servitestService.indicadorA!=""' [ngClass]="servitestService.indicadorA != 'incorrecto' ? 'correcto': 'incorrecto'">{{servitestService.indicadorA }}</div>
+		</mat-radio-group>
+		
+  </div>
+  
+  <div *ngIf='respuestaB!=""'>
+		<label for="escribe" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>
+		{{testbase.preguntaB}} </label>
+		<mat-radio-group   class="example-radio-group" >
+		<mat-radio-button  class="example-radio-button" *ngFor="let Bop of Boptions" [value]="Bop" (click)="onKeyB($event)" >
+		{{Bop}}
+		</mat-radio-button>
+		<div *ngIf='servitestService.indicadorB!=""' [ngClass]="servitestService.indicadorB != 'incorrecto' ? 'correcto': 'incorrecto'">{{servitestService.indicadorB }}</div>
+		</mat-radio-group>
+  </div>
+  
+  <div *ngIf='respuestaC!=""'>
+		<label for="escribe" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>
+		{{testbase.preguntaC}} </label>
+		<mat-radio-group   class="example-radio-group" >
+		<mat-radio-button  class="example-radio-button" *ngFor="let Cop of Coptions" [value]="Cop" (click)="onKeyC($event)" >
+		{{Cop}}
+		</mat-radio-button>
+		<div *ngIf='servitestService.indicadorC!=""' [ngClass]="servitestService.indicadorC != 'incorrecto' ? 'correcto': 'incorrecto'">{{servitestService.indicadorC }}</div>
+		</mat-radio-group>
+  </div>
+  
+  <div *ngIf='respuestaD!=""'>
+		<label for="escribe" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>
+		{{testbase.preguntaD}} </label>
+		<mat-radio-group   class="example-radio-group" >
+		<mat-radio-button  class="example-radio-button" *ngFor="let Dop of Doptions" [value]="Dop" (click)="onKeyD($event)" >
+		{{Dop}}
+		</mat-radio-button>
+		<div *ngIf='servitestService.indicadorD!=""' [ngClass]="servitestService.indicadorD != 'incorrecto' ? 'correcto': 'incorrecto'">{{servitestService.indicadorD }}</div>
+		</mat-radio-group>
+  </div>
+  
+  <div *ngIf='respuestaE!=""'>
+		<label for="escribe" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>
+		{{testbase.preguntaE}} </label>
+		<mat-radio-group   class="example-radio-group" >
+		<mat-radio-button  class="example-radio-button" *ngFor="let Eop of Eoptions" [value]="Eop" (click)="onKeyE($event)" >
+		{{Eop}}
+		</mat-radio-button>
+		<div *ngIf='servitestService.indicadorE!=""' [ngClass]="servitestService.indicadorE != 'incorrecto' ? 'correcto': 'incorrecto'">{{servitestService.indicadorE }}</div>
+		</mat-radio-group>
+  </div>
+  
+  <div *ngIf='respuestaF!=""'>
+		<label for="escribe" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>
+		{{testbase.preguntaF}} </label>
+		<mat-radio-group   class="example-radio-group" >
+		<mat-radio-button  class="example-radio-button" *ngFor="let Fop of Foptions" [value]="Fop" (click)="onKeyF($event)" >
+		{{Fop}}
+		</mat-radio-button>
+		<div *ngIf='servitestService.indicadorF!=""' [ngClass]="servitestService.indicadorF != 'incorrecto' ? 'correcto': 'incorrecto'">{{servitestService.indicadorF }}</div>
+		</mat-radio-group>
+  </div>
+  
+  <div *ngIf='respuestaG!=""'>
+		<label for="escribe" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>
+		{{testbase.preguntaG}} </label>
+		<mat-radio-group   class="example-radio-group" >
+		<mat-radio-button  class="example-radio-button" *ngFor="let Gop of Goptions" [value]="Gop" (click)="onKeyG($event)" >
+		{{Gop}}
+		</mat-radio-button>
+		<div *ngIf='servitestService.indicadorG!=""' [ngClass]="servitestService.indicadorG != 'incorrecto' ? 'correcto': 'incorrecto'">{{servitestService.indicadorG }}</div>
+		</mat-radio-group>
+  </div>
+  
+  <div *ngIf='respuestaH!=""'>
+		<label for="escribe" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>
+		{{testbase.preguntaH}} </label>
+		<mat-radio-group   class="example-radio-group" >
+		<mat-radio-button  class="example-radio-button" *ngFor="let Hop of Hoptions" [value]="Hop" (click)="onKeyH($event)" >
+		{{Hop}}
+		</mat-radio-button>
+		<div *ngIf='servitestService.indicadorH!=""' [ngClass]="servitestService.indicadorH != 'incorrecto' ? 'correcto': 'incorrecto'">{{servitestService.indicadorH }}</div>
+		</mat-radio-group>
+  </div>
+  
+  <div *ngIf='respuestaI!=""'>
+		<label for="escribe" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>
+		{{testbase.preguntaI}} </label>
+		<mat-radio-group   class="example-radio-group" >
+		<mat-radio-button  class="example-radio-button" *ngFor="let Iop of Ioptions" [value]="Iop" (click)="onKeyI($event)" >
+		{{Iop}}
+		</mat-radio-button>
+		<div *ngIf='servitestService.indicadorI!=""' [ngClass]="servitestService.indicadorI != 'incorrecto' ? 'correcto': 'incorrecto'">{{servitestService.indicadorI }}</div>
+		</mat-radio-group>
+  </div>
+
+  <div id="ubicarSubmit" *ngIf='servitestService.isChecked!=true'>
+	<button class="button" type="submit" (click)="borrarPrevios(); OnSubmit()">Submit</button>
+	<br>
+	<button class="btn btn-success" (click)="resetear.emit(); borrarSeleccion()">Another Text/Otro Test/Outro Teste</button>
+	
+	<ng-container *ngIf="servitestService.porcentaje"> 
+	<p [@slideStatus] class="ubicarPercent" [ngClass]="servitestService.grado == 'A' ? 'gradoA':'gradoByC' ">{{ servitestService.porcentajeMostrar | percent }}</p>
+	</ng-container> 
+	
+	<div class="publicidadTest" *ngIf='servitestService.pubTest' >
+	<p [@slideStatusPub] *ngFor='let testbase of testbases | slice:definirinicial:definirfinal' > {{testbase.pubTest}} </p>  
+	</div>
+	
+  </div>
+  
+</form>
+
+<div class="citaContainer" *ngIf='servitestService.isChecked!=true' >
+<p class="cita" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal' > {{testbase.final}} </p>  
+</div>
+
+
+
+
+<ng-container *ngIf="servitestService.gradoA"> 
+<app-animacion1></app-animacion1>
+</ng-container> 
+
+<ng-container *ngIf="servitestService.gradoA && servitestService.principiante"> 
+<app-animacion2></app-animacion2>
+</ng-container> 
+ 
+ <!--  ESTAS VARIABLES SE UTILIZARON PARA PROBAR FUNCIONAMIENTO
+<p>respuesta es {{seleccionA}}</p>
+<p>respuesta es {{seleccionB}}</p>
+<p>respuesta es {{seleccionC}}</p>
+<p>total preguntas {{servitestService.sumadePreguntas}}</p>
+<p>total aciertos {{servitestService.sumadeAciertos}}</p>
+<p>indicadorA {{servitestService.indicadorA}}</p>
+
+<p>{{testseleccionado}}</p>  
+
+<p>{{respuestaA}}<br>{{respuestaB}}<br>{{respuestaC}}</p>
+
+ -->

@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { MatRadioModule } from '@angular/material/radio'; 
+
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';      // para que al recargar la pagina no de mensaje de error
 
 import { AppComponent } from './app.component';
 import { PalabrasComponent } from './palabras/palabras.component';
@@ -36,6 +39,22 @@ import { NumerosIntermedio2Component } from './numeros-intermedio2/numeros-inter
 import { InProgressComponent } from './in-progress/in-progress.component';
 import { PoliticadeprivacidadComponent } from './politicadeprivacidad/politicadeprivacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { SpanishTestComponent } from './spanish-test/spanish-test.component';
+import { BaseDeTestComponent } from './base-de-test/base-de-test.component';
+import { Animacion1Component } from './animacion1/animacion1.component';
+import { Animacion2Component } from './animacion2/animacion2.component';
+import { SpanishTestIntComponent } from './spanish-test-int/spanish-test-int.component';
+import { SpanishTestAvanzComponent } from './spanish-test-avanz/spanish-test-avanz.component';
+import { DictadoptAvanzadoComponent } from './dictadopt-avanzado/dictadopt-avanzado.component';
+import { DictadoptIntermedioComponent } from './dictadopt-intermedio/dictadopt-intermedio.component';
+import { DictadoptPrincipianteComponent } from './dictadopt-principiante/dictadopt-principiante.component';
+import { AdBannerComponent } from './ad-banner/ad-banner.component';
+import { AdDirective } from './ad.directive';
+import { AdService } from './ad.service';
+import { Publicidad1Component } from './publicidad1/publicidad1.component';
+import { PortugueseTestComponent } from './portuguese-test/portuguese-test.component';
+import { Publicidad2Component } from './publicidad2/publicidad2.component';
+import { Animacion3Component } from './animacion3/animacion3.component';
 
 @NgModule({
   declarations: [
@@ -70,15 +89,33 @@ import { ContactoComponent } from './contacto/contacto.component';
     NumerosIntermedio2Component,
     InProgressComponent,
     PoliticadeprivacidadComponent,
-    ContactoComponent
+    ContactoComponent,
+    SpanishTestComponent,
+    BaseDeTestComponent,
+    Animacion1Component,
+    Animacion2Component,
+    SpanishTestIntComponent,
+    SpanishTestAvanzComponent,
+    DictadoptAvanzadoComponent,
+    DictadoptIntermedioComponent,
+    DictadoptPrincipianteComponent,
+    AdBannerComponent,
+    AdDirective,
+    Publicidad1Component,
+    PortugueseTestComponent,
+    Publicidad2Component,
+    Animacion3Component
   ],
   imports: [
     BrowserModule,
 	BrowserAnimationsModule,
 	ReactiveFormsModule,
     AppRoutingModule,
+	MatRadioModule,
   ],
-  providers: [],
+  providers: [  AdService,
+				{ provide: LocationStrategy, useClass: HashLocationStrategy }],     // para que al recargar la pagina no de mensaje de error
+  entryComponents: [ Publicidad1Component ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

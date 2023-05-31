@@ -2,7 +2,7 @@
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+  font-size: 200%;
 }
 h2, h3 {
   color: #444;
@@ -32,7 +32,7 @@ button {
 }
 button:hover {
   background-color: black;
-  color: white;
+  color: #d6cbd3;
 }
 button:disabled {
   background-color: #eee;
@@ -45,31 +45,40 @@ button:disabled {
 }
 
 .categoria{
-	position: absolute;
+	position: fixed;
+	/* position: absolute; */
 	left: 215px;
 	top: 40px;
 	color: #3f525c;
+	/* width: 80%;
+	padding-top: 0;
+	height: 30px;
+	background-color: #fff; */
 }
 .botonretroceso{
-	position: absolute;
-	right: 45px;
+	position: fixed;
+	/* position: absolute; */
+	right: 160px;
 	top: 40px;
 }
 .botonHome{
-	position: absolute;
-	right: 45px;
+	position: fixed;
+	/* position: absolute; */
+	right: 160px;
 	top: 85px;
 }
 .enlace1{
-	position: absolute;
-	right: 45px;
+	position: fixed;
+	/* position: absolute; */
+	right: 160px;
 	top: 130px;
 	font-size: 9px;
 	width: 125px;
 }
 .enlace2{
-	position: absolute;
-	right: 45px;
+	position: fixed;
+	/* position: absolute; */
+	right: 160px;
 	top: 190px;
 	font-size: 9px;
 	width: 125px;
@@ -81,3 +90,6 @@ button:disabled {
   font: 20px "Montserrat", sans-serif;
   font-size: 1.5rem;
 }
+
+html, body { height: 100%; }
+body { margin: 2em; font-family: Roboto, "Helvetica Neue", sans-serif; }

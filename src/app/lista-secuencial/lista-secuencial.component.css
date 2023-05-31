@@ -1,18 +1,20 @@
 
-li {
+#listade10 {
   margin-top: 2rem;
-  font-size:  2rem;
+  font-size:  10px;
   padding-top: 1px;
   text-align: center;
   background-color: white;
   border-radius: 32px;
+  width: 400px;
 }
 
 
 .ubicarlista{
 	position: absolute;
-	left: 900px;
-	top: 200px;
+	left: 750px;
+	top: 200px;	
+	width: 300px;
 }
 
 .ubicarPercent{

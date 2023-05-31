@@ -1,0 +1,89 @@
+.tituloTest {
+  background-color: #474e5d; /* Dark Blue */
+}
+
+.texto{
+  color: white;
+  font-family: 20px "Montserrat", sans-serif;
+  padding-left: 4px;
+  padding-top: 3px;
+}
+
+.citaContainer {
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	right: 325px;
+	background-color: white;
+}
+
+.cita {
+  color: #474e5d;
+  text-align: left;
+  font-size: 11px;
+  padding-bottom: 3px;
+  padding-right: 4px;
+}
+
+
+.formato {
+	background-color: #fefbd8;	
+}
+
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.correcto{
+		color: green;
+		position: absolute;
+		right: 340px;
+		font-size: 40px;
+		font-weight: 900;
+		padding-top: 40px;
+}
+.incorrecto{
+		color:red;
+		position: absolute;
+		right: 340px;
+		font-size: 24px;
+		padding-top: 60px;
+}
+
+#ubicarSubmit {
+	position: relative;	
+	padding-bottom: 40px;
+}
+
+.ubicarPercent{
+	position: absolute;
+	left: 705px;
+	top: -20px;
+}
+
+.publicidadTest{
+	font-weight: 800;
+	background-color: #b2b2b2;
+	color: #50394c;
+	position: absolute;
+	left: 285px;
+	bottom: 5px;
+}
+
+.gradoA{
+	color: blue;
+	font-size: 92px;
+}
+
+.gradoByC{
+	color: brown;
+	font-size: 80px;
+}

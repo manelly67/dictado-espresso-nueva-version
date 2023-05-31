@@ -1,4 +1,5 @@
 
+/* definido en style.css
 .botonretroceso{
 	position: absolute;
 	right: 45px;
@@ -23,12 +24,12 @@
 	font-size: 9px;
 	width: 105px;
 }
-
+ */
 
 .grid1 {
 	grid-auto-flow:row;
 	grid-template-rows: 30px 30px 500px;
-	grid-template-columns:15px 200px 250px 320px 200px ;
+	grid-template-columns:15px 200px 250px 320px 130px ;
 	grid-row-gap:5px;
 	grid-column-gap:25px;
 }
