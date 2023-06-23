@@ -2,7 +2,7 @@
 
 .ubicacion {
 	position: absolute;
-	bottom: 90px;
+	bottom: -90px;
 	left: 30px;
 	z-index:-1;
 }

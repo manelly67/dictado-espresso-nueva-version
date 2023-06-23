@@ -89,7 +89,7 @@ a:hover {
   .container-fluid {
   width: 50%;
   position: absolute;
-  bottom: 1px;
+  bottom: -200px;
   padding-top: 2px;
   padding-bottom: 3px;
   }

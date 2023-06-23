@@ -1,12 +1,14 @@
-    
-	<div class="container barra-uno-es">	
+ <!-- version inicial con panel en acordion    -->
+ 
+	<div class="container barra-uno">
+    <div class="panel-group" id="accordion">
 		<div class="panel panel-default">
 		<div class="panel-heading">
 		<h4 class="panel-title">
-		<a *ngFor='let categoria of categorias | slice:0:1'  class="texto" data-parent="#accordion" >{{categoria.idioma | titlecase}} </a>
+		<a *ngFor='let categoria of categorias | slice:0:1' data-toggle="collapse" class="texto" data-parent="#accordion" href="#collapse1">{{categoria.idioma | titlecase}}<span class="caret"></span></a>
 		</h4>
 		</div>
-		<div>
+		<div id="collapse1" class="panel-collapse collapse">
 		<div class="panel-body">
 		
 		<div class="container barra-dos">
@@ -66,17 +68,13 @@
 		</div>
 		</div>
 		</div>
-		
-	</div>
-		
-	<div class="container barra-uno-pt">	
 		<div class="panel panel-default">
         <div class="panel-heading">
         <h4 class="panel-title">
-          <a *ngFor='let categoria of categorias | slice:13:14'  class="texto" >{{categoria.idioma | titlecase}} </a>
+          <a *ngFor='let categoria of categorias | slice:13:14' data-toggle="collapse" class="texto" data-parent="#accordion" href="#collapse2">{{categoria.idioma | titlecase}}<span class="caret"></span></a>
         </h4>
         </div>
-        <div>
+        <div id="collapse2" class="panel-collapse collapse">
         <div class="panel-body">
 		
 		<div class="container barra-tres">
@@ -137,5 +135,37 @@
 		</div>
         </div>
         </div>
-    
-	</div>
+    </div>		
+</div>
+
+<!--  Formas de generar listado de un objeto -->
+
+<!-- <tbody>
+      <tr *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>
+      
+        <td>{{categoria.id}}</td>
+        <td>{{categoria.idioma}}</td>
+        <td>{{categoria.modo}}</td>   
+		<td>{{categoria.nivel}}</td>
+      </tr>
+</tbody> -->
+
+
+<!-- <ul>
+  <li *ngFor="let categoria of categorias| slice:inicialnivel:finalnivel" >
+    {{categoria.id}}
+        {{categoria.idioma}}
+			{{categoria.modo}}  
+				{{categoria.nivel}}
+  </li>
+</ul> -->
+
+<!-- <div *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
+        {{categoria.id}}
+        {{categoria.idioma}}
+        {{categoria.modo}}   
+		{{categoria.nivel}}  
+</div> -->
+
+
+

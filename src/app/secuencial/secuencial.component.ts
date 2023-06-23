@@ -189,13 +189,13 @@ export class SecuencialComponent implements OnInit{
 
 	tomaPalabra<type>(arg1:number,arg2:number):string{                       // utiliza las listas de palabras importadas por el randomService para seleccionar una sola
 	this.espalabra = this.randomService.espalabra ;
-	this.espalabras = this.randomService.captarDatosES();
+	this.espalabras = this.randomService.captarDatosESbeginner();
 	this.espalabras = this.espalabras.slice(arg1,arg2) ;
 	this.ptpalabra = this.randomService.ptpalabra ;
-	this.ptpalabras = this.randomService.captarDatosPT();
+	this.ptpalabras = this.randomService.captarDatosPTbeginner();
 	this.ptpalabras = this.ptpalabras.slice(arg1,arg2) ;
 	this.enpalabra = this.randomService.enpalabra ;
-	this.enpalabras = this.randomService.captarDatosEN();
+	this.enpalabras = this.randomService.captarDatosENbeginner();
 	this.enpalabras = this.enpalabras.slice(arg1,arg2) ;
 	this.ptpalabraseleccionada = this.ptpalabras.toString();
 	this.ptpalabraseleccionada = this.guardartextoService.depurar(this.ptpalabraseleccionada);           // extrae de la palabra seleccionada los signos ?¿ y ,
