@@ -48,7 +48,7 @@ export class AdBannerComponent implements OnInit, OnDestroy {
   getAds() {
     this.interval = setInterval(() => {
       this.loadComponent();
-    }, 4000);
+    }, 6000);
   }
 
 

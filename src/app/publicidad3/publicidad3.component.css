@@ -10,24 +10,22 @@
   height: 500px;
 }
 
-#vertical1{
+.head{
 	font-weight:900;
-	word-break: break-word;
 	text-shadow: 1px 1px #feb236;
-	width: 0;
 	justify-content: left;
 	padding-top: 10px;
-	padding-left: 15px;	
+	padding-left: 5px;	
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-#vertical2{
+.head2{
 	font-weight:900;
-	word-break: break-word;
+	font-size: 23px;
 	text-shadow: 1px 1px #feb236;
-	width: 0;
-	justify-content: left;
+	justify-content: center;
 	padding-top: 10px;
-	padding-left: 55px;	
+	
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
+
