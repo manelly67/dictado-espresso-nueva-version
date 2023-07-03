@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: dictadoespresso.netlify.app
+Token: 068f833496d33b83552d58a23f4b0d1060be13f17235fbe6d9a83105e5e60246
