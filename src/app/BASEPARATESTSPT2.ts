@@ -123,7 +123,7 @@ final:'',
 pubTest:''
 },
 
-{nivel:'intermedioPT', testID:7, testname:'VERBOS Reflexivos - Futuro ', instruccion:'Selecciona la conjugación correcta en tiempo Futuro (Select the right conjugation)',
+{nivel:'intermedioPT', testID:7, testname:'VERBOS Reflexivos - Futuro do Presente ', instruccion:'Seleccione a conjugação correcta no tempo verbal Futuro do Presente (Select the right conjugation)',
 preguntaA:'Yo ____  ________ (verbo QUEDARSE) en casa', 
 opcionA1:'me quedaré', opcionA2:'te quedaré',opcionA3:'me quedé',respuestaA:'me quedaré', 
 preguntaB:'Ella  ____  ________  (verbo MAQUILLARSE) para ir a la fiesta', 
@@ -147,7 +147,7 @@ pubTest:''
 {nivel:'intermedioPT', testID:8, testname:'Verbo IR A + Infinitivo', instruccion:'Sustituye el verbo en Futuro por la expresión IR A + infinitivo (Select the right conjugation)',
 preguntaA:'Yo me quedaré en casa', 
 opcionA1:'nos vamos a quedar', opcionA2:'te vas a quedar',opcionA3:'me voy a quedar',respuestaA:'me voy a quedar', 
-preguntaB:'Ella se maquillará para ir a la fiesta', 
+preguntaB:'ela vai maquilhar-se para ir à festa   -  ela se maquilhará para ir à festa', 
 opcionB1:'se van a maquillar', opcionB2:'se va a maquillar', opcionB3:'te vas a maquillar', respuestaB:'se va a maquillar', 
 preguntaC:'Ellos se encargarán de hacer todas las tareas', 
 opcionC1:'se van a encargar', opcionC2:'te vas a encargar', opcionC3:'nos vamos a encargar', respuestaC:'se van a encargar',
@@ -165,7 +165,7 @@ final:'',
 pubTest:''
 },
 
-{nivel:'intermedioPT', testID:9, testname:'Adverbios de lugar', instruccion:'La estación del tren queda al lado derecho del centro comercial. La universidad y el museo quedan al lado izquierdo del centro comercial. El museo es un edificio muy pequeño que está delante de la universidad. El aeropuerto queda en el otro extremo de la ciudad. En el centro comercial hay un cine en el primer piso y una tienda de ropa en el segundo piso y tiene un estacionamiento en el sótano.',
+{nivel:'intermedioPT', testID:9, testname:'Advérbios de lugar', instruccion:'A estação de comboios fica do lado direito do centro comercial. A universidade e o museu estão do lado esquerdo do centro comercial. O museu é um edifício muito pequeno diante da universidade. O aeroporto fica no outro extremo da cidade. O centro comercial tem um cinema no primeiro andar e uma loja de roupa no segundo andar, bem como um parque de estacionamento na cave.',
 preguntaA:'La universidad está __________  del museo', 
 opcionA1:'ENCIMA', opcionA2:'CERCA',opcionA3:'DEBAJO',respuestaA:'CERCA', 
 preguntaB:'El aeropuerto está ________ de la estación del tren', 

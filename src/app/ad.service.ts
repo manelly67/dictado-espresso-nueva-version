@@ -24,9 +24,9 @@ export class AdService {
                                         }),
 										
 		new AdItem (Publicidad2Component,   {headline: 'Estimado PROFESOR',
-                                        body: 'Contáctanos, incorporamos tu TEST personalizado, y tus datos de contacto',
-										body2: 'GANA MÁS ALUMNOS',
-										imagen1:'/assets/img/pub.jpg',
+                                        body: 'Contáctanos, publicamos online tu TEST personalizado, y tus datos de contacto',
+										body2: '¿QUIERES ATRAER MÁS ALUMNOS?',
+										imagen1:'/assets/img/pub-b.jpg',
 										enlace1:'https://patrocinar-spanishtest.netlify.app/',
 										}),	
 		
@@ -90,9 +90,9 @@ export class AdService {
 		
 		
 		new AdItem (Publicidad2Component,   {headline: 'Senhor PROFESSOR',
-										body: 'Contacte-nos, incorporamos o seu TESTE personalizado e os seus dados de contacto',
-										body2: 'ATRAI MAIS ESTUDANTES ',
-										imagen1:'/assets/img/pub.jpg',
+										body: 'Contacte-nos, nós publicamos o seu TESTE personalizado em linha e os seus dados de contacto',
+										body2: 'QUER ATRAIR MAIS ESTUDANTES?',
+										imagen1:'/assets/img/pub-b.jpg',
 										enlace1:'https://patrocinar-portuguesetest.netlify.app/',
 										}),	
 		
@@ -117,6 +117,18 @@ export class AdService {
 											enlace2:'https://ed7632u8xg35yeqgwo1mbgtiqk.hop.clickbank.net',
                                         body: 'BUY NOW',
 										enlace3:'https://ed7632u8xg35yeqgwo1mbgtiqk.hop.clickbank.net',
+										}),
+										
+		new AdItem(Publicidad4Component,   {headline1: '',
+											headline2: '',
+											imagen1:'/assets/img/pub10a.jpg',
+											enlace1:'https://go.hotmart.com/F84458924K',
+											imagen2:'/assets/img/pub10b.jpg',
+											enlace2:'https://go.hotmart.com/F84458924K?dp=1',
+											imagen3:'/assets/img/pub10c.jpg',
+											enlace3:'https://go.hotmart.com/F84458924K',
+                                        body: 'BUY NOW',
+										enlace4:'https://go.hotmart.com/F84458924K?dp=1',
 										}),
 		
 		
