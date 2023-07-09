@@ -5,6 +5,7 @@ import { BASEPARATESTS } from './BASEPARATESTS';
 import { BASEPARATESTS2 } from './BASEPARATESTS2';
 import { BASEPARATESTS3 } from './BASEPARATESTS3';
 import { BASEPARATESTSPT } from './BASEPARATESTSPT';
+import { BASEPARATESTSPT2 } from './BASEPARATESTSPT2';
 
 
 @Injectable({
@@ -26,6 +27,7 @@ testbases = BASEPARATESTS;
 	this.captarTest2();
 	this.captarTest3();
 	this.captarTest4();
+	this.captarTest5();
 	}
 
 	captarTest(): Testbase[]{
@@ -45,6 +47,11 @@ testbases = BASEPARATESTS;
 	
 	captarTest4(): Testbase[]{
 	this.testbases = BASEPARATESTSPT;
+	return this.testbases;
+	}
+	
+	captarTest5(): Testbase[]{
+	this.testbases = BASEPARATESTSPT2;
 	return this.testbases;
 	}
 	

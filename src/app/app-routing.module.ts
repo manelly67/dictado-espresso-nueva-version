@@ -25,7 +25,7 @@ import { DictadoptAvanzadoComponent } from './dictadopt-avanzado/dictadopt-avanz
 import { DictadoptPrincipianteComponent } from './dictadopt-principiante/dictadopt-principiante.component';
 import { DictadoptIntermedioComponent } from './dictadopt-intermedio/dictadopt-intermedio.component';
 import { PortugueseTestComponent } from './portuguese-test/portuguese-test.component';
-
+import { PortugueseTestIntComponent } from './portuguese-test-int/portuguese-test-int.component';
 
 
 import { InProgressComponent } from './in-progress/in-progress.component';
@@ -58,6 +58,7 @@ const routes: Routes = [
   { path: 'dictadoptPrincipiante', component: DictadoptPrincipianteComponent },
   { path: 'dictadoptIntermedio', component: DictadoptIntermedioComponent },
   { path: 'portugueseTest1', component: PortugueseTestComponent },
+  { path: 'portugueseTest2', component: PortugueseTestIntComponent },
   
   
   { path: 'inProgress', component: InProgressComponent },

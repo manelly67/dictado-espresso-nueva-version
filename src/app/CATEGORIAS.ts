@@ -37,6 +37,7 @@ export const CATEGORIAS: Categoria[] = [
 	{ id: 30, idioma: 'Português / Portuguese', modo: 'ÁUDIOS - ditados/ dictation', nivel:'advanced/ avançado'},
 	
 	{ id: 31, idioma: 'Português / Portuguese', modo: 'Provas/ Test', nivel:'begginner/ principiante'},
+	{ id: 32, idioma: 'Português / Portuguese', modo: 'Provas/ Test', nivel:'intermediate/ intermédio'},
 	
 	
 ];
