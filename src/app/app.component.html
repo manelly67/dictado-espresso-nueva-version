@@ -22,6 +22,10 @@
 <app-barra-navegacion></app-barra-navegacion>
 </ng-container> 
 
+<ng-container *ngIf="mostrarService.show">
+<app-youtube-video></app-youtube-video>
+</ng-container>
+
 <ng-container *ngIf="mostrarService.show"> 
 <app-carrusel></app-carrusel>
 </ng-container> 

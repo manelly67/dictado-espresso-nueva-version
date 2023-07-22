@@ -59,6 +59,7 @@ import { InProgressPtComponent } from './in-progress-pt/in-progress-pt.component
 import { Publicidad3Component } from './publicidad3/publicidad3.component';
 import { Publicidad4Component } from './publicidad4/publicidad4.component';
 import { PortugueseTestIntComponent } from './portuguese-test-int/portuguese-test-int.component';
+import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
 
 @NgModule({
   declarations: [
@@ -112,7 +113,8 @@ import { PortugueseTestIntComponent } from './portuguese-test-int/portuguese-tes
     InProgressPtComponent,
     Publicidad3Component,
     Publicidad4Component,
-    PortugueseTestIntComponent
+    PortugueseTestIntComponent,
+    YoutubeVideoComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class MostrarService {
 
-show:boolean=true;                                         /*recibe la indicacion para mostrar o no el carousel */
+show:boolean=true;                                         /*recibe la indicacion para mostrar o no el carousel, las barras, y otros componentes */
  	
   
 }
