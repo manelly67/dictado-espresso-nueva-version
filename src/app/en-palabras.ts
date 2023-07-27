@@ -109,7 +109,7 @@ export const ENPALABRAS: string[] = [
 'The woman likes to wear dresses',
 'He looks everywhere',
 'she has three cats',
-'You are right (omit subject pronoun)',
+'You are right (omit subject pronoun - informal-you)',
 'Thursday',
 'Daughter-in-law',
 'I have two brothers',

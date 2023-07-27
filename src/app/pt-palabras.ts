@@ -109,7 +109,7 @@ export const PTPALABRAS: string[] = [
 'A mulher gosta de usar vestidos',
 'Ele procura em todo o lado',
 'ela tem três gatos',
-'Está certo',
+'Estás certo',
 'Quinta-feira',
 'Nora',
 'Eu tenho dois irmãos',
