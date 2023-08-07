@@ -1,7 +1,6 @@
-[build]
-  publish = "dist/anglify"
-  command = "ng build --prod"
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  from = "https://dictadoespresso.netlify.app/numerosPrincipiante"
+  to = "https://dictadoespresso.netlify.app"
+  status = 301
+  force = false
+  query = {path = ":path"}
