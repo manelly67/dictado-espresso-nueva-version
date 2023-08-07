@@ -5,7 +5,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { MatRadioModule } from '@angular/material/radio'; 
 
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';      // para que al recargar la pagina no de mensaje de error
+/* import { HashLocationStrategy, LocationStrategy } from '@angular/common';  */     
+
+// para que al recargar la pagina no de mensaje de error
 
 import { AppComponent } from './app.component';
 import { PalabrasComponent } from './palabras/palabras.component';
@@ -124,7 +126,8 @@ import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
 	MatRadioModule,
   ],
   providers: [  AdService,
-				{ provide: LocationStrategy, useClass: HashLocationStrategy }],     // para que al recargar la pagina no de mensaje de error
+				/* { provide: LocationStrategy, useClass: HashLocationStrategy } */
+				],     // para que al recargar la pagina no de mensaje de error
   entryComponents: [ Publicidad1Component ],
   bootstrap: [AppComponent]
 })

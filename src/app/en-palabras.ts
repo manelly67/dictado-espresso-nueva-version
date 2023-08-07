@@ -196,7 +196,7 @@ export const ENPALABRAS: string[] = [
 'Saturday and Sunday are the weekend days',
 'Roof',
 'Grandmother',
-'We don\'t want to do the homework',
+'We don\'t want to do the homework (omit subject pronoun)',
 'Iron the shirts (imperative)',
 'The mountain is very high',
 'Breakfast, lunch and dinner'
