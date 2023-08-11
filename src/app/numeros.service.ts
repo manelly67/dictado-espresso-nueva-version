@@ -18,7 +18,7 @@ maximo:number=0;
 	if (arg == 'intermedio' || arg == 'intermedioPT'){
 	this.minimo = 101;
 	}else{
-	if (arg == 'intermedio-dos'){
+	if (arg == 'intermedio-dos' || arg == 'intermedioPT-dos'){
 	this.minimo = 1001;
 	}else{
 	if (arg == 'avanzado'){
@@ -34,8 +34,8 @@ maximo:number=0;
 	if (arg == 'intermedio' || arg == 'intermedioPT'){
 	this.maximo = 1000;
 	}else{
-	if (arg == 'intermedio-dos'){
-	this.maximo = 100000;
+	if (arg == 'intermedio-dos' || arg == 'intermedioPT-dos'){
+	this.maximo = 999999;
 	}else{
 	if (arg == 'avanzado'){
 	this.maximo = 999999999;
@@ -87,9 +87,22 @@ escrituraCienPT:string[]=['UM','DOIS','TRÊS','QUATRO','CINCO','SEIS','SETE','OI
 'OITENTA','OITENTA E UM','OITENTA E DOIS','OITENTA E TRÊS','OITENTA E QUATRO','OITENTA E CINCO','OITENTA E SEIS','OITENTA E SETE','OITENTA E OITO','OITENTA E NOVE',
 'NOVENTA','NOVENTA E UM','NOVENTA E DOIS','NOVENTA E TRÊS','NOVENTA E QUATRO','NOVENTA E CINCO','NOVENTA E SEIS','NOVENTA E SETE','NOVENTA E OITO','NOVENTA E NOVE','CEM',' '];
 
+escrituraCienPTmil:string[]=['E UM','E DOIS','E TRÊS','E QUATRO','E CINCO','E SEIS','E SETE','E OITO','E NOVE','E DEZ','E ONZE','E DOZE','E TREZE','E CATORZE','E QUINZE','E DEZASSEIS','E DEZASSETE',
+'E DEZOITO','E DEZANOVE','E VINTE','E VINTE E UM','E VINTE E DOIS','E VINTE E TRÊS','E VINTE E QUATRO','E VINTE E CINCO','E VINTE E SEIS','E VINTE E SETE','E VINTE E OITO','E VINTE E NOVE',
+'E TRINTA','E TRINTA E UM','E TRINTA E DOIS','E TRINTA E TRÊS','E TRINTA E QUATRO','E TRINTA E CINCO','E TRINTA E SEIS','E TRINTA E SETE','E TRINTA E OITO','E TRINTA E NOVE',
+'E QUARENTA','E QUARENTA E UM','E QUARENTA E DOIS','E QUARENTA E TRÊS','E QUARENTA E QUATRO','E QUARENTA E CINCO','E QUARENTA E SEIS','E QUARENTA E SETE','E QUARENTA E OITO','E QUARENTA E NOVE',
+'E CINQUENTA','E CINQUENTA E UM','E CINQUENTA E DOIS','E CINQUENTA E TRÊS','E CINQUENTA E QUATRO','E CINQUENTA E CINCO','E CINQUENTA E SEIS','E CINQUENTA E SETE','E CINQUENTA E OITO','E CINQUENTA E NOVE',
+'E SESSENTA','E SESSENTA E UM','E SESSENTA E DOIS','E SESSENTA E TRÊS','E SESSENTA E QUATRO','E SESSENTA E CINCO','E SESSENTA E SEIS','E SESSENTA E SETE','E SESSENTA E OITO','E SESSENTA E NOVE',
+'E SETENTA','E SETENTA E UM','E SETENTA E DOIS','E SETENTA E TRÊS','E SETENTA E QUATRO','E SETENTA E CINCO','E SETENTA E SEIS','E SETENTA E SETE','E SETENTA E OITO','E SETENTA E NOVE',
+'E OITENTA','E OITENTA E UM','E OITENTA E DOIS','E OITENTA E TRÊS','E OITENTA E QUATRO','E OITENTA E CINCO','E OITENTA E SEIS','E OITENTA E SETE','E OITENTA E OITO','E OITENTA E NOVE',
+'E NOVENTA','E NOVENTA E UM','E NOVENTA E DOIS','E NOVENTA E TRÊS','E NOVENTA E QUATRO','E NOVENTA E CINCO','E NOVENTA E SEIS','E NOVENTA E SETE','E NOVENTA E OITO','E NOVENTA E NOVE','E CEM',' '];
+
+
+
 escrituraCentenasPT:string[] = ['CEM','DUZENTOS','TREZENTOS','QUATROCENTOS','QUINHENTOS','SEISCENTOS','SETECENTOS','OITOCENTOS','NOVECENTOS'];
 
 escrituraCentenasPT1:string[] = ['CENTO E','DUZENTOS E','TREZENTOS E','QUATROCENTOS E','QUINHENTOS E','SEISCENTOS E','SETECENTOS E','OITOCENTOS E','NOVECENTOS E'];
+
 
 
 escribirNumero:string ='';
@@ -114,7 +127,10 @@ indice?:number;
 		}else{
 	if (arg1 == 'intermedioPT'){
 		this.escribirNumero = this.captarEscrituraIntermedioPT(arg2);			
-	}}}}}}
+		}else{
+	if (arg1 == 'intermedioPT-dos'){
+		this.escribirNumero = this.captarEscrituraIntermedioDosPT(arg2);
+	}}}}}}}
 	return this.escribirNumero;
 	}
 
@@ -285,32 +301,6 @@ escribirFraccion3:string='';
 							}} 
 				}
 				
-				/* if(this.numero2=='100'){
-				this.escribirFraccion2 = 'CIEN';
-				}else{
-						if (this.cFraccion2 == '0'){
-							this.bFraccion2 = this.b2Fraccion2;
-							}else{
-							this.bFraccion2 = this.b1Fraccion2;
-							}	
-							this.indice1b = Number(this.aFraccion2);
-							this.indice1b = this.indice1b-1;
-							this.indice2b = Number(this.bFraccion2);
-							this.indice2b = this.indice2b-1;
-							this.aFraccion2Nro = Number(this.aFraccion2);
-							if (this.aFraccion2Nro==0){
-							this.textobFraccion2 = this.escrituraCien1[this.indice2b];
-							this.escribirFraccion2 = this.textobFraccion2;
-							}else{
-							if (this.indice2b==-1){
-							this.textoaFraccion2 = this.escrituraCentenas[this.indice1b];
-							this.escribirFraccion2 = this.textoaFraccion2;
-							}else{
-							this.textoaFraccion2 = this.escrituraCentenas[this.indice1b];
-							this.textobFraccion2 = this.escrituraCien1[this.indice2b];
-							this.escribirFraccion2 =this.textoaFraccion2 +' '+this.textobFraccion2;
-							}}
-				} */
 		
 				if(this.numero2=='100'){
 				this.escribirFraccion2 = 'CIEN';
@@ -341,6 +331,152 @@ escribirFraccion3:string='';
 							this.escribirFraccion2 =this.textoaFraccion2 +' '+this.textobFraccion2;
 							}}
 				}}
+
+		
+		if (this.nro2==0 && this.nro1!=0){
+		this.escribirNumero=this.escribirFraccion1;	
+		}else{
+		if (this.nro2!=0 && this.nro1==0){
+		this.escribirNumero=this.escribirFraccion2+' MIL';	
+		}else{
+		if (this.nro2!=0 && this.nro1!=0){
+		this.escribirNumero=this.escribirFraccion2+' MIL '+this.escribirFraccion1;
+		}
+		}} 
+		
+	return this.escribirNumero;
+	}
+	
+// CAPTA ESCRITURA DE NUMEROS DE SEIS DIGITOS EN PORTUGUES
+	
+	captarEscrituraIntermedioDosPT<Type>(arg2:number):string{
+
+				this.numeroTexto= arg2.toString();
+				this.numero1=this.numeroTexto.slice(-3);
+				this.numero2=this.numeroTexto.slice(-6,-3);
+				this.nro1 = Number(this.numero1);
+				this.nro2 = Number(this.numero2);
+		
+				this.aFraccion1 = this.numero1.slice(-3,-2);
+				this.b1Fraccion1 = this.numero1.slice(-2);
+				this.cFraccion1 = this.b1Fraccion1.substring(0,1);
+				this.b2Fraccion1 = this.numero1.slice(-1);
+				
+				this.aFraccion2 = this.numero2.slice(-3,-2);
+				this.b1Fraccion2 = this.numero2.slice(-2);
+				this.cFraccion2 = this.b1Fraccion2.substring(0,1);
+				this.b2Fraccion2 = this.numero2.slice(-1);
+
+						
+				if(this.numero1=='100'){
+				this.escribirFraccion1 = 'E CEM';
+				}else{
+				if(this.numero1=='200'){
+				this.escribirFraccion1 = 'E DUZENTOS';
+				}else{
+				if(this.numero1=='300'){
+				this.escribirFraccion1 = 'E TREZENTOS';
+				}else{
+				if(this.numero1=='400'){
+				this.escribirFraccion1 = 'E QUATROCENTOS';
+				}else{
+				if(this.numero1=='500'){
+				this.escribirFraccion1 = 'E QUINHENTOS';
+				}else{
+				if(this.numero1=='600'){
+				this.escribirFraccion1 = 'E SEISCENTOS';
+				}else{
+				if(this.numero1=='700'){
+				this.escribirFraccion1 = 'E SETECENTOS';
+				}else{
+				if(this.numero1=='800'){
+				this.escribirFraccion1 = 'E OITOCENTOS';
+				}else{
+				if(this.numero1=='900'){
+				this.escribirFraccion1 = 'E NOVECENTOS';
+				}else{
+				
+				
+						if (this.cFraccion1 == '0'){
+							this.bFraccion1 = this.b2Fraccion1;
+							}else{
+							this.bFraccion1 = this.b1Fraccion1;
+							}	
+							this.indice1a = Number(this.aFraccion1);
+							this.indice1a = this.indice1a-1;
+							this.indice2a = Number(this.bFraccion1);
+							this.indice2a = this.indice2a-1;
+							this.aFraccion1Nro = Number(this.aFraccion1);
+							if (this.aFraccion1Nro==0){
+							this.textobFraccion1 = this.escrituraCienPTmil[this.indice2a];
+							this.escribirFraccion1 = this.textobFraccion1;
+							}else{
+							if (this.indice2a==-1){
+							this.textoaFraccion1 = this.escrituraCentenasPT1[this.indice1a];
+							this.escribirFraccion1 = this.textoaFraccion1;
+							}else{
+							this.textoaFraccion1 = this.escrituraCentenasPT1[this.indice1a];
+							this.textobFraccion1 = this.escrituraCienPT[this.indice2a];
+							this.escribirFraccion1 = this.textoaFraccion1+' '+this.textobFraccion1;
+							}} 
+				}}}}}}}}}
+				
+		
+				if(this.numero2=='100'){
+				this.escribirFraccion2 = 'CEM';
+				}else{
+				if(this.numero2=='1' ){
+				this.escribirFraccion2 = '';
+				}else{
+				if(this.numero2=='200'){
+				this.escribirFraccion2 = 'DUZENTOS';
+				}else{
+				if(this.numero2=='300'){
+				this.escribirFraccion2 = 'TREZENTOS';
+				}else{
+				if(this.numero2=='400'){
+				this.escribirFraccion2 = 'QUATROCENTOS';
+				}else{
+				if(this.numero2=='500'){
+				this.escribirFraccion2 = 'QUINHENTOS';
+				}else{
+				if(this.numero2=='600'){
+				this.escribirFraccion2 = 'SEISCENTOS';
+				}else{
+				if(this.numero2=='700'){
+				this.escribirFraccion2 = 'SETECENTOS';
+				}else{
+				if(this.numero2=='800'){
+				this.escribirFraccion2 = 'OITOCENTOS';
+				}else{
+				if(this.numero2=='900'){
+				this.escribirFraccion2 = 'NOVECENTOS';
+				}else{
+				
+				
+						if (this.cFraccion2 == '0'){
+							this.bFraccion2 = this.b2Fraccion2;
+							}else{
+							this.bFraccion2 = this.b1Fraccion2;
+							}	
+							this.indice1b = Number(this.aFraccion2);
+							this.indice1b = this.indice1b-1;
+							this.indice2b = Number(this.bFraccion2);
+							this.indice2b = this.indice2b-1;
+							this.aFraccion2Nro = Number(this.aFraccion2);
+							if (this.aFraccion2Nro==0){
+							this.textobFraccion2 = this.escrituraCienPT[this.indice2b];
+							this.escribirFraccion2 = this.textobFraccion2;
+							}else{
+							if (this.indice2b==-1){
+							this.textoaFraccion2 = this.escrituraCentenasPT1[this.indice1b];
+							this.escribirFraccion2 = this.textoaFraccion2;
+							}else{
+							this.textoaFraccion2 = this.escrituraCentenasPT1[this.indice1b];
+							this.textobFraccion2 = this.escrituraCienPT[this.indice2b];
+							this.escribirFraccion2 =this.textoaFraccion2 +' '+this.textobFraccion2;
+							}}
+				}}}}}}}}}}
 
 		
 		if (this.nro2==0 && this.nro1!=0){
@@ -557,7 +693,7 @@ intermedio:boolean=false;
        // activar avanzado
   
   activarAvanzado<Type>(arg:string|undefined):boolean{
-     if (arg == 'avanzado' || arg == 'intermedio-dos' || arg == 'avanzadoPT' ){
+     if (arg == 'avanzado' || arg == 'intermedio-dos' || arg == 'avanzadoPT' || arg == 'intermedioPT-dos' ){
 	 this.avanzado=true;
 	 }else{
 	 this.avanzado=false;

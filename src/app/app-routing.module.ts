@@ -18,6 +18,7 @@ import { NumerosIntermedioComponent } from './numeros-intermedio/numeros-interme
 import { NumerosIntermedio2Component } from './numeros-intermedio2/numeros-intermedio2.component';
 import { NumerosPTPrincipianteComponent } from './numeros-pt-principiante/numeros-pt-principiante.component';
 import { NumerosPTIntermedioComponent } from './numeros-pt-intermedio/numeros-pt-intermedio.component';
+import { NumerosPtIntermedio2Component } from './numeros-pt-intermedio2/numeros-pt-intermedio2.component';
 import { SpanishTestComponent } from './spanish-test/spanish-test.component';
 import { SpanishTestIntComponent } from './spanish-test-int/spanish-test-int.component';
 import { SpanishTestAvanzComponent } from './spanish-test-avanz/spanish-test-avanz.component';
@@ -51,6 +52,7 @@ const routes: Routes = [
   { path: 'numerosIntermedio2', component: NumerosIntermedio2Component },
   { path: 'numerosPrincipiantePT', component: NumerosPTPrincipianteComponent },
   { path: 'numerosintermedioPT', component: NumerosPTIntermedioComponent },
+  { path: 'numerosAvanzadoPT', component: NumerosPtIntermedio2Component },
   { path: 'spanishTest1', component: SpanishTestComponent },
   { path: 'spanishTest2', component: SpanishTestIntComponent },
   { path: 'spanishTest3', component: SpanishTestAvanzComponent },

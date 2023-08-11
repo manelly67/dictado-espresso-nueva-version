@@ -62,6 +62,7 @@ import { Publicidad3Component } from './publicidad3/publicidad3.component';
 import { Publicidad4Component } from './publicidad4/publicidad4.component';
 import { PortugueseTestIntComponent } from './portuguese-test-int/portuguese-test-int.component';
 import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
+import { NumerosPtIntermedio2Component } from './numeros-pt-intermedio2/numeros-pt-intermedio2.component';
 
 @NgModule({
   declarations: [
@@ -116,7 +117,8 @@ import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
     Publicidad3Component,
     Publicidad4Component,
     PortugueseTestIntComponent,
-    YoutubeVideoComponent
+    YoutubeVideoComponent,
+    NumerosPtIntermedio2Component
   ],
   imports: [
     BrowserModule,
