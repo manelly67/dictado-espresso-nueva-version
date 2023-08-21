@@ -2,12 +2,26 @@
 
 .ubicacion {
 	position: absolute;
-	bottom: -90px;
-	left: 30px;
+	width: 750px;
+	left: 400px;
 	z-index:-1;
+	background-color:  #DAF7A6 ;
+	top: 300px;
 }
 
 #myCarousel {
 	padding-left: 150px;
 	
+}
+
+.blue {
+	color: blue;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
 }

@@ -34,8 +34,15 @@
 <app-ad-banner [ads]="ads"></app-ad-banner>
 </div>
 
+<div class="contenedor" *ngIf="mostrarService.show">
+<app-juego></app-juego>
+</div>
 
-<footer class="container-fluid bg-4 text-center" *ngIf="mostrarService.show">
+
+<br><br><br>
+<footer class="container-fluid text-center" *ngIf="mostrarService.show">
+<div class="bg-4">
   <p>About DICTado Espresso  <a routerLink="/contacto"> Contact Information </a> <a routerLink="/privacidad"> Privacy Policy </a></p>
+</div>
 </footer> 
 

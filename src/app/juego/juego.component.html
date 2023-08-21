@@ -1,0 +1,50 @@
+<ng-container  *ngIf="underScore"> 
+
+<div>
+<p class="title-game"> {{title}} </p>
+</div>
+
+<div class="score-board">  
+  <div id="user-label" class="badge">user</div>
+  <div id="comp-label" class="badge">comp</div>
+  <span id="user-score">{{pointsUser}}</span><span id="dospuntos">:</span><span id="comp-score">{{pointsComp}}</span>
+  <p class="info-game2">{{title1}}{{contador}}</p>
+</div>
+
+<p class="info-game">{{result}}</p>
+
+<div class="choices">
+  <div class="choice" (click)="play('r')">
+    <img src="/assets/img/rock.png">
+  </div>
+  <div class="choice" (click)="play('p')">
+    <img src="/assets/img/paper.png">
+  </div>
+  <div class="choice" (click)="play('s')">
+    <img src="/assets/img/scissors.png">
+  </div>
+</div>
+
+<p class="info-game">{{title2}}</p>
+<div class="ubicar">
+<button type="button" class="playBtn" (click)="playPT()">play in Portuguese</button>
+<button type="button" class="playBtn" (click)="playSP()">play in Spanish</button>
+</div>
+
+</ng-container> 
+
+<ng-container *ngIf="topScore"> 
+
+<div class="score-board">  
+  <div id="user-label" class="badge">user</div>
+  <div id="comp-label" class="badge">comp</div>
+  <span id="user-score">{{pointsUser}}</span>:<span id="comp-score">{{pointsComp}}</span>
+  </div>
+<p class="info-final">{{resultFinal}}{{contador}}</p>
+
+<div class="ubicar">
+<button type="button" class="playBtn" (click)="playAgain()">{{newPlay}}</button>
+</div>
+
+</ng-container> 
+
