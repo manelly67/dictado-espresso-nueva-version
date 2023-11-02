@@ -1,5 +1,3 @@
-/* esta parte corresponde a visualizacion en móviles    */
-
 #texto1 {color: #04B404;
 		line-height: 95%;
 }
@@ -18,10 +16,6 @@
 		border-top-right-radius: 0px;
 		border-bottom-left-radius: 32px;
 		border-bottom-right-radius: 0px;
-		/* padding-left: 10px;
-		grid-row: 3;
-		grid-column-start: 3;
-		grid-column-end: 6; */
 		overflow-y: scroll;
 }
 
@@ -30,9 +24,6 @@
 }
 
 .btn-circle.btn-m {
-			/* width: 80px;
-			height: 80px;
-			padding: 13px 18px; */
 			border-radius: 60px;
 			font-size: 15px;
 			text-align: center;
@@ -42,9 +33,6 @@
 		}
 		
 .btn-circle.btn-l {
-			/*width: 90px;
-			height: 90px;
-			padding: 13px 18px;*/
 			border-radius: 60px;
 			font-size: 15px;
 			text-align: center;
@@ -53,18 +41,12 @@
 		}
 		
 .btn-circle.btn-xl {
-			/*width: 100px;
-			height: 100px;
-			padding: 13px 18px;*/
 			border-radius: 60px;
 			font-size: 15px;
 			text-align: center;
 			background-color: #ffcc5c;
 			border-color: #ffcc5c;
 		}
-
-/*hasta aquí la parte corresponde a visualizacion en móviles    */
-
 
 /* media view   */
 
