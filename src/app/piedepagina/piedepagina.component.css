@@ -1,0 +1,46 @@
+ .bg-4 {
+  background-color: #2f2f2f;
+  color: #ffffff;
+  }
+  .about{
+  text-align: center;	  
+  }
+  
+  a {
+  padding-left: 5px;
+  }
+
+  /* media view   */
+
+
+ main {
+    
+    display: flex;
+	grid-auto-flow:row;
+	
+	grid-row-gap:0px;
+	grid-column-gap:0px;
+    flex-wrap: wrap;
+
+  }
+
+  div {
+    flex-basis: 100%;
+    font-size: 14px;
+  } 
+  
+ 
+  
+  @media screen and (min-width: 992px) {
+    main {
+      flex-wrap: nowrap;
+	
+    }
+
+    div {
+	  flex-basis: 70%;
+	  font-size: 20px;
+    }
+	
+		
+  }

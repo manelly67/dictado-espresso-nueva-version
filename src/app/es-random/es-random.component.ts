@@ -4,6 +4,7 @@ import { ClearService } from '../clear.service';
 import { GuardartextoService } from '../guardartexto.service';
 import { MensajeService } from '../mensaje.service';
 import { RandomService } from '../random.service';
+import { CompararService } from '../comparar.service';
 import { TecladoService } from '../teclado.service';
 
 @Component({
@@ -18,7 +19,8 @@ export class EsRandomComponent implements OnInit {
 					public guardartextoService: GuardartextoService,
 						public mensajeService: MensajeService,   // solamente define el título de la página de ejercicios correspondiente
 							private randomService: RandomService,
-								public tecladoService: TecladoService) { }
+								public compararService: CompararService,    // unicamente para leer variable gradoA para activar animacion
+									public tecladoService: TecladoService) { }
 
 
 @Output() comparar = new EventEmitter (); 
@@ -50,7 +52,8 @@ export class EsRandomComponent implements OnInit {
 	funcion(){                                            /* utiliza las listas de palabras importadas por el randomService para seleccionar una sola */
 	this.respuesta = this.clearService.clear(this.respuesta);                                                           /* borra los textos anteriores para comenzar un nuevo ingreso de texto */
 	this.guardartextoService.textodefinitivo = this.clearService.clear(this.guardartextoService.textodefinitivo);       /* borra los textos anteriores para comenzar un nuevo ingreso de texto */
-		
+	this.compararService.gradoA = false;    // para reiniciar la variable de la animacion del random component
+	
 				this.final = this.randomService.numeroFinal();
 				this.inicial = this.randomService.numeroInicial();
 		

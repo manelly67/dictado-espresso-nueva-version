@@ -1,5 +1,5 @@
 <ng-container  *ngIf="underScore"> 
-
+<div class="contenedor">
 <div>
 <p class="title-game"> {{title}} </p>
 </div>
@@ -30,11 +30,11 @@
 <button type="button" class="playBtn" (click)="playPT()">play in Portuguese</button>
 <button type="button" class="playBtn" (click)="playSP()">play in Spanish</button>
 </div>
-
+</div>
 </ng-container> 
 
 <ng-container *ngIf="topScore"> 
-
+<div class="contenedor">
 <div class="score-board">  
   <div id="user-label" class="badge">user</div>
   <div id="comp-label" class="badge">comp</div>
@@ -45,6 +45,6 @@
 <div class="ubicar">
 <button type="button" class="playBtn" (click)="playAgain()">{{newPlay}}</button>
 </div>
-
+</div>
 </ng-container> 
 

@@ -1,48 +1,43 @@
-<div class="toolbar" role="banner">
-<img src="/assets/img/1.jpg" alt="image" width="150px">
-<p id="titulo"> {{title}} </p>
-		
-<div class="panel-group" id="accordion">
-<a id="apoyame" href="#"
-        data-toggle="collapse" class="texto" data-parent="#accordion" href="#collapseEnlace"                 
-						 ><span class="glyphicon glyphicon-user" ></span>Support me/ Apóyame/ Apoie-me </a>
 
-<div id="collapseEnlace" class="panel-collapse collapse">
-<app-apoyame></app-apoyame>  
-</div>
-
-</div>
-
-</div>
-
-
-<router-outlet></router-outlet>         
+<app-titulo></app-titulo>
+    
 
 <ng-container *ngIf="showbarra"> 
 <app-barra-navegacion></app-barra-navegacion>
 </ng-container> 
 
-<ng-container *ngIf="mostrarService.show">
-<app-youtube-video></app-youtube-video>
-</ng-container>
+<router-outlet></router-outlet>   
 
 <ng-container *ngIf="mostrarService.show"> 
 <app-carrusel></app-carrusel>
-</ng-container> 
+</ng-container>
 
-<div class="ubicar-ad">
-<app-ad-banner [ads]="ads"></app-ad-banner>
+
+<main>
+
+<div>
+<ng-container *ngIf="mostrarService.show">
+<app-youtube-video></app-youtube-video>
+</ng-container>
 </div>
 
-<div class="contenedor" *ngIf="mostrarService.show">
+<div></div>
+
+<div  *ngIf="mostrarService.show">
 <app-juego></app-juego>
 </div>
 
+<div></div>
 
-<br><br><br>
-<footer class="container-fluid text-center" *ngIf="mostrarService.show">
-<div class="bg-4">
-  <p>About DICTado Espresso  <a routerLink="/contacto"> Contact Information </a> <a routerLink="/privacidad"> Privacy Policy </a></p>
+<div></div>
+</main>
+
+<div>
+<app-ad-banner [ads]="ads" ></app-ad-banner>
 </div>
-</footer> 
+
+
+<ng-container *ngIf="mostrarService.show"> 
+<app-piedepagina></app-piedepagina>
+</ng-container>
 

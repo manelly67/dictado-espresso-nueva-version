@@ -1,21 +1,23 @@
 /* slide */
 
 .ubicacion {
-	position: absolute;
-	width: 750px;
-	left: 400px;
-	z-index:-1;
 	background-color:  #DAF7A6 ;
-	top: 300px;
-}
-
-#myCarousel {
-	padding-left: 150px;
 	
 }
 
+.ancho {
+
+  text-align: center
+}
+
+#myCarousel {
+	padding-left: 30px;
+	
+}
+
+
 .blue {
-	color: blue;
+	color: blue;	
 }
 
 .green {
@@ -25,3 +27,66 @@
 .red {
 	color: red;
 }
+
+/* media view   */
+
+
+ main {
+    
+    display: flex;
+	grid-auto-flow:row;
+	
+	grid-row-gap:0px;
+	grid-column-gap:0px;
+    flex-wrap: wrap;
+
+  }
+
+  div {
+   
+    flex-basis: 100%;
+    
+  } 
+  
+    
+	h6 {
+	flex-basis: 100%;
+	}
+  
+  
+  @media screen and (min-width: 992px) {
+    main {
+      flex-wrap: nowrap;
+	
+    }
+
+    div {
+      
+	  flex-basis: 70%;
+    }
+	
+	h6 {
+	flex-basis: 100%;
+	}
+  
+		
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

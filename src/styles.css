@@ -1,22 +1,10 @@
 /* Application-wide Styles */
-h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 200%;
-}
-h2, h3 {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
+
 body {
-  margin: 2em;
+ /*  margin: 2em; */
   background-color: #F2E3A9;
 }
-body, input[type="text"], button {
-  color: #333;
-  font-family: Cambria, Georgia, serif;
-}
+
 button {
   background-color: #eee;
   border: none;
@@ -44,11 +32,15 @@ button:disabled {
 	display: none;
 }
 
+
+
+@media (min-width: 992px) {
+	/* Para fijar posicion unicamente en pantallas grandes*/
 .categoria{
 	position: fixed;
 	/* position: absolute; */
 	left: 215px;
-	top: 40px;
+	top: 47px;
 	color: #3f525c;
 	/* width: 80%;
 	padding-top: 0;
@@ -60,6 +52,12 @@ button:disabled {
 	/* position: absolute; */
 	right: 160px;
 	top: 40px;
+}
+
+.botonretrocesoendictado{
+	position: absolute;
+	right: 45px;
+	top: 50px;
 }
 .botonHome{
 	position: fixed;
@@ -84,12 +82,15 @@ button:disabled {
 	width: 125px;
 }
 
-/* everywhere else */
-* {
-  /* font-family: Arial, Helvetica, sans-serif; */
-  font: 20px "Montserrat", sans-serif;
-  font-size: 1.5rem;
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
-html, body { height: 100%; }
-body { margin: 2em; font-family: Roboto, "Helvetica Neue", sans-serif; }
+}

@@ -90,7 +90,7 @@ secuencial?:boolean;
 		
 		
 	
-		onComparar(): string[] | undefined | number | string {
+		onComparar(): string[] | undefined | number | string | boolean {
 		this.mensajedealerta = this.mensaje();
 		do {
 		this.palabraseleccionada = this.guardartextoService.palabraseleccionada;
@@ -101,6 +101,7 @@ secuencial?:boolean;
 		this.aciertos = this.compararService.aciertos(this.nuevoArray);
 		this.percentAciertos = this.compararService.porcentaje(this.nuevoArray,this.aciertos);
 		this.mostrarIndicador = this.compararService.indicador(this.nuevoArray,this.percentAciertos);
+		this.compararService.gradoA = this.compararService.activarGradoA(this.percentAciertos);   // unicamente para la animacion del random component
 		this.compararService.siguiente = this.nuevoArray;
 		
 		return this.arrayPalabra;
@@ -110,6 +111,7 @@ secuencial?:boolean;
 		return this.percentAciertos;
 		return this.mostrarIndicador;
 		return this.compararService.siguiente;
+		return this.compararService.gradoA;   // unicamente para la animacion del random component
 		
 			} while(this.mensajedealerta == '')
 		}

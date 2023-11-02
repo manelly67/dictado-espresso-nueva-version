@@ -120,13 +120,14 @@ export class SecuencialComponent implements OnInit{
 	
 	
 	
-	// OCULTA el boton INICIAR y MUESTRA de nuevo al final de la secuencia//
+	// OCULTA el boton INICIAR y MUESTRA de nuevo al final de la secuencia y REINICIA LA ANIMACION//
 	iniciar:boolean=true;
 	oculta(){
 	if (this.numeroingresado != 0){
 	this.iniciar = false;
 	this.compararService.iniciar = false;
 	this.uno = true;
+	this.gradoA = false;      // para REINICIAR la ANIMACION
 	}else{
 	this.iniciar = true;
 	this.uno = false;
@@ -342,6 +343,7 @@ export class SecuencialComponent implements OnInit{
 gradoA:boolean=false;		
 	//al final cuenta aciertos y determina porcentaje
 	determinarPorcentaje(){
+	
 	this.contar = this.compararService.aciertos(this.secuenciaArray);
 	this.acertadas = this.compararService.porcentaje(this.secuenciaArray,this.contar);
 			if( this.acertadas == 100){

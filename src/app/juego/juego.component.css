@@ -1,4 +1,19 @@
 /* Para ubicar las opciones de izquierda a derecha*/
+
+
+.contenedor {
+  width: 280px;
+  height: 430px;
+
+  border: 1px solid #80ced6;
+  box-sizing: border-box;
+  background-color:#191266;
+  box-sizing: border-box;
+ 
+  }
+
+
+
 .choices {
     margin: 10px;
     display: flex; /* or inline-flex */

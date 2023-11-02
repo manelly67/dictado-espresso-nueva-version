@@ -146,6 +146,21 @@ grado:string='';					// para ser utilizado en el dictado component
 	arg = arg/100;
 	return arg;
 	}
+	
+// agregadas para ser utilizadas para la animacion en el random component
+
+gradoA:boolean=false;
+
+ // activar grado
+   
+  activarGradoA<Type>(arg:number):boolean{
+     if (arg == 100){
+	 this.gradoA=true;
+	 }else{
+	 this.gradoA=false;
+	 }
+  return this.gradoA;
+  }
 
   }
 

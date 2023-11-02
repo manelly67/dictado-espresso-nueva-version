@@ -64,6 +64,8 @@ import { PortugueseTestIntComponent } from './portuguese-test-int/portuguese-tes
 import { YoutubeVideoComponent } from './youtube-video/youtube-video.component';
 import { NumerosPtIntermedio2Component } from './numeros-pt-intermedio2/numeros-pt-intermedio2.component';
 import { JuegoComponent } from './juego/juego.component';
+import { PiedepaginaComponent } from './piedepagina/piedepagina.component';
+import { TituloComponent } from './titulo/titulo.component';
 
 @NgModule({
   declarations: [
@@ -120,7 +122,9 @@ import { JuegoComponent } from './juego/juego.component';
     PortugueseTestIntComponent,
     YoutubeVideoComponent,
     NumerosPtIntermedio2Component,
-    JuegoComponent
+    JuegoComponent,
+    PiedepaginaComponent,
+    TituloComponent
   ],
   imports: [
     BrowserModule,
