@@ -1,30 +1,104 @@
-/*  definido en style.css
-.botonretroceso{
-	position: absolute;
-	right: 45px;
-	top: 40px;
-}
-.botonHome{
-	position: absolute;
-	right: 45px;
-	top: 85px;
-}
-.enlace1{
-	position: absolute;
-	right: 45px;
-	top: 130px;
-	font-size: 9px;
-	width: 105px;
-}
-.enlace2{
-	position: absolute;
-	right: 45px;
-	top: 190px;
-	font-size: 9px;
-	width: 105px;
-} */
+/* esta parte corresponde a visualizacion en móviles    */
 
-.grid1 {
+#texto1 {color: #04B404;
+		line-height: 95%;
+}
+#texto2 {color: #29098B;
+		line-height: 95%;
+}
+.subtitulo {background-color: white;
+}
+
+.contenidoB {
+		width: 100%;
+		height: 500px;
+		box-sizing: content-box;
+		border: 4px solid #DE003A;
+		border-top-left-radius: 32px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 32px;
+		border-bottom-right-radius: 0px;
+		/* padding-left: 10px;
+		grid-row: 3;
+		grid-column-start: 3;
+		grid-column-end: 6; */
+		overflow-y: scroll;
+}
+
+#lista li{
+	display: inline-block;
+}
+
+.btn-circle.btn-m {
+			/* width: 20px;
+			height: 20px;
+			padding: 3px 8px; */
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: center;
+			color: #f2e394;
+			background-color: #82b74b;
+			border-color: #82b74b;
+		}
+		
+.btn-circle.btn-l {
+			/* width: 30px;
+			height: 30px;
+			padding: 3px 8px; */
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: center;
+			background-color: #ff7b25;
+			border-color: #ff7b25;
+		}
+		
+.btn-circle.btn-xl {
+			/* width: 35px;
+			height: 35px;
+			padding: 3px 8px; */
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: center;
+			background-color: #b9936c;
+			border-color: #b9936c;
+		}
+/*hasta aquí la parte corresponde a visualizacion en móviles    */			
+		
+		
+/* media view   */
+
+
+ main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+
+  div {
+    flex-basis: 100%;
+  } 
+    
+ul {
+	flex-basis: 90%;
+}
+
+  
+  
+  @media screen and (min-width: 992px) {
+    main {
+      display: flex;
+	  flex-direction:row;
+	  justify-content: flex-start;
+	  flex-wrap: wrap;
+	  margin-top: 7.5rem;
+	  width: 1200px;
+	 
+    }
+
+    .grid1 {
 	grid-auto-flow:row;
 	grid-template-rows: 30px 30px 500px;
 	grid-template-columns:15px 200px 250px 320px 130px ;
@@ -58,7 +132,7 @@
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 6);
 }
 #vertical{
-	font-size: 14px;
+	font-size: 15px;
 	font-weight:900;
 	word-break: break-word;
 	width: 0;
@@ -118,3 +192,10 @@
 			background-color: #b9936c;
 			border-color: #b9936c;
 		}
+			
+	
+	
+	
+  }
+	
+	

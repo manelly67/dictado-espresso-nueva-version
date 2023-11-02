@@ -1,29 +1,104 @@
+/* esta parte corresponde a visualizacion en móviles    */
 
-/*  definido en style.css
-.botonretroceso{
-	position: absolute;
-	right: 45px;
-	top: 40px;
+#texto1 {color: #04B404;
+		line-height: 95%;
 }
-.botonHome{
-	position: absolute;
-	right: 45px;
-	top: 85px;
+#texto2 {color: #29098B;
+		line-height: 95%;
 }
-.enlace1{
-	position: absolute;
-	right: 45px;
-	top: 130px;
-	font-size: 9px;
-	width: 105px;
+.subtitulo {background-color: white;
 }
-.enlace2{
-	position: absolute;
-	right: 45px;
-	top: 190px;
-	font-size: 9px;
-	width: 105px;
-} */
+
+.contenidoB {
+		width: 100%;
+		height: 500px;
+		box-sizing: content-box;
+		border: 4px solid #DE003A;
+		border-top-left-radius: 32px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 32px;
+		border-bottom-right-radius: 0px;
+		/* padding-left: 10px;
+		grid-row: 3;
+		grid-column-start: 3;
+		grid-column-end: 6; */
+		overflow-y: scroll;
+}
+
+#lista li{
+	display: inline-block;
+}
+
+.btn-circle.btn-m {
+			/* width: 80px;
+			height: 80px;
+			padding: 13px 18px; */
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: center;
+			color: #f2e394;
+			background-color: #eca1a6;
+			border-color: #eca1a6;
+		}
+		
+.btn-circle.btn-l {
+			/*width: 90px;
+			height: 90px;
+			padding: 13px 18px;*/
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: center;
+			background-color: #6b5b95;
+			border-color: #6b5b95;
+		}
+		
+.btn-circle.btn-xl {
+			/*width: 100px;
+			height: 100px;
+			padding: 13px 18px;*/
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: center;
+			background-color: #ffcc5c;
+			border-color: #ffcc5c;
+		}
+
+/*hasta aquí la parte corresponde a visualizacion en móviles    */
+
+
+/* media view   */
+
+
+ main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+
+  div {
+    flex-basis: 100%;
+  } 
+    
+ul {
+	flex-basis: 90%;
+}
+
+  
+  
+  @media screen and (min-width: 992px) {
+    main {
+      display: flex;
+	  flex-direction:row;
+	  justify-content: flex-start;
+	  flex-wrap: wrap;
+	  margin-top: 7.5rem;
+	  width: 1200px;
+	 
+    }
+
 
 .grid1 {
 	grid-auto-flow:row;
@@ -119,3 +194,5 @@
 			background-color: #ffcc5c;
 			border-color: #ffcc5c;
 		}
+		
+  }
