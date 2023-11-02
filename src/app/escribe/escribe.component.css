@@ -1,5 +1,17 @@
-/* media view   */
+#escribe{
+	position: relative;
+	left: 1px;
+	top: 45px;
+}
 
+#escribeingles{
+	position: relative;
+	left: 1px;
+	top: 50px;
+	color: #4040a1;
+}
+
+/* media view   */
 
  main {
     
@@ -11,7 +23,11 @@
   }
 
   div {
-    flex-basis: 100%;
+    flex-basis: 90%;
+  } 
+  
+  textarea{
+    flex-basis: 90%;
   } 
  
   
@@ -42,18 +58,6 @@
 		top: 35px;
 }
 
-#escribe{
-	position: relative;
-	left: 1px;
-	top: 45px;
-}
-
-#escribeingles{
-	position: relative;
-	left: 1px;
-	top: 50px;
-	color: #4040a1;
-}
 
 .button {
 	top: 10px;

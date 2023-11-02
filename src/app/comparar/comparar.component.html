@@ -1,5 +1,5 @@
 <br>
-
+<main>
 <p class="ancho"><kbd>Your answer:</kbd><span class="texto1">{{respuestacomparar}}</span></p>
 
 <ul class="list-inline texto2">
@@ -15,35 +15,4 @@
 <div [ngClass]="mostrarIndicador != 'X' ? 'correcto': 'incorrecto'">
 		{{mostrarIndicador}} 
 </div>
-
-
-
-
-
-<!-- variables utilizadas como practica
-
-<p class="ocultar">{{respuestacomparar}} </p>
-<p class="ocultar">{{palabraseleccionada}} </p>
-<p class="ocultar">{{indicador}}</p>
-<p>{{aciertos}}</p>
-<p>{{percentAciertos}}</p>
-<p>{{mostrarIndicador}}</p>
-
- <ul>
-  <li *ngFor="let palabra of arrayPalabra">
-    {{palabra}}
-  </li>
-</ul> 
-<ul>
-  <li *ngFor="let respuesta of arrayRespuesta">
-    {{respuesta}}
-  </li>
-</ul>  -->
-
-<!-- <tbody>
-      <tr *ngFor='let palabra of arrayPalabra; index as i'>
-        <th scope='row'>{{i + 1}}</th>
-        <td>{{palabra}}</td>     
-      </tr>
-</tbody> -->
-
+</main>

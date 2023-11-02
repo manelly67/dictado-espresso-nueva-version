@@ -25,6 +25,10 @@
 											     [mostrarIndicador]="mostrarIndicador"		>	 </app-comparar>
 </div>
 
+<div id="texto" [ngClass]="mensajedealerta != '' ? 'alert alert-warning': 'ocultar'"> 
+{{mensajedealerta | uppercase }}
+ </div>
+ 
  <ng-container *ngIf="porcentaje"> 
 <p [@slideStatus] class="ubicarPercent" [ngClass]=" grado == 'A' ? 'gradoA':'gradoByC' ">{{ porcentajeMostrar | percent }}</p>
  </ng-container> 
@@ -69,10 +73,6 @@
 </div>
 </div>
 
-
-<div id="texto" [ngClass]="mensajedealerta != '' ? 'alert alert-warning': 'ocultar'"> 
-{{mensajedealerta | uppercase }}
- </div>
  
  
 <ng-container *ngIf="definirAudioService.gradoA && definirAudioService.avanzado"> 

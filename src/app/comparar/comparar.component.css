@@ -1,3 +1,35 @@
+.correcto{
+	color: green;
+	font-size: 180px;
+}
+.incorrecto{
+	color:red;
+	font-size: 150px;
+}
+
+
+/* media view   */
+
+ main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+
+  div {
+    flex-basis: 90%;
+  } 
+  
+   ul {
+    flex-basis: 90%;
+  } 
+
+  
+  @media screen and (min-width: 992px) {
+
 .ancho {
 	width: 1000px;
 }
@@ -26,3 +58,5 @@
 			bottom: 30px;
 			font-size: 150px;
 }
+
+  }
