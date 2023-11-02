@@ -1,13 +1,5 @@
-#escribe{
-	position: relative;
-	left: 1px;
-	top: 45px;
-}
 
 #escribeingles{
-	position: relative;
-	left: 1px;
-	top: 50px;
 	color: #4040a1;
 }
 
@@ -26,8 +18,15 @@
     flex-basis: 90%;
   } 
   
+  label {
+	flex-basis: 90%; 
+  }
+  
+  p {
+	flex-basis: 90%; 
+  }
   textarea {
-    flex-basis: 90%;
+    flex-basis: 95%;
   } 
  
   
@@ -38,6 +37,19 @@
 	grid-template-columns:550px 100px 200px;
 	grid-row-gap:30px;
 	grid-column-gap:100px;
+}
+
+#escribe{
+	position: relative;
+	left: 1px;
+	top: 45px;
+}
+
+#escribeingles{
+	position: relative;
+	left: 1px;
+	top: 50px;
+	color: #4040a1;
 }
 
 .ingresatexto {
