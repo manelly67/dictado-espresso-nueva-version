@@ -1,4 +1,4 @@
-
+<main>
 <div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
         
         <b>{{categoria.idioma|uppercase}}</b> 
@@ -15,6 +15,7 @@
 
 
 <br><br>
+<div>
 <app-numeros [minimo]="minimo" [maximo]="maximo" [nivel]="nivel" [inicialnivel]="inicialnivel"></app-numeros>
-
-
+</div>
+</main>

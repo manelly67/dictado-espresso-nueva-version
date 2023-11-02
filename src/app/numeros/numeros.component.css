@@ -1,3 +1,67 @@
+.formato {
+  margin-top: 2.2rem;
+  font-size:  2.2rem;
+  color: white;
+  text-align: center;
+  background-color: #1abc9c;
+}
+
+.formatoEN{
+	color: #f2e394;
+	font-size: 1.7rem;
+	font-weight: 600;
+	text-align: center;
+	background-color: #1abc9c;
+}
+
+#texto {
+	color: black;
+	font-size: 1.5rem;
+}
+.gradoA{
+	color: blue;
+	font-size: 92px;
+}
+
+.gradoByC{
+	color: brown;
+	font-size: 80px;
+}
+
+.container1{
+	background-color: #1abc9c;
+	padding: 13px 18px;
+/* 	width: 150px;
+	height: 90px; */
+	border-radius: 60px;
+	text-align: center;
+}
+.container2{
+	background-color: #1abc9c;
+	padding: 13px 18px;
+/* 	width: 250px;
+	height: 90px; */
+	border-radius: 60px;
+	text-align: center;
+}
+
+
+/* media view   */
+
+ main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+
+  div {
+    flex-basis: 100%;
+  } 
+  
+  @media screen and (min-width: 992px) {
 .grid2 {
 	grid-auto-flow:row;
 	grid-template-rows: 80px 30px;
@@ -12,6 +76,7 @@
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 	color: white;
 }
+
 p {
   font: 34px "Montserrat", sans-serif;
   line-height: 1.8;
@@ -46,27 +111,6 @@ button:hover {
 	grid-column-gap:5px;
 }
 
-.formato {
-  margin-top: 2.2rem;
-  font-size:  2.2rem;
-  color: white;
-  text-align: center;
-  background-color: #1abc9c;
-}
-
-.formatoEN{
-	color: #f2e394;
-	font-size: 1.7rem;
-	font-weight: 600;
-	text-align: center;
-	background-color: #1abc9c;
-}
-
-#texto {
-	color: black;
-	font-size: 1.5rem;
-}
-
 
 .ubicarPercent{
 	position: absolute;
@@ -83,3 +127,5 @@ button:hover {
 	color: brown;
 	font-size: 80px;
 }
+
+  }

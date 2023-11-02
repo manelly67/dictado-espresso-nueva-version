@@ -1,10 +1,27 @@
-/* .categoria{
-	position: absolute;
-	left: 215px;
-	top: 40px;
-} en STYLE*/
-.botonretroceso{
-	position: absolute;
-	right: 45px;
-	top: 40px;
-}
+/* media view   */
+
+ main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+
+  div {
+    flex-basis: 100%;
+  } 
+
+  
+  @media screen and (min-width: 992px) {
+    main {
+      display: flex;
+	  flex-direction:row;
+	  justify-content: flex-start;
+	  flex-wrap: wrap;
+	  margin-top: 7.5rem;
+	  width: 1200px;
+    }
+	
+  }
