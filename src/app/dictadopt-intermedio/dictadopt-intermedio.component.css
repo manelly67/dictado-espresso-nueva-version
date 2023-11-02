@@ -6,7 +6,24 @@
 }
 
 .subtitulo {background-color: white;
-}		
+}
+.btn-m {
+			color: #f2e394;
+			background-color: #82b74b;
+			border-color: #82b74b;
+		}
+		
+.btn-l {
+			background-color: #ff7b25;
+			border-color: #ff7b25;
+		}
+		
+.btn-xl {
+			background-color: #b9936c;
+			border-color: #b9936c;
+		}
+			
+			
 /* media view   */
 
  main {

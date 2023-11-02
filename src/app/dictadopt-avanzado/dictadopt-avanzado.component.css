@@ -7,6 +7,21 @@
 
 .subtitulo {background-color: white;
 }
+.btn-m {
+			color: #f2e394;
+			background-color: #80ced6;
+			border-color: #80ced6;
+		}
+		
+.btn-l {
+			background-color: #034f84;
+			border-color: #034f84;
+		}
+		
+.btn-xl {
+			background-color: #82b74b;
+			border-color: #82b74b;
+		}
 
 /* media view   */
 
