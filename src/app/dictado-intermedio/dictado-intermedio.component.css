@@ -7,6 +7,7 @@
 
 .subtitulo {background-color: white;
 }	
+
 .btn-m {
 			color: #f2e394;
 			background-color: #82b74b;
@@ -107,6 +108,42 @@ ul {
 	margin: 15px;
 	
 }
+
+
+.btn-circle.btn-m {
+			width: 80px;
+			height: 80px;
+			padding: 13px 18px;
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: center;
+			color: #f2e394;
+			background-color: #82b74b;
+			border-color: #82b74b;
+		}
+		
+.btn-circle.btn-l {
+			width: 90px;
+			height: 90px;
+			padding: 13px 18px;
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: center;
+			background-color: #ff7b25;
+			border-color: #ff7b25;
+		}
+		
+.btn-circle.btn-xl {
+			width: 100px;
+			height: 100px;
+			padding: 13px 18px;
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: center;
+			background-color: #b9936c;
+			border-color: #b9936c;
+		}
+			
 
 
 	
