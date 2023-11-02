@@ -18,7 +18,15 @@
 	color: black;
 	font-size: 1.5rem;
 }
+.gradoA{
+	color: blue;
+	font-size: 92px;
+}
 
+.gradoByC{
+	color: brown;
+	font-size: 80px;
+}
 
 /* media view   */
 
@@ -35,12 +43,7 @@
   div {
     flex-basis: 100%;
   } 
-    
-ul {
-	flex-basis: 90%;
-}
-
-  
+ 
   
   @media screen and (min-width: 992px) {
     main {

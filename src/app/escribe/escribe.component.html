@@ -1,4 +1,4 @@
-
+<main>
 <div style="display:grid" class="grid1">
 
 <div class="grid1">
@@ -18,7 +18,7 @@
 
   <p class="ocultar">Result: {{arraytexto}}</p>    <!--variable solo para probar funcionamiento -->
   <p class="ocultar">Result: {{letra}} {{array.length}}</p>  <!--variable solo para probar funcionamiento -->
-  
+<div>  
 <app-teclado class="teclado" (notifyA1)="onNotifyA1()" 
 								(notifyA2)="onNotifyA2()" 
 									(notifyA3)="onNotifyA3()"
@@ -36,6 +36,7 @@
 																					(notifyInterr)="onNotifyInterr()"
 																						(notifyExclam)="onNotifyExclam()"
 										                                                       ></app-teclado>
+																							   </div>
 <br>
 
 </div>
@@ -47,53 +48,4 @@
 
 </div>
 
- 
-
-<!-- EJERCICIO 1 - FORMA
-<p>{{respuesta1}}</p>
-{{checkoutForm.value | json }} 
-{{checkoutForm.value}} -->
-
-<!-- EJERCICIO 1 - FORMA
-<form [formGroup]="checkoutForm"(ngSubmit)="OnSubmit()">
-  <div>
-    <label for="escribe">
-      Escribe tu respuesta </label>
-    <input id="escribe" type="text" formControlName="escribe" >
-  </div>
-  <button class="button" type="submit">Submit</button>
-</form> -->
-
-<!-- EJERCICIO 2 - OUTPUT
-<button class="button" type="submit" (click)="notify.emit()">Submit</button>
- este ejercicio separado es para un mensaje de alerta-->
-
-<!-- EJERCICIO 3 - ONKEY $EVENT INPUT
-<div>
-<input (keyup)="onKey($event)">
-  <p>{{values}}</p>
-</div> -->
-
-
-<!--  EJERCICIO  esta forma de ingresar texto es excelente cuando no
-                 se necesita unir con otra forma de ingreso
-		<input [value]="arraytexto"
-         (input)="arraytexto=getValue($event)" />
-  <p>Result: {{arraytexto}}</p>
-  <p>Result: {{letra}} </p>
-  <p>Result: {{array.length}} </p> 
-  
-    se acompaña en el component con esto
-     getValue(event: Event): string {
-    return (event.target as HTMLInputElement).value;
-  } 
-  
-  -->
-  
-  <!-- <input id="escribe" class="ingresatexto" placeholder="  Escribe tu respuesta" (keyup)="onKey2($event)">
-  <!-- <p class="ocultar">  <p>{{arraytexto}}{{array}}{{array.length}}</p> -->
-
-
-
-
-
+</main>

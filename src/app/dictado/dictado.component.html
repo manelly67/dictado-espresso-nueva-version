@@ -25,6 +25,10 @@
 											     [mostrarIndicador]="mostrarIndicador"		>	 </app-comparar>
 </div>
 
+ <ng-container *ngIf="porcentaje"> 
+<p [@slideStatus] class="ubicarPercent" [ngClass]=" grado == 'A' ? 'gradoA':'gradoByC' ">{{ porcentajeMostrar | percent }}</p>
+ </ng-container> 
+
 <div style="display:grid" class="grid" *ngIf="spanish"> 
 	<button type="button" class="button grid" (click)="show = !show">{{show ? texto2 : texto3 }}</button>
     <!-- show = {{show}} permite ver el cambio de true o false -->
@@ -70,9 +74,6 @@
 {{mensajedealerta | uppercase }}
  </div>
  
- <ng-container *ngIf="porcentaje"> 
-<p [@slideStatus] class="ubicarPercent" [ngClass]=" grado == 'A' ? 'gradoA':'gradoByC' ">{{ porcentajeMostrar | percent }}</p>
- </ng-container> 
  
 <ng-container *ngIf="definirAudioService.gradoA && definirAudioService.avanzado"> 
 <app-animacion1></app-animacion1>
