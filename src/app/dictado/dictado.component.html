@@ -1,3 +1,4 @@
+<main>
 <div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
         
         <b>{{categoria.idioma|uppercase}}</b> 
@@ -10,15 +11,19 @@
 <button type="button" class="botonretroceso" (click)="goBack()">go back</button>
 <br><br>
 
-
+<div>
 <app-audio></app-audio>
+</div>
 <br><br>
+<div>
 <app-escribe (guardartexto)="onGuardartexto(); comparar()" ></app-escribe> 
-
+</div>
+<div>
 <app-comparar [palabraseleccionada]="palabraseleccionada" [respuestacomparar]="respuestacomparar" 
 							[arrayPalabra]="arrayPalabra" [arrayRespuesta]="arrayRespuesta" 	
 									[nuevoArray]="nuevoArray" [aciertos]="aciertos" [percentAciertos]="percentAciertos"
 											     [mostrarIndicador]="mostrarIndicador"		>	 </app-comparar>
+</div>
 
 <div style="display:grid" class="grid" *ngIf="spanish"> 
 	<button type="button" class="button grid" (click)="show = !show">{{show ? texto2 : texto3 }}</button>
@@ -80,4 +85,6 @@
 
 <ng-container *ngIf="definirAudioService.gradoA && definirAudioService.intermedio"> 
 <app-animacion3></app-animacion3>
-</ng-container> 
+</ng-container>
+
+</main> 
