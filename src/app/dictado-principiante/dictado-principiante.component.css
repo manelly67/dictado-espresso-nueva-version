@@ -1,6 +1,14 @@
+#texto1 {color: #04B404;
+		line-height: 95%;
+}
+#texto2 {color: #29098B;
+		line-height: 95%;
+}
+
+.subtitulo {background-color: white;
+}
 
 /* media view   */
-
 
  main {
     
@@ -47,15 +55,6 @@ ul {
 #nro2 {grid-row: 2;
 		grid-column-start: 3;
 		grid-column-end: 5;
-}
-#texto1 {color: #04B404;
-		line-height: 95%;
-}
-#texto2 {color: #29098B;
-		line-height: 95%;
-}
-
-.subtitulo {background-color: white;
 }
 
 .contenidoA {box-sizing: content-box;
