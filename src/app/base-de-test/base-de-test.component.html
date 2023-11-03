@@ -1,3 +1,5 @@
+
+
 <div class="tituloTest" *ngIf='servitestService.isChecked!=true' >
 <h3 class="texto" *ngFor='let testbase of testbases | slice:definirinicial:definirfinal'>{{testbase.testname}}</h3>
 </div>
@@ -139,17 +141,4 @@
 <ng-container *ngIf="servitestService.gradoA && servitestService.principiante"> 
 <app-animacion2></app-animacion2>
 </ng-container> 
- 
- <!--  ESTAS VARIABLES SE UTILIZARON PARA PROBAR FUNCIONAMIENTO
-<p>respuesta es {{seleccionA}}</p>
-<p>respuesta es {{seleccionB}}</p>
-<p>respuesta es {{seleccionC}}</p>
-<p>total preguntas {{servitestService.sumadePreguntas}}</p>
-<p>total aciertos {{servitestService.sumadeAciertos}}</p>
-<p>indicadorA {{servitestService.indicadorA}}</p>
 
-<p>{{testseleccionado}}</p>  
-
-<p>{{respuestaA}}<br>{{respuestaB}}<br>{{respuestaC}}</p>
-
- -->

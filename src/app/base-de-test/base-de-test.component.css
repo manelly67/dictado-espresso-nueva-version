@@ -9,6 +9,60 @@
   padding-top: 3px;
 }
 
+
+.citaContainer {
+
+	background-color: white;
+}
+
+.cita {
+  color: #474e5d;
+  text-align: left;
+  font-size: 11px;
+  padding-bottom: 3px;
+  padding-right: 4px;
+}
+
+
+.formato {
+	background-color: #fefbd8;	
+}
+
+/* media view   */
+/* 
+  main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  } */
+
+  div {
+    flex-basis: 100%;
+  } 
+    
+  form {
+	flex-basis: 100%;
+} 
+
+  
+  
+  @media screen and (min-width: 992px) {
+
+.tituloTest {
+  background-color: #474e5d; /* Dark Blue */
+}
+
+.texto{
+  color: white;
+  font-family: 20px "Montserrat", sans-serif;
+  padding-left: 4px;
+  padding-top: 3px;
+}
+
+
 .citaContainer {
 	width: 400px;
 	height: 50px;
@@ -87,3 +141,5 @@
 	color: brown;
 	font-size: 80px;
 }
+
+  }
