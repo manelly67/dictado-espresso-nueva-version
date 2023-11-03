@@ -28,16 +28,37 @@
 	background-color: #fefbd8;	
 }
 
-/* media view   */
-/* 
-  main {
-    
-    display: flex;
-	flex-direction:row;
-	
-    flex-wrap: wrap;
-	justify-content: flex-start;
-  } */
+
+.gradoA{
+	color: blue;
+	font-size: 92px;
+}
+
+.gradoByC{
+	color: brown;
+	font-size: 80px;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.correcto{
+		color: green;
+}
+.incorrecto{
+		color:red;
+}
+
+
+/* media view*/
 
   div {
     flex-basis: 100%;
