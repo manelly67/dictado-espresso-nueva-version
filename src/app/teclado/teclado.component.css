@@ -1,11 +1,25 @@
-
+ .tecladoPT {
+   background-color: #eee;
+   border-radius: 2px;
+   display: inline-block;
+   align-items: center;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .tecladoSP {
+   background-color: #eee;
+   border-radius: 2px;
+   display: inline-block;
+   align-items: center;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+ }
+ 
 /* media view   */
 
  main {
     
     display: flex;
-	flex-direction:row;
-	
+	flex-direction:row;	
     flex-wrap: wrap;
 	justify-content: flex-start;
   }
