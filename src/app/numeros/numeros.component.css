@@ -30,13 +30,13 @@
 
 .container1{
 	background-color: #1abc9c;
-	padding: 13px 18px;
+	/* padding: 13px 18px; */
 	border-radius: 60px;
 	text-align: center;
 }
 .container2{
 	background-color: #1abc9c;
-	padding: 13px 18px;
+	/* padding: 13px 18px; */
 	border-radius: 60px;
 	text-align: center;
 }
@@ -50,7 +50,7 @@
 }
 
 p {
-  font: 34px "Montserrat", sans-serif;
+  font: 28px "Montserrat", sans-serif;
   line-height: 1.8;
   color: #f5f6f7;
 }
