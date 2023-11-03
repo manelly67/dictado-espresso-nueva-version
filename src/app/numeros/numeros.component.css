@@ -31,18 +31,28 @@
 .container1{
 	background-color: #1abc9c;
 	padding: 13px 18px;
-/* 	width: 150px;
-	height: 90px; */
 	border-radius: 60px;
 	text-align: center;
 }
 .container2{
 	background-color: #1abc9c;
 	padding: 13px 18px;
-/* 	width: 250px;
-	height: 90px; */
 	border-radius: 60px;
 	text-align: center;
+}
+
+.sizebtn {
+	width: 75%;
+	height: 70%;
+	background-color: #04B404;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	color: white;
+}
+
+p {
+  font: 34px "Montserrat", sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
 }
 
 

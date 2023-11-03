@@ -2,20 +2,23 @@
 <div style="display:grid" class="grid1">
 
 <div class="grid1">
-<label id="escribe">{{label1}}</label>
+
 
 <!-- <input  class="ingresatexto" [value]="arraytexto" 
          (keyup)="onKey2($event)"
 			(blur)="actualizar()" 
 			 (keyup.enter)="actualizar2();guardartexto.emit(); borrar(); lista.emit(); secuencia.emit(); resalta.emit()" /> -->
-
+<div>
 <textarea  class="ingresatexto" [value]="arraytexto" 
 				(keyup)="onKey2($event)" 
 						(blur)="actualizar()" 
 						(keyup.enter)="actualizar2();guardartexto.emit(); borrar();lista.emit();secuencia.emit();resalta.emit()"></textarea>
+</div>
 
+<div>
+<label id="escribe">{{label1}}</label>
 <p id="escribeingles"> <b>Write your answer [ENTER]</b> </p>
-
+</div>
   <p class="ocultar">Result: {{arraytexto}}</p>    <!--variable solo para probar funcionamiento -->
   <p class="ocultar">Result: {{letra}} {{array.length}}</p>  <!--variable solo para probar funcionamiento -->
 

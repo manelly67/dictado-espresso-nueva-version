@@ -28,6 +28,11 @@
 {{mensajedealerta | uppercase }}
  </div>
 
+ 
+ <ng-container *ngIf="porcentaje"> 
+<p [@slideStatus] class="ubicarPercent" [ngClass]=" grado == 'A' ? 'gradoA':'gradoByC' ">{{ porcentajeMostrar | percent }}</p>
+ </ng-container> 
+
 <div style="display:grid" class="grid"> 
 	<button type="button" class="button grid" (click)="show = !show">{{show ? texto2 : texto3 }}</button>
     <!-- show = {{show}} permite ver el cambio de true o false -->
@@ -41,11 +46,6 @@
 </div>
 </div>
 
-
- 
- <ng-container *ngIf="porcentaje"> 
-<p [@slideStatus] class="ubicarPercent" [ngClass]=" grado == 'A' ? 'gradoA':'gradoByC' ">{{ porcentajeMostrar | percent }}</p>
- </ng-container> 
  
 <ng-container *ngIf="numerosService.gradoA && numerosService.principiante"> 
 <app-animacion1></app-animacion1>
