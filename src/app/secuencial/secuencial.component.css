@@ -1,9 +1,48 @@
+.sizebtn {
 
-/* .categoria{
-	position: absolute;
-	left: 215px;
-	top: 40px;
-} en STYLE*/
+	background-color: #04B404;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	color: white;
+}
+
+.mensajeEN{
+	color: #4040a1;
+	font-size: 12px;
+}
+
+.palabraEN{
+	color: #f2e394;
+	font-size: 1.7rem;
+	font-weight: 600;
+	
+}
+
+li {
+  margin-top: 2rem;
+  font-size:  2rem;
+  color: white;
+  text-align: center;
+  background-color: #1abc9c;
+  border-radius: 32px;
+}
+
+/* media view   */
+
+ main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+  
+  div {
+    flex-basis: 100%;
+  } 
+
+  
+  @media screen and (min-width: 992px) {
 
 .grid2 {
 	grid-auto-flow:row;
@@ -29,8 +68,8 @@
 
 .ubicar {
 	position: absolute;
-	right: 325px;
-	top: 130px;
+	right: 525px;
+	top: 145px;
 }
 
 .lista1 {
@@ -79,3 +118,5 @@ li {
 	font-weight: 600;
 	
 }
+
+  }

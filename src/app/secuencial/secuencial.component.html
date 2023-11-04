@@ -1,11 +1,4 @@
-<div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
-        
-        <b>{{categoria.idioma | uppercase}}</b> 
-			{{espacio}}
-        <b>{{categoria.modo | titlecase}}</b>
-			{{espacio}}
-		<kbd>{{categoria.nivel | titlecase}}</kbd>
-</div>
+<main>
 
 <div style="display:grid" class="grid2">
 
@@ -35,9 +28,9 @@
 </ul>
 </div>
 
-
+<div>
 <app-escribe (guardartexto)="onGuardartexto(); comparar.emit()" (lista)="onLista()" (secuencia)="onSecuencia()" (resalta)="onResalta()" ></app-escribe> 
-
+</div>
 
 
 <div style="display:grid" class="grid3"> 
@@ -51,9 +44,11 @@
 </ul>
 </div>
 
+<div>
 <app-lista-secuencial [lista]="lista" [secuenciaArray]="secuenciaArray" 
 							[contar]="contar" [acertadas]="acertadas" 	
 										[porcentaje]="porcentaje" [grado]="grado" [gradoA]="gradoA" ></app-lista-secuencial>
+</div>
 
  <!-- se muestra un solo boton por cada click     -->
 <div>
@@ -89,4 +84,4 @@
 </ng-container>
 </div>
 
-
+</main>

@@ -1,4 +1,45 @@
+.gradoA{
+	color: blue;
+	font-size: 100px;
+}
 
+.gradoByC{
+	color: brown;
+	font-size: 80px;
+}
+
+#listade10 {
+  margin-top: 2rem;
+  font-size:  10px;
+  padding-top: 1px;
+  text-align: center;
+  background-color: white;
+  border-radius: 32px;
+  width: 400px;
+}
+
+/*media view*/
+
+ main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+
+  div {
+    flex-basis: 100%;
+  } 
+  
+    ul {
+    flex-basis: 100%;
+  } 
+
+  
+  @media screen and (min-width: 992px) {
+	  
 #listade10 {
   margin-top: 2rem;
   font-size:  10px;
@@ -32,3 +73,5 @@
 	color: brown;
 	font-size: 80px;
 }
+
+  }

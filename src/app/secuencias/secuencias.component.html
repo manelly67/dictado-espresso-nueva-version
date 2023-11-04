@@ -1,4 +1,14 @@
 <main>
+
+<div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
+        
+        <b>{{categoria.idioma | uppercase}}</b> 
+			{{espacio}}
+        <b>{{categoria.modo | titlecase}}</b>
+			{{espacio}}
+		<kbd>{{categoria.nivel | titlecase}}</kbd>
+</div>
+
 <br>
 <app-ingresar-numero [idioma]="idioma" > </app-ingresar-numero>
 
