@@ -1,3 +1,4 @@
+<main>
 <br>
 <div class="display:inline categoria" *ngFor='let categoria of categorias | slice:inicialnivel:finalnivel'>  
         
@@ -38,9 +39,9 @@
 </ul>
 </div>
 
-
+<div>
 <app-escribe (guardartexto)="onGuardartexto(); comparar.emit()" ></app-escribe> 
-
+</div>
 
 
 <div style="display:grid" class="grid3"> 
@@ -58,3 +59,4 @@
 <app-animacion2></app-animacion2>
 </ng-container> 
 
+</main>

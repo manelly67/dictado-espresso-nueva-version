@@ -1,11 +1,15 @@
+<main>
 
 <button type="button" class="botonretroceso" (click)="goBack()">go back</button>
 <br>
-
+<div>
 <!-- cuando la opcion es numeros random utiliza este componente, en caso contrario está oculto -->
 <ng-container *ngIf="random">
 <app-es-random (comparar)="onComparar()" (borrar)="onClear()" > </app-es-random>
 </ng-container>
+</div>
+
+<div>
 <!-- cuando la opcion es ingresar numero utiliza este componente, en caso contrario está oculto -->
 <ng-container *ngIf="secuencial">
 <app-es-secuencial [numeroingresado]="numeroingresado" [inicialingresado]="inicialingresado" 
@@ -13,12 +17,15 @@
 						(comparar)="onComparar()"  (cierrefinal)="cierrefinal()" (borrar)="onClear()"        
 																> </app-es-secuencial>  <!-- comparte el valor desde palabras hacia secuencial  -->
 </ng-container>
+</div>
 <br>
-
+<div>
 <app-comparar [palabraseleccionada]="palabraseleccionada" [respuestacomparar]="respuestacomparar" 
 							[arrayPalabra]="arrayPalabra" [arrayRespuesta]="arrayRespuesta" 	
 									[nuevoArray]="nuevoArray" [aciertos]="aciertos" [percentAciertos]="percentAciertos"
 											     [mostrarIndicador]="mostrarIndicador"		>	 </app-comparar>
+</div>
+
 <p class="ocultar">{{numeroingresado}}</p>
 <p class="ocultar">{{inicialingresado}}</p>
 <p class="ocultar">{{respuestacomparar}} </p>
@@ -28,3 +35,4 @@
 {{mensajedealerta | uppercase }}
  </div>
 
+</main>

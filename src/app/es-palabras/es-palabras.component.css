@@ -2,15 +2,30 @@
 	color: black;
 	font-size: 1.5rem;
 }
+/* media view   */
 
-.botonretroceso{
-	position: absolute;
-	right: 45px;
-	top: 40px;
-}
+ main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  }
 
-.ubicarlista{
-	position: absolute;
-	left: 900px;
-	top: 200px;
-}
+  div {
+    flex-basis: 100%;
+  } 
+
+  
+  @media screen and (min-width: 992px) {
+    main {
+      display: flex;
+	  flex-direction:row;
+	  justify-content: flex-start;
+	  flex-wrap: wrap;
+	  margin-top: 7.5rem;
+	  width: 1200px;
+    }
+	
+  }

@@ -1,9 +1,49 @@
 
-/* .categoria{
-	position: absolute;
-	left: 215px;
-	top: 40px;
-} en STYLE */
+.sizebtn {
+	width: 75%;
+	height: 70%;
+	background-color: #04B404;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	color: white;
+}
+
+li {
+  margin-top: 2.2rem;
+  font-size:  2.2rem;
+  color: white;
+  text-align: center;
+  background-color: #1abc9c;
+  border-radius: 32px;
+}
+
+
+.palabraEN{
+	color: #f2e394;
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+/* media view   */
+
+ main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+
+  div {
+    flex-basis: 100%;
+  } 
+  
+      li {
+    flex-basis: 100%;
+  } 
+
+  
+  @media screen and (min-width: 992px) {
 .grid2 {
 	grid-auto-flow:row;
 	grid-template-rows: 65px 45px;
@@ -45,3 +85,5 @@ li {
 	font-size: 1.7rem;
 	font-weight: 600;
 }
+
+  }
