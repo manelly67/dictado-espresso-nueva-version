@@ -1,5 +1,43 @@
 .container {
 	background-color: #3f525c;
+	text-align: center;
+}
+
+.enlace {
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 900;
+}
+
+.ES {
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 900;
+}
+
+.EN {
+	color: #d5e1df;
+	font-size: 1.1rem;
+	font-weight: 900;
+}
+
+.PT {
+	color: #e3eaa7;
+	font-size: 1.1rem;
+	font-weight: 900;
+}
+
+/* media view   */
+
+  div {
+    flex-basis: 100%;
+  } 
+ 
+  
+  @media screen and (min-width: 992px) {
+
+.container {
+	background-color: #3f525c;
 	width: 400px;
 	text-align: center;
 }
@@ -28,4 +66,4 @@
 	font-weight: 900;
 }
 
-
+  }
