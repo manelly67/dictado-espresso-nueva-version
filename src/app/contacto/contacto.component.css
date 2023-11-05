@@ -1,6 +1,47 @@
 body {
 	background-color: #F2E3A9;
 	color:black;
+
+	 }
+
+ .blue{ color: blue;
+		text-align: center;
+		}
+		
+/* media view   */
+
+ main {
+    
+    display: flex;
+	flex-direction:row;
+	
+    flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+
+  div {
+    flex-basis: 100%;
+  } 
+  
+   h6 {
+    flex-basis: 100%;
+  } 
+  
+  
+  @media screen and (min-width: 992px) {
+    main {
+      display: flex;
+	  flex-direction:row;
+	  justify-content: flex-start;
+	  flex-wrap: wrap;
+	  margin-top: 7.5rem;
+	  width: 1200px;
+	 
+    }
+	
+ body {
+	background-color: #F2E3A9;
+	color:black;
 	height:90%;
 	width:100%;
 	 }
@@ -58,4 +99,4 @@ body {
 		text-align: center;
 		font-size: 18px;
 		}
- 
+  }

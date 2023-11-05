@@ -44,7 +44,7 @@ export const ENPALABRAS: string[] = [
 'September',
 'Address',
 'The clocks are synchronized',
-'Cell phone number',
+'Cell phone',
 'She wears high heels ',
 'August',
 'Good evening',

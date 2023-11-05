@@ -77,6 +77,7 @@ export class RandomComponent implements OnInit {
 	this.ptpalabraseleccionada ='';
 	this.guardartextoService.palabraseleccionada == '';
 	this.tecladoService.nivelcategoria = this.inicialnivel;    //para definir el teclado a utilizar
+	this.compararService.gradoA = false;    // para reiniciar la variable de la animacion del random component	
 	}
 	
 	onGuardartexto():string {
